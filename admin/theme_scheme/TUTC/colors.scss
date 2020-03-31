@@ -1,0 +1,8 @@
+$menu-submenu-background-alt:  #B3DDDF;
+$base-color: #B3DDDF;
+$highlight-color:  #F19124;
+$notification-color: #FEE35C;
+$menu-submenu-focus-text: lighten( $highlight-color, 35% );
+$body-background: #F5F3F1;
+
+@import "../_admin.scss";

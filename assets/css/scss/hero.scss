@@ -1,0 +1,28 @@
+/*
+ * Slider
+ */
+
+.slider {
+  position: relative;
+  .flex-control-nav {
+    bottom: 1rem;
+    z-index: 5;
+    li {
+      margin: 0 .5rem;
+      a {
+        height: 15px;
+        width: 15px;
+        background: #fff;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        img {
+          width: 100%;
+        }
+        &.flex-active {
+          background: #000;
+        }
+      }
+    }
+  }
+}
