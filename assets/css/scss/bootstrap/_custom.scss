@@ -1,0 +1,28 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+$black: #181415;
+$blue: #0fb4c2;
+$brand-primary: $blue;
+$btn-primary-bg: $blue;
+$btn-primary-border: $blue;
+$brand-warning: #fa0cb2;
+$btn-warning-bg: $brand-warning;
+$btn-warning-border: $brand-warning;
+$body-color: #000;
+$link-color: inherit;
+$link-hover-color: inherit;
+$link-decoration: underline;
+
+
+$btn-padding-y: 1.125rem;
+$btn-padding-y-sm: .8125rem;
+$btn-font-size: .9rem;
+$btn-border-radius:0;
+
+
+$font-family-base: 'Open Sans', sans-serif;
+// $headings-font-family: 'bromello', sans-serif;
+$headings-font-family: sans-serif;

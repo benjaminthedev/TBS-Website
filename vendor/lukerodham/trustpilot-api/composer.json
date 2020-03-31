@@ -1,0 +1,21 @@
+{
+  "name": "lukerodham/trustpilot-api",
+  "keywords": ["trustpilot", "trust", "pilot"],
+  "description": "A TrustPilot API client",
+  "authors": [
+    {
+      "name": "Luke Rodham",
+      "email": "lkrodham@gmail.com",
+      "homepage": "http://www.snowysocial.co.uk"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "LukeRodham\\TrustPilot\\": "src"
+    }
+  },
+  "require": {
+    "php": ">=5.4",
+    "guzzlehttp/guzzle": "^6.1"
+  }
+}

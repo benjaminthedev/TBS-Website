@@ -1,0 +1,18 @@
+/*
+Theme Name: Topclick Default Theme
+Theme URI: http://topclick.com
+Description: A responsive WordPress theme based on the Bootstrap framework, developed by Connor Mulhall @ Topclick
+Version: 2.0
+Author: Connor Mulhall
+Author URI: http://topclick.com
+*/
+
+/*this is for the new prices*/
+
+ins {
+    clear: both;
+    display: block;
+    font-weight: 700;
+}
+
+ins:before {content: "Multi-Buy Price ";}

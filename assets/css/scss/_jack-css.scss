@@ -1,0 +1,21 @@
+.close_sidebar {
+    margin-bottom: 1em;
+}
+
+#payment {
+    #sagepaydirect-cc-form .wc-credit-card-form-card-type, #sagepaydirect-cc-form .wc-credit-card-form-card-number, #sagepaydirect-cc-form .wc-credit-card-form-card-expiry, #sagepaydirect-cc-form .wc-credit-card-form-card-cvc {
+        font-size: 1rem;
+    }
+}
+
+.content_tabs .content_tab header {
+    cursor: pointer;
+}
+
+#main_nav .navigation_wrap .navigation > li .mega_menu {
+    pointer-events: none;
+}
+
+#main_nav .navigation_wrap .navigation > li:hover .mega_menu, #main_nav .navigation_wrap .navigation > li:hover .brands-menu {
+    pointer-events: auto;
+}
