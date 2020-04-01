@@ -1,0 +1,25 @@
+{
+  "name": "tbs-website",
+  "version": "1.0.0",
+  "description": "TBS Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjaminthedev/TBS-Website.git"
+  },
+  "author": "BenjaminTheDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benjaminthedev/TBS-Website/issues"
+  },
+  "homepage": "https://github.com/benjaminthedev/TBS-Website#readme",
+  "dependencies": {
+    "gulp-sass": "^4.0.2"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
