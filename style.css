@@ -1,10 +1,10 @@
 /*
-Theme Name: Topclick Default Theme
-Theme URI: http://topclick.com
-Description: A responsive WordPress theme based on the Bootstrap framework, developed by Connor Mulhall @ Topclick
+Theme Name: The Beauty Store
+Theme URI: https://www.thebeautystore.com/
+Description: A responsive WordPress theme based on the Bootstrap framework, developed by BenjaminTheDev
 Version: 2.0
-Author: Connor Mulhall
-Author URI: http://topclick.com
+Author: BenjaminTheDev
+Author URI: https://benjaminthedev.github.io/
 */
 
 /*this is for the new prices*/
@@ -16,3 +16,5 @@ ins {
 }
 
 ins:before {content: "Multi-Buy Price ";}
+
+
