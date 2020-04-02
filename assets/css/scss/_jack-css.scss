@@ -1,6 +1,5 @@
 .close_sidebar {
     margin-bottom: 1em;
-    font-size: 12px;
 }
 
 #payment {
@@ -10,7 +9,7 @@
 }
 
 .content_tabs .content_tab header {
-    cursor: pointer !important;
+    cursor: pointer;
 }
 
 #main_nav .navigation_wrap .navigation > li .mega_menu {
@@ -20,6 +19,3 @@
 #main_nav .navigation_wrap .navigation > li:hover .mega_menu, #main_nav .navigation_wrap .navigation > li:hover .brands-menu {
     pointer-events: auto;
 }
-
-.close_sidebar {
-  margin-bottom: 1em; }
