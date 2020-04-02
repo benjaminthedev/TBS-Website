@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/benjaminthedev/TBS-Website#readme",
   "dependencies": {
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "gulp-uglifycss": "^1.1.0"
   },
   "devDependencies": {
     "gulp": "^4.0.2"
