@@ -23,6 +23,7 @@ if (!defined('ABSPATH')) {
 get_header('shop');
 
 
+
 $is_tax = is_tax('product_cat');
 $search = isset($_GET['search']) ? $_GET['search'] : '';
 
@@ -63,6 +64,7 @@ $spf = isset($_GET['gender']) ? array_map('intval', explode(',', $_GET['spf'])) 
 
 ?>
 <section id="static_content" class="no_margin">
+
 
     <?php
     /**
@@ -137,10 +139,17 @@ $spf = isset($_GET['gender']) ? array_map('intval', explode(',', $_GET['spf'])) 
     <?php } else echo "<div class='container no_border'><h1 class='section_title text-left shop_archive'><span>$title</span></h1></div>";
     ?>
 
+    <span class="clerk" 
+        data-template="@category-page-popular" 
+        data-category="<?php echo get_queried_object()->term_id;?>">
+            
+    </span>
+
     <div id="product_content_wrapper">
 
         <div class="container <?php echo $is_tax ? 'no_border' : 'no_padding_top' ?>">
             <header class="product_feed_header clearfix">
+
                 <div class="filter_btn hidden-md-up">
                     <i class="fa fa-filter" aria-hidden="true"></i> Filter
                 </div>
@@ -259,6 +268,4 @@ $spf = isset($_GET['gender']) ? array_map('intval', explode(',', $_GET['spf'])) 
 
 
 </section>
-
-
 <?php get_footer('shop'); ?>

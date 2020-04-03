@@ -11,6 +11,8 @@
 
     <div class="container">
 
+        <span class="clerk" data-template="@home-page-visitor-complementary"></span>
+
         <h1 class="section_title"><span>Trending</span></h1>
 
         <div id="product_tabs">

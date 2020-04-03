@@ -76,19 +76,62 @@
         <div class="container clearfix ">
             <?php echo '<a href="' . get_site_url() . '" id="logo" class="float-md-left hidden-sm-down">' . get_img('logo.png') . '</a>'; ?>
 
+                        <?php
 
-            <form action="<?php echo get_permalink(wc_get_page_id('shop')) ?>" id="search_form" class="float-md-right">
+            if ( ! defined( 'ABSPATH' ) ) {
+                exit; // Exit if accessed directly.
+            }
+
+            $options = get_option('clerk_options');
+            ?>
+            <span id="clerk-search"
+                  class="clerk"
+                  data-template="@<?php echo esc_attr(strtolower(str_replace(' ', '-', $options['search_template']))); ?>"
+                  data-limit="40"
+                  data-offset="0"
+                  data-target="#clerk-search-results"
+                  data-after-render="_clerk_after_load_event"
+                  <?php
+                  if (count($Attributes) > 0) {
+
+                      echo 'data-facets-target="#clerk-search-filters"';
+                      echo "data-facets-attributes='".$facets_attributes;
+                      echo "data-facets-titles='".$facets_titles;
+
+                  }
+
+                  ?>
+                  data-query="<?php echo esc_attr(get_query_var('searchterm')); ?>">
+            </span>
+
+
+             <form role="search" method="get" class="search-form float-md-right"
+          action="<?php echo esc_url( get_page_link( $options['search_page'] ) ); ?>">
+        <label>
+            <span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ) ?></span>
+            <input type="search" id="clerk-searchfield" class="search-field"
+                   placeholder="I am looking for..."
+                   value="<?php echo get_search_query() ?>" name="searchterm"/>
+        </label>
+        <input type="submit" class="search-submit" value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>"/>
+    </form>
+
+
+           <!-- <form action="<?php echo esc_url( get_page_link( $options['search_page'] ) ); ?>" class="search_form" class="float-md-right">
                 <div id="search_form_inner">
                     <div class="input_wrap">
                         <i class="fa fa-search"></i>
-                        <input type="text" name="search" placeholder="I am looking for...">
+                        <input type="text" name="searchterm" placeholder="I am looking for..." id="clerk-live-search">
                     </div>
                     <button type="submit" class="btn btn-primary btn-sm">Search</button>
                 </div>
-            </form>
+            </form> -->
 
         </div>
     </div>
 
+    
+
+        <span class="clerk" data-template="@live-search" data-instant-search="#clerk-searchfield" data-instant-search-suggestions="6" data-instant-search-categories="6" data-instant-search-pages="6"></span> 
 
 </header>
