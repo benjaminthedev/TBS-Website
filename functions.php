@@ -157,35 +157,3 @@ function send_custom_email_notifications( $order_id, $old_status, $new_status, $
         $wc_emails['WC_Email_Failed_Order']->trigger( $order_id );
     } 
 }
-
-
-
-//Test
-// function theme_enqueue_styles() {
-//     wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/assets/custom-css.css', array( 'stylesheet' ) );
-// }
-// add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
-
-
-
-/**
- * Proper way to enqueue scripts and styles.
- */
-function get_scripts() {
-     wp_enqueue_style( 'customStyle', get_stylesheet_directory_uri() . '/assets/custom-css.css', array() );
-    
-    //Use as template if needed.
-	//wp_enqueue_script( 'customJSProductPage', get_stylesheet_directory_uri() . '/js/single-product.js', array(), '1.0.0', true );
-	
-	//Conditionally Loading The JS for single product
-	// if (is_product()) {
-	// 	wp_enqueue_script( 'customJSProductPage', get_stylesheet_directory_uri() . '/js/single-product.js', array(), '1.0.0', true );
-	// }
-
-	// if (is_page(262)) {
-	// 	wp_enqueue_script( 'homeJs', get_stylesheet_directory_uri() . '/js/home-page.js', array(), '1.0.0', true );
-	// }
-  
-	
-}
-add_action( 'wp_enqueue_scripts', 'get_scripts' );
