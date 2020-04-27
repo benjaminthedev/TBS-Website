@@ -48,7 +48,7 @@
 
 
             <div class="float-right clearfix">
-
+                                
                 <?php echo do_shortcode('[aelia_currency_selector_widget widget_type="buttons"]') ?>
 
                 <a href="<?php the_field('stores_page', 'options') ?>" class="account_link float-left hidden-sm-down"><i
@@ -132,6 +132,6 @@
 
     
 
-        <span class="clerk" data-template="@live-search" data-instant-search="#clerk-searchfield" data-instant-search-suggestions="6" data-instant-search-categories="6" data-instant-search-pages="6"></span> 
+        <span class="clerk" data-template="@live-search" data-instant-search="#clerk-searchfield" data-instant-search-suggestions="6" data-instant-search-categories="6" data-instant-search-pages="6" data-instant-search-positioning="below"></span> 
 
 </header>

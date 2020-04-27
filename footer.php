@@ -1,6 +1,5 @@
 <footer id="social_footer">
 
-
     <div class="container">
 
         <div class="row">
@@ -120,7 +119,7 @@
 
                 <g:ratingbadge merchant_id=102295467></g:ratingbadge>​
 
-                <div class="trustpilot-widget"   data-locale="en-US" data-template-id="53aa8807dec7e10d38f59f32"
+                <div class="trustpilot-widget"   data-locale="en-GB" data-template-id="53aa8807dec7e10d38f59f32"
 
                      data-businessunit-id="52fb37910000640005783555" data-style-height="100px" data-style-width="165px"
 
@@ -168,7 +167,6 @@
 
 <script src="https://apis.google.com/js/platform.js" async defer></script>​
 
-<script src="//tags.affiliatefuture.com/6927.js"></script>
 
 </body>
 

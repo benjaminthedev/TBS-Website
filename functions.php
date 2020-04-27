@@ -3,6 +3,18 @@
 $GLOBALS['THEME_ABS_URL'] = __DIR__;
 $GLOBALS['CONTENT_ABS_URL'] = $GLOBALS['THEME_ABS_URL'] . "/content";
 
+/* =============== New Widgets Sections! ===============  */
+
+register_sidebar(
+    array(
+        'name' => 'Shop Filters Sidebar',
+        'before_widget' => '<div class="sub clearfix %2$s">',  
+        'after_widget' => '</div>',  
+        'before_title' => '<header><h4>',  
+        'after_title' => '</h4></header>',  
+    ));
+
+
 
 /* =============== LinnWorks ===============  */
 require_once 'includes/linnworks/Factory.php';
@@ -157,3 +169,71 @@ function send_custom_email_notifications( $order_id, $old_status, $new_status, $
         $wc_emails['WC_Email_Failed_Order']->trigger( $order_id );
     } 
 }
+
+/**
+ * Add "Ingredients" and "Benefits" tabs to WooCommerce products
+ *
+ */
+ 
+	add_filter( 'woocommerce_product_tabs', 'woo_new_product_tab' );
+	
+	function woo_new_product_tab( $tabs ) {
+	
+		global $post;
+		$product_how_to_use = get_post_meta( $post->ID, 'how_to_use', true );
+		$product_ingredients    = get_post_meta( $post->ID, 'ingredients', true );
+		$product_about_the_brand    = get_post_meta( $post->ID, 'about_the_brand', true );
+	 
+		if ( ! empty( $product_how_to_use ) ) {
+		
+			$tabs['how_to_use_tab'] = array(
+				'title'    => __( 'How to Use', 'woocommerce' ),
+				'priority' => 15,
+				'callback' => 'woo_how_to_use_tab_content'
+			);
+			
+		}
+		
+		if ( ! empty( $product_ingredients ) ) {
+		
+			$tabs['ingredients_tab'] = array(
+				'title'    => __( 'Ingredients', 'woocommerce' ),
+				'priority' => 16,
+				'callback' => 'woo_ingredients_tab_content'
+			);
+			
+			}
+		
+		if ( ! empty( $product_about_the_brand ) ) {
+		
+			$tabs['about_the_brand_tab'] = array(
+				'title'    => __( 'About the Brand', 'woocommerce' ),
+				'priority' => 16,
+				'callback' => 'woo_about_the_brand_tab_content'
+			);
+			
+		}
+		
+		return $tabs;
+	 
+	}
+	
+	function woo_how_to_use_tab_content() {
+	
+		echo get_field('how_to_use', $post_id);
+			
+		}
+	 
+	
+	function woo_ingredients_tab_content() {
+	
+		echo get_field('ingredients', $post_id);
+			
+		}
+	 
+
+     function woo_about_the_brand_tab_content() {
+	
+		echo get_field('about_the_brand', $post_id);
+			
+	 }

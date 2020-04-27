@@ -2,14 +2,14 @@
   background: transparent; }
   #mobile_nav > .mobile_menu_wrap header {
     background: rgba(24, 20, 21, 0.8); }
+  #mobile_nav > .mobile_menu_wrap .navigation_wrap {
+    background: rgba(24, 20, 21, 0.8); }
 
 #main_header .top_header #logo_mob {
   width: 230px;
   position: relative;
   top: auto;
   left: auto;
-  -webkit-transform: translate(0);
-  -ms-transform: translate(0);
   transform: translate(0);
   margin: .75rem 0;
   max-width: 100%;
@@ -17,3 +17,8 @@
 
 .flex_loaded ul.slides li img {
   width: 100%; }
+
+
+  /* footer#footer_credits {
+    background: gray !important;
+} */
