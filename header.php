@@ -32,7 +32,6 @@ $class= get_field('offer_tagline', 'options') ? 'offer_open' : '';
         <!-- TrustBox script -->
         <script src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
         <!-- End Trustbox script -->
-		
     </head>
 
     <body <?php body_class($class); ?>>

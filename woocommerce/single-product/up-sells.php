@@ -27,5 +27,3 @@ if (!defined('ABSPATH')) {
 
 
 
-
-
