@@ -118,8 +118,8 @@
             <div class="col-lg-3 col-sm-6 footer_block">
 
                 <g:ratingbadge merchant_id=102295467></g:ratingbadge>​
-
-                <div class="trustpilot-widget"   data-locale="en-GB" data-template-id="53aa8807dec7e10d38f59f32"
+				
+				                <div class="trustpilot-widget"   data-locale="en-GB" data-template-id="53aa8807dec7e10d38f59f32"
 
                      data-businessunit-id="52fb37910000640005783555" data-style-height="100px" data-style-width="165px"
 
@@ -128,6 +128,7 @@
                     <a href="https://www.trustpilot.com/review/www.thebeautystore.co.uk" target="_blank">Trustpilot</a>
 
                 </div>
+
 
             </div>
 
