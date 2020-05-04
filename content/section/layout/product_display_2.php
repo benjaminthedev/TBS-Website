@@ -8,38 +8,30 @@
 ?>
 
 <section class="section_container">
-	
-	    <div class="container">
+
+    <div class="container">
+
+        <span class="clerk" data-template="@home-page-visitor-complementary"></span>
 
         <h1 class="section_title"><span>Trending</span></h1>
-	
-	<div class="container">
 
-		<span class="clerk"
-  data-template="@home-page-trending"
-></span>
-          
+        <div id="product_tabs">
+
+            <ul class="controls">
+
+            </ul>
+
+            <div class="owls">
+
+                <ul class="slides clearfix">
+
+                    <?php get_section('tabs/best_seller'); ?>
+
+                </ul>
             </div>
 
         </div>
 
-</section>
-
-
-<section class="section_container">
-	
-	    <div class="container">
-
-        <h1 class="section_title"><span>What's New</span></h1>
-	
-	<div class="container">
-
-		<span class="clerk"
-  data-template="@homepage"
-></span>
-          
-            </div>
-
-        </div>
+    </div>
 
 </section>

@@ -59,13 +59,12 @@ global $product;
          * @hooked woocommerce_template_loop_rating - 5
          * @hooked woocommerce_template_loop_price - 10
          */
-
         do_action( 'woocommerce_after_shop_loop_item_title' );
 
         $average = $product->get_average_rating();
 
         if( $average )
-            echo render_star_rating($average, 5, $product->get_rating_count());
+            echo render_star_raiting($average, 5, $product->get_rating_count());
 
 
         /**
