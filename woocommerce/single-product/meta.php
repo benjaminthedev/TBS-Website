@@ -27,33 +27,11 @@ global $product;
 <div class="countdown">
         <div class="title">
             <?php /* ORDER BY 2PM FOR NEXT DAY DELIVERY */ ?>
-            FREE 2 Day Delivery on orders over &#163;25 - order before 2pm
+            NEXT DAY DELIVERY is just £2.95 on orders over &#163;25
         </div>
         <div id="count_down_text"></div>
     </div>
-
-
     <div class="content_tabs">
-        <?php if ($delivery_and_returns = get_field('delivery_and_returns', 'options')) : ?>
-            <div class="content_tab">
-                <header>DELIVERY & RETURNS <i class="fa fa-plus"></i></header>
-                <div class="content">
-                    <div class="inner">
-                        <?php echo $delivery_and_returns; ?>
-                    </div>
-                </div>
-            </div>
-        <?php endif; ?>
-        <?php if ($payment_and_security = get_field('payment_and_security', 'options')) : ?>
-            <div class="content_tab">
-                <header>PAYMENT & SECURITY <i class="fa fa-plus"></i></header>
-                <div class="content">
-                    <div class="inner">
-                        <?php echo $payment_and_security; ?>
-                    </div>
-                </div>
-            </div>
-        <?php endif; ?>
     </div>
 
     <div class="product_controls">

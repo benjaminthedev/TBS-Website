@@ -48,24 +48,24 @@
 
 
             <div class="float-right clearfix">
-
-                <?php echo do_shortcode('[aelia_currency_selector_widget widget_type="buttons"]') ?>
+                                
+                <?php //echo do_shortcode('[aelia_currency_selector_widget widget_type="buttons"]') ?>
 
                 <a href="<?php the_field('stores_page', 'options') ?>" class="account_link float-left hidden-sm-down"><i
                             class="fa fa-map-marker"></i> <span
                             class="hidden-sm-down">Our Stores</span></a>
-                <a href="<?php echo wc_get_cart_url(); ?>" class="account_link float-left"><i
+                <!-- <a href="<?php //echo wc_get_cart_url(); ?>" class="account_link float-left"><i
                             class="fa fa-shopping-bag"></i> <span
-                            class="hidden-sm-down">Bag</span></a>
+                            class="hidden-sm-down">Bag</span></a>    -->
 
-                <div class="cart_info float-left clearfix hidden-sm-down">
+                <!-- <div class="cart_info float-left clearfix hidden-sm-down">
                     <div class="count float-left">
-                        <?php echo WC()->cart->get_cart_contents_count(); ?>
+                        <?php //echo WC()->cart->get_cart_contents_count(); ?>
                     </div>
                     <div class="price float-left">
-                        <?php woocommerce_mini_cart(); ?>
+                        <?php //woocommerce_mini_cart(); ?>   
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div id="mob-logo-container" class="container hidden-md-up text-center">
@@ -84,11 +84,6 @@
 
             $options = get_option('clerk_options');
             ?>
-
-
-
-
-
             <span id="clerk-search"
                   class="clerk"
                   data-template="@<?php echo esc_attr(strtolower(str_replace(' ', '-', $options['search_template']))); ?>"
@@ -96,15 +91,6 @@
                   data-offset="0"
                   data-target="#clerk-search-results"
                   data-after-render="_clerk_after_load_event"
-
-                  data-facets-target="#clerk-search-filters"
-                  data-facets-attributes='["price","categories","manufacturer","gender"]'
-                  data-facets-multiselect-attributes='["categories","manufacturer"]'
-                  data-facets-titles='{"price":"Price",categories":"Categories","manufacturer":"Brand","gender":"Sex"}'
-
-
-
-
                   <?php
                   if (count($Attributes) > 0) {
 
@@ -131,7 +117,7 @@
     </form>
 
 
-           <!-- <form action="<?php //echo esc_url( get_page_link( $options['search_page'] ) ); ?>" class="search_form" class="float-md-right">
+           <!-- <form action="<?php echo esc_url( get_page_link( $options['search_page'] ) ); ?>" class="search_form" class="float-md-right">
                 <div id="search_form_inner">
                     <div class="input_wrap">
                         <i class="fa fa-search"></i>
@@ -144,8 +130,8 @@
         </div>
     </div>
 
+    
 
-
-        <span class="clerk" data-template="@live-search" data-instant-search="#clerk-searchfield" data-instant-search-suggestions="6" data-instant-search-categories="6" data-instant-search-pages="6"></span>
+        <span class="clerk" data-template="@live-search" data-instant-search="#clerk-searchfield" data-instant-search-suggestions="6" data-instant-search-categories="6" data-instant-search-pages="6" data-instant-search-positioning="below"></span> 
 
 </header>

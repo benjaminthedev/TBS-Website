@@ -111,20 +111,5 @@ if (!defined('ABSPATH')) {
 
 <?php if( $order && !$order->has_status('failed') ) : ?>
 
-<script language="javascript" src="https://scripts.affiliatefuture.com/AFFunctions.js"></script>
-<script language="javascript">
- 
-                var merchantID = 6927;
-                var orderValue = '<?php echo $order->get_total(); ?>';
-    
-                var orderRef = '<?php echo $order->get_order_number(); ?>';
-                var payoutCodes = '';
-                var offlineCode = '';
-                var voucher = '';
-                var products = '';
-                var curr = '';              
- 
-AFProcessSaleV5(merchantID,orderValue,orderRef,payoutCodes,offlineCode,voucher,products,curr);
-</script>
 <?php
 endif;

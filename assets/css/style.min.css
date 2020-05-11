@@ -434,10 +434,10 @@ output {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: "bromello", sans-serif;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit; }
+  color: inherit; 
+}
 
 h1, .h1 {
   font-size: 2.5rem; }
@@ -8619,7 +8619,7 @@ header#offer {
                 #main_nav .navigation_wrap .navigation > li .brands-menu .menu_block.one_block .menu_block_content .block_title {
                   font-size: 1.625rem; } }
             #main_nav .navigation_wrap .navigation > li .brands-menu .menu_block.one_block .menu_block_content .block_subtitle {
-              font-family: "bromello", sans-serif;
+              /* font-family: "bromello", sans-serif; */
               font-size: 2.4rem;
               letter-spacing: 1px;
               text-transform: none; }
@@ -8722,7 +8722,7 @@ header#offer {
                   #main_nav .navigation_wrap .navigation > li .mega_menu .menu_content .menu_block.one_block .menu_block_content .block_title {
                     font-size: 1.625rem; } }
               #main_nav .navigation_wrap .navigation > li .mega_menu .menu_content .menu_block.one_block .menu_block_content .block_subtitle {
-                font-family: "bromello", sans-serif;
+                /* font-family: "bromello", sans-serif; */
                 font-size: 2.4rem;
                 letter-spacing: 1px;
                 text-transform: none; }
@@ -10304,7 +10304,7 @@ div.swatch-wrapper.disabled {
   text-align: center;
   font-size: 1.375rem; }
   #social_footer .sign_up_title span {
-    font-family: "bromello", sans-serif;
+    /* font-family: "bromello", sans-serif; */
     font-size: 200%; }
 
 #social_footer .mailchimp_form {
