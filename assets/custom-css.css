@@ -1,8 +1,17 @@
 /* 
-All custom styles!
-*/
 
-h1{font-size: 11px;}
+All custom styles!
+
+*/
+  .products .product .button {
+    text-align: center;
+    display: block;
+    background-color: #CF0491;
+    padding: 10px 10px;
+    display: block; 
+    color: #0fb4c2;
+    margin: 1rem 0 0; 
+color: #fff;}
 
 ins {
     clear: both;
@@ -16,12 +25,14 @@ del {
     text-decoration: none;
 }
 
+
+
 .woocommerce-billing-fields__field-wrapper {
   display: flex;
   flex-wrap: wrap;
 }
-/* .woocommerce form .form-row {
-} */
+.woocommerce form .form-row {
+}
 .woocommerce form .form-row input.input-text {
 }
 #billing_email_field {
@@ -68,7 +79,10 @@ del {
   display: flex;
   flex-wrap: wrap;
 }
-
+.woocommerce form .form-row {
+}
+.woocommerce form .form-row input.input-text {
+}
 #shipping_country_field {
   order: 1;
 	width: 100%;
@@ -134,3 +148,38 @@ display: none;
 .clear { display: inline-block; } /* positions button horizontally in line with input */
 
 input.button { font-family: 'Helvetica Neue', Helvetica,  Arial, sans-serif; font-weight: bold; font-size: 1em; letter-spacing: .03em; color: #fff; background-color: #08b6c6 ; padding: .7em 2em; border: 1px solid #08b6c6 ; -webkit-border-radius: 1px; -moz-border-radius: 3px; border-radius: 3px; display: inline-block; margin: 0; } /* Button Styles */
+
+
+/* Clerk Search */
+
+form.search-form.float-md-right {
+    margin-top: 20px;
+    position: relative;
+    
+}
+
+input#clerk-searchfield {
+    padding: 12px 20px;
+    position: relative;
+    border: 1px solid #d7d7d7;
+    border-right: 0;
+    background: #ffffff;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+input.search-submit {
+    float: right;
+    color: #fff;
+    background-color: #0fb4c2;
+    border-color: #0fb4c2;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.8125rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 0;
+}

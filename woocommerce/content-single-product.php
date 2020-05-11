@@ -95,11 +95,12 @@ if (post_password_required()) {
      * @hooked woocommerce_output_related_products - 20
      */
 
-    if( count($product->get_upsells()) ) {
+    // if( count($product->get_upsells()) ) {
+    //     
+    // } else {
         remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
-    } else {
         remove_action('woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15);
-    }
+  //  }
 
 
     do_action('woocommerce_after_single_product_summary');

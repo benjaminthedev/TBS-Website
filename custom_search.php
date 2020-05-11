@@ -69,9 +69,10 @@ Template Name: Search Results Latest
                             .clerk-facet-_yoast_wpseo_focuskw {
                                 display: none !important;
                             }
-
-                            div#MdzcZfHp {
-                                display: none !important;
+								
+							.clerk-facet-stock,
+                            .clerk-facet-_msrp_price {
+								display: none !important;
                             }
 
                             @media only screen and (max-width:800px) {
