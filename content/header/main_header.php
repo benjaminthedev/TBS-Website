@@ -54,18 +54,18 @@
                 <a href="<?php the_field('stores_page', 'options') ?>" class="account_link float-left hidden-sm-down"><i
                             class="fa fa-map-marker"></i> <span
                             class="hidden-sm-down">Our Stores</span></a>
-                <!-- <a href="<?php //echo wc_get_cart_url(); ?>" class="account_link float-left"><i
+                <a href="<?php echo wc_get_cart_url(); ?>" class="account_link float-left"><i
                             class="fa fa-shopping-bag"></i> <span
-                            class="hidden-sm-down">Bag</span></a>    -->
+                            class="hidden-sm-down">Bag</span></a>
 
-                <!-- <div class="cart_info float-left clearfix hidden-sm-down">
+                <div class="cart_info float-left clearfix hidden-sm-down">
                     <div class="count float-left">
-                        <?php //echo WC()->cart->get_cart_contents_count(); ?>
+                        <?php echo WC()->cart->get_cart_contents_count(); ?>
                     </div>
                     <div class="price float-left">
-                        <?php //woocommerce_mini_cart(); ?>   
+                        <?php woocommerce_mini_cart(); ?>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
         <div id="mob-logo-container" class="container hidden-md-up text-center">

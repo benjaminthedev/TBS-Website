@@ -41,15 +41,9 @@ Template Name: Search Results Latest
                                 color: black;
                             }
 
-                            .clerk-facet-group-title {
-                                font-family: "bromello", sans-serif;
-                                font-size: 18px;
-                            }
-
                             input.clerk-facet-search::placeholder {
                                 color: black;
                             }
-
                             .clerk-facet-selected .clerk-facet-name:before {
                                 background-color: #40E0D0;
                                 border-color: #40E0D0;
@@ -57,14 +51,6 @@ Template Name: Search Results Latest
                             .clerk-range-selected-range {
                                 background-color: #40E0D0;
                             }
-                            .clerk-facet-group {
-                                /* border: 1px solid #ff0cb5; */
-                                -webkit-box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.45);
-                            -moz-box-shadow:    3px 3px 10px 0px rgba(50, 50, 50, 0.45);
-                            box-shadow:         3px 3px 10px 0px rgba(50, 50, 50, 0.45);
-                            }
-
-
                             .clerk-facet-stock,
                             .clerk-facet-_yoast_wpseo_focuskw {
                                 display: none !important;

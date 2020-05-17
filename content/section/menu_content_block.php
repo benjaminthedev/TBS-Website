@@ -33,11 +33,7 @@ $image_size = $class === 'one_block' ? 'menu_big' : 'menu_small';
 $image = $image ? get_img($image['sizes'][$image_size], $image['alt'], false) : false;
 if ($link) :
     echo "<a href='$link' class='menu_block $class'>";
-    echo '<div class="overlay"></div>';
     echo '<div class="menu_block_content">';
-    echo $block_title ? "<div class='block_title'>$block_title</div>" : '';
-    echo $block_subtitle ? "<div class='block_subtitle'>$block_subtitle</div>" : '';
-    echo $link_text ? "<div class='link_text'>$link_text</div>" : '';
     echo '</div>';
     echo $image ? $image : '';
     echo '</a>';
