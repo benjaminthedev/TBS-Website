@@ -105,8 +105,10 @@ if (post_password_required()) {
 
     do_action('woocommerce_after_single_product_summary');
     ?>
-
+&nbsp;
      <span class="clerk" data-template="@product-page-alternatives" data-products="[<?php echo $product->get_id(); ?>]"></span> 
+&nbsp;	
+	 <span class="clerk" data-template="@product-page-others-also-bought" data-products="[<?php echo $product->get_id(); ?>]"></span> 
 
 </div><!-- #product-<?php the_ID(); ?> -->
 
