@@ -33,9 +33,13 @@ Template Name: Search Results Latest
                                 display: contents;
                             }
 
-
-
                             /*Addtional Styles*/
+								
+							.clerk-facet-group.clerk-facet-price .clerk-range-label-left:before { content: '£';
+								}
+							.clerk-facet-price .clerk-range-label-left:before,
+							.clerk-range-label-right:before { content: '£';
+								}
 
                             div#clerk-search-filters * {
                                 color: black;
