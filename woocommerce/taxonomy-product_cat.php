@@ -141,22 +141,7 @@ global $product;
 
         </section>
 
-<script type="text/javascript">
-      var clerk_response = false;
-      var category_page_selector = "container"
-      Clerk('on','response', function(data,content){
-        if (content.result.length > 0) {
-            clerk_response = true;
-        }
-      });
-      setTimeout(
-        function(){
-          if (clerk_response == false) {
-             $(category_page_selector).show();
-          }
-        }
-      ,750)
-</script>
+
 
 
 <section>
@@ -232,107 +217,79 @@ div#clerk-category-filters {
 
 
 
-    <?php } else echo "<div class='container no_border'><h1 class='section_title text-left shop_archive'><span>$title</span></h1></div>";
-    ?>
+<script type="text/javascript">
+
+/*issue happening here:
+
+https://www.thebeautystore.com/hair-care/hair-treatments/dandruff-products/
+
+/hair-care/
+*/
+
+                            console.log('hair-treatments/dandruff-products/');
+                             console.log('HELLO WORLD :-');
 
 
 
-    <div id="product_content_wrapper">
-
-        <div class="container <?php echo $is_tax ? 'no_border' : 'no_padding_top' ?>">
-            <header class="product_feed_header clearfix">
-
-                <div class="filter_btn hidden-md-up">
-                    <i class="fa fa-filter" aria-hidden="true"></i> Filter
-                </div>
-                <div class="sort">
-                    <i class="fa fa-cog"></i>
-                    <select name="sort_order" id="sort_order">
-                        <?php
-                        $sort_args = [
-                            "A-Z" => "Title A-Z",
-                            "Z-A" => "Title Z-A",
-                            "LowHigh" => "Price Low-High",
-                            "High-Low" => "Price High-Low",
-                            "skuA-Z" => "Reference A-Z",
-                            "skuZ-A" => "Reference Z-A",
-                            "recent" => "Newest",
-                            "old" => "Oldest",
-                            "top" => "Best Sellers"
-                        ];
-                        foreach ($sort_args as $value => $title)
-                            echo $sort === $value ? '<option value="' . $value . '" selected>' . $title . '</option>' : '<option value="' . $value . '">' . $title . '</option>';
-                        ?>
-                    </select>
-                    <i class="fa fa-angle-down"></i>
-                </div>
-                <div class="per_page">
-                    <?php
-                    echo per_page($wp_query); ?>
-                </div>
-                <div class="pagination">
-                    <ul>
-                        <?php echo the_product_pagination($wp_query); ?>
-                    </ul>
-                </div>
-            </header>
-        </div>
-
-        <div class="container">
-
-            <div class="product_feed_wrap clearfix">
-                <?php
-                /**
-                 * woocommerce_sidebar hook.
-                 *
-                 * @hooked woocommerce_get_sidebar - 10
-                 */
-                do_action('woocommerce_sidebar');
-                ?>
-                <div class="products" id="product_feed_loader"
-
-                     data-colour="<?php echo json_encode($colour); ?>"
-                     data-sizes="<?php echo json_encode($sizes); ?>"
-                     data-brand="<?php echo json_encode($brand); ?>"
-                     data-age_group="<?php echo json_encode($age_group); ?>"
-                     data-formulation="<?php echo json_encode($formulation); ?>"
-                     data-skin_type="<?php echo json_encode($skin_type); ?>"
-                     data-hazardous_goods="<?php echo json_encode($hazardous_goods); ?>"
-                     data-gender="<?php echo json_encode($gender); ?>"
-                     data-spf="<?php echo json_encode($spf); ?>"
-                     data-sort="<?php echo $sort; ?>"
-                     data-page="<?php echo $page; ?>"
-                     data-per_page="<?php echo $per_page; ?>"
-                     data-cat="<?php echo json_encode($cat); ?>"
-                     data-cat_default="<?php echo json_encode($cat_init); ?>"
-                     data-search="<?php echo htmlentities($search); ?>"
-                >
-                    <?php if (have_posts()) : ?>
-                        <div class="row justify-content-center" id="product_row">
-                            <?php while (have_posts()) : the_post(); ?>
-                                <?php
-                                /**
-                                 * woocommerce_shop_loop hook.
-                                 *
-                                 * @hooked WC_Structured_Data::generate_product_data() - 10
-                                 */
-                                do_action('woocommerce_shop_loop');
-                                ?>
-                                <?php // wc_get_template_part('content', 'product'); ?>
-                            <?php endwhile; // end of the loop. ?>
-                        </div>
-                        <?php
-                    else:
-                        do_action('woocommerce_no_products_found');
-                    endif;
-                    ?>
+  // handle rendered events but only for popular products
 
 
-                </div>
+    //   var clerk_response = false;
+    //   var category_page_selector = "clerk-category";
 
-            </div>
 
-        </div>
+
+
+  setTimeout(function(){ 
+      
+        const gotEle = document.querySelector = 'clerk-category-results';
+        console.log(gotEle);
+
+        const newError = document.getElementById('error-page');
+        console.log(`the length is £{newError.length}`);
+
+        
+
+        if(gotEle.length > 1){
+            console.log('Products are loaded')
+        } else {
+            console.log('NO Products are loaded')
+        }
+
+
+
+
+      
+    }, 3000);
+
+
+
+
+
+    //   Clerk('on','response', function(data,content){
+    //     if (content.result.length > 0) {
+    //         clerk_response = true;
+    //         console.log('logging true')
+    //     }
+    //   });
+    //   setTimeout(
+    //     function(){
+    //       if (clerk_response == false) {
+    //          $(category_page_selector).show();
+    //          console.log('logging false')
+    //       }
+    //     }
+    //   ,2750)
+</script>
+
+
+
+    <?php } ?>
+    
+    
+    
+    
+    
 
 <style>
 .newnewBye{
@@ -343,21 +300,9 @@ div#product_content_wrapper {
 }
 
 </style>
-        <div class="container margin_top_2 newnewBye">
-            <footer class="product_feed_footer clearfix">
-                <div class="per_page">
-                    <?php echo per_page($wp_query); ?>
-					
-                </div>
-                <div class="pagination">
-                    <ul>
-                        <?php echo the_product_pagination($wp_query); ?>
-                    </ul>
-                </div>
-            </footer>
-        </div>
 
-    </div>
+
+  
 
     <?php
     /**

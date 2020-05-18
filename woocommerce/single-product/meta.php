@@ -31,41 +31,6 @@ global $product;
         </div>
         <div id="count_down_text"></div>
     </div>
-    <div class="content_tabs">
-    </div>
-
-    <div class="product_controls">
-        <div class="row">
-            <div class="col-sm-4">
-                <a href="#" data-toggle="modal" data-target="#ask_question">
-                    <i class="fa fa-comments-o" aria-hidden="true"></i>
-                    Ask A Question
-                </a>
-            </div>
-            <div class="col-sm-4">
-                <a href="#" data-toggle="modal" data-target="#friend_form">
-                    <i class="fa fa-users" aria-hidden="true"></i>
-                    Tell A Friend
-                </a>
-            </div>
-            <?php
-
-            $wishlist = get_field('wishlist', 'user_' . get_current_user_id());
-            if ($wishlist)
-                $wishlist = in_array(get_the_ID(), explode('|', $wishlist));
-
-            ?>
-            <div class="col-sm-4">
-                <a href="#" class="wishlist <?php echo $wishlist ? 'active' : ''; ?>" data-product="<?php echo get_the_ID(); ?>">
-                    <i class="fa fa-heart" aria-hidden="true"></i>
-                    <span class="in_active_text"> Add To Wishlist</span>
-                    <span class="active_text"> Remove From Wishlist</span>
-                </a>
-            </div>
-        </div>
-    </div>
-
-
     <div class="social_links">
         <ul>
             <li>
