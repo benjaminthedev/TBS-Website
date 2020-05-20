@@ -40,7 +40,7 @@
                 $telephone_number_converted = preg_replace("/[^0-9+]/", "", $telephone_number);
                 echo $telephone_number ? '<a href="tel:' . $telephone_number_converted . '" class="telephone_number hidden-sm-down float-left" ' . $telephone_number_attributes . '><i class="fa fa-phone"></i><span class="hidden-md-down">' . $telephone_number . '</span></a>' : '';
                 ?>
-                <a href="#" class="hidden-md-up telephone_number float-left menu_expand_toggle"><i class="fa fa-bars"></i></a>
+                <a href="#" class="hidden-md-up hidden-lg-up hidden-xl-up telephone_number float-left menu_expand_toggle"><i class="fa fa-bars"></i></a>
                 <?php /* <a href="#" class="hidden-md-up telephone_number float-left search_expand_toggle"><i class="fa fa-search"></i></a> */ ?>
 
             </div>
@@ -51,9 +51,9 @@
                                 
                 <?php //echo do_shortcode('[aelia_currency_selector_widget widget_type="buttons"]') ?>
 
-                <a href="<?php the_field('stores_page', 'options') ?>" class="account_link float-left hidden-sm-down"><i
+                <!-- <a href="<?php //the_field('stores_page', 'options') ?>" class="account_link float-left hidden-sm-down"><i
                             class="fa fa-map-marker"></i> <span
-                            class="hidden-sm-down">Our Stores</span></a>
+                            class="hidden-sm-down">Our Stores</span></a> -->
                 <a href="<?php echo wc_get_cart_url(); ?>" class="account_link float-left"><i
                             class="fa fa-shopping-bag"></i> <span
                             class="hidden-sm-down">Bag</span></a>

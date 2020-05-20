@@ -21,9 +21,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header('shop');
 
-$rating_count = $product->get_rating_count();
-$review_count = $product->get_review_count();
-$average      = round($product->get_average_rating());
+// $rating_count = $product->get_rating_count();
+// $review_count = $product->get_review_count();
+// $average      = round($product->get_average_rating());
 
 
 
@@ -247,8 +247,6 @@ https://www.thebeautystore.com/hair-care/hair-treatments/dandruff-products/
 
         const newError = document.getElementById('error-page');
         console.log(`the length is £{newError.length}`);
-
-        
 
         if(gotEle.length > 1){
             console.log('Products are loaded')
