@@ -7,12 +7,4 @@ Author: BenjaminTheDev
 Author URI: https://benjaminthedev.github.io/
 */
 
-/*this is for the new prices*/
 
-ins {
-    clear: both;
-    display: block;
-    font-weight: 700;
-}
-
-ins:before {content: "Multi-Buy Price ";}

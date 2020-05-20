@@ -11,15 +11,16 @@ All custom styles!
     display: block; 
     color: #0fb4c2;
     margin: 1rem 0 0; 
-color: #fff;}
+    color: #fff;
+}
 
-ins {
+/* ins {
     clear: both;
     display: block;
     font-weight: 700;
 }
 
-ins:before {content: "Multi Buy Price ";}
+ins:before {content: "Multi Buy Price ";} */
 
 del {
     text-decoration: none;
