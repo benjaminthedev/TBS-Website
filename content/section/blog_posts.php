@@ -16,7 +16,7 @@ if ($the_query->have_posts()) : ?>
 
     <section class="section_container">
 
-        <div class="container">
+        <div class="container-fluid">
 
             <h2 class="section_title"><span>Beauty News</span></h2>
 

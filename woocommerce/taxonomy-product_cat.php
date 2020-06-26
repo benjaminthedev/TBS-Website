@@ -69,7 +69,7 @@ global $product;
 
 
 ?>
-<section id="static_content" class="no_margin">
+<section id="static_content">
 
 
     <?php
@@ -157,12 +157,11 @@ global $product;
 }
 
 div#clerk-category-filters {
-    width: 20%;
-    float: left;
-}
-
-
-  @media only screen and (max-width:800px) {
+                width: 20%;
+	            float: left;
+            }
+	
+  @media only screen and (max-width:1024px) {
             div#clerk-category-filters {
                 display: none;
             }
@@ -189,16 +188,16 @@ div#clerk-category-filters {
 </style>
 
 
-<div class="container">
+<div class="container-fluid">
     <div class="row">
-        <div class="col-3-sm">
+        <div class="col">
             <div id="clerk-category-filters"></div>
             <ul id="clerk-category-results"></ul>
             <span
                 id="clerk-category"
                 class="clerk"
                 data-template="@category-page-results"
-                
+                data-facets-in-url="true"
                 data-target="#clerk-category-results"
                 data-category="<?php echo get_queried_object()->term_id;?>"
                 data-facets-target="#clerk-category-filters"

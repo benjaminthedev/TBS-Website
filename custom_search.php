@@ -4,27 +4,20 @@ Template Name: Search Results Latest
 */
 ?>
 <?php get_header(); ?>
-    <section id="static_content" >
-        <div class="container">
+    <section id="static_content">
+        <div class="container-fluid">
             <?php if (have_posts()) :
                 while (have_posts()) : the_post(); ?>
                     <div class="row">
 
-                        <div class="col-12">
+                        <div class="col-md-12">
                             <?php the_breadcrumb(); ?>
                         </div>
 
-                      <h1 class="section_title <?php echo is_account_page() ? 'text-center' : 'text-left' ?>">
-                        <span><?php the_title() ?></span>
-                      </h1>
-
                     </div>
 
-                  <div class="clearfix"></div>
-
-
                     <div class="row">
-                      <div class="col-3 is-responsive">
+                      <div class="col-md-3">
                             <!-- Trying to get filters to work here: -->
                             <div id="clerk-search-filters"></div>
                             <!-- Filters End -->
@@ -56,7 +49,9 @@ Template Name: Search Results Latest
                                 background-color: #40E0D0;
                             }
                             .clerk-facet-stock,
-                            .clerk-facet-_yoast_wpseo_focuskw {
+                            .clerk-facet-_yoast_wpseo_focuskw,
+							.clerk-facet-on_sale,
+							.clerk-facet-_wc_average_rating{
                                 display: none !important;
                             }
 								
@@ -65,8 +60,8 @@ Template Name: Search Results Latest
 								display: none !important;
                             }
 
-                            @media only screen and (max-width:800px) {
-                            .is-responsive {
+                            @media only screen and (max-width:1024px) {
+                            div#clerk-search-filters * {
                               display:none;
                             }
                           }
@@ -76,7 +71,7 @@ Template Name: Search Results Latest
                         </div>
 
 
-                      <div class="col-9">
+                      <div class="col-md-9">
                         <?php the_content(); ?>
                       </div>
 
@@ -85,6 +80,6 @@ Template Name: Search Results Latest
 
                 <?php endwhile;
             endif; ?>
-
+</div>
     </section>
 <?php get_footer(); ?>

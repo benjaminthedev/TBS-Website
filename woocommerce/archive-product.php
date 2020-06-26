@@ -1,8 +1,8 @@
 <?php
 /**
- * The Template for displaying product archives, including the main shop page which is a post type archive
+ * The Template for displaying products in a product category. Simply includes the archive template
  *
- * This template can be overridden by copying it to yourtheme/woocommerce/archive-product.php.
+ * This template can be overridden by copying it to yourtheme/woocommerce/taxonomy-product_cat.php.
  *
  * HOWEVER, on occasion WooCommerce will need to update template files and you
  * (the theme developer) will need to copy the new files to your theme to
@@ -10,17 +10,22 @@
  * happen. When this occurs the version of the template file will be bumped and
  * the readme will list any important changes.
  *
- * @see        https://docs.woocommerce.com/document/template-structure/
- * @author        WooThemes
- * @package    WooCommerce/Templates
- * @version     3.4.0
+ * @see 	    https://docs.woocommerce.com/document/template-structure/
+ * @package 	WooCommerce/Templates
+ * @version     1.6.4
  */
 
-if (!defined('ABSPATH')) {
-    exit; // Exit if accessed directly
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
 }
 
 get_header('shop');
+
+// $rating_count = $product->get_rating_count();
+// $review_count = $product->get_review_count();
+// $average      = round($product->get_average_rating());
+
+
 
 
 $is_tax = is_tax('product_cat');
@@ -49,6 +54,7 @@ $cat = isset($_GET['category']) ? (int)$_GET['category'] : $cat_init;
 $brand = is_tax('product_brand') ? [ get_queried_object()->term_id ] : [];
 $brand = isset($_GET['brand']) ? array_map('intval', explode(',', $_GET['brand'])) : $brand;
 
+$brands = get_queried_object()->term_id;
 
 $colour = isset($_GET['colour']) ? array_map('intval', explode(',', $_GET['colour'])) : [];
 $colour = isset($_GET['colour']) ? array_map('intval', explode(',', $_GET['colour'])) : [];
@@ -60,9 +66,12 @@ $hazardous_goods = isset($_GET['hazardous_goods']) ? array_map('intval', explode
 $gender = isset($_GET['gender']) ? array_map('intval', explode(',', $_GET['gender'])) : [];
 $spf = isset($_GET['gender']) ? array_map('intval', explode(',', $_GET['spf'])) : [];
 
+global $product;
+
 
 ?>
-<section id="static_content" class="no_margin">
+<section id="static_content">
+
 
     <?php
     /**
@@ -90,7 +99,7 @@ $spf = isset($_GET['gender']) ? array_map('intval', explode(',', $_GET['spf'])) 
 
                 <div class="row">
 
-                    <div class="col-md-6">
+                    <div class="col-md-8">
 
                         <div class="vlog_content">
 
@@ -119,7 +128,7 @@ $spf = isset($_GET['gender']) ? array_map('intval', explode(',', $_GET['spf'])) 
 
                     <?php if ($term_img) : ?>
 
-                        <div class="col-md-6 video_wrap"
+                        <div class="col-md-4 video_wrap"
 
                             <?php echo "style='background-image: url($term_img)'" ?> >
 
@@ -134,119 +143,160 @@ $spf = isset($_GET['gender']) ? array_map('intval', explode(',', $_GET['spf'])) 
         </section>
 
 
-    <?php } else echo "<div class='container no_border'><h1 class='section_title text-left shop_archive'><span>$title</span></h1></div>";
-    ?>
 
-    <div id="product_content_wrapper">
 
-        <div class="container <?php echo $is_tax ? 'no_border' : 'no_padding_top' ?>">
-            <header class="product_feed_header clearfix">
-                <div class="filter_btn hidden-md-up">
-                    <i class="fa fa-filter" aria-hidden="true"></i> Filter
-                </div>
-                <div class="sort">
-                    <i class="fa fa-cog"></i>
-                    <select name="sort_order" id="sort_order">
-                        <?php
-                        $sort_args = [
-                            "A-Z" => "Title A-Z",
-                            "Z-A" => "Title Z-A",
-                            "LowHigh" => "Price Low-High",
-                            "High-Low" => "Price High-Low",
-                            "skuA-Z" => "Reference A-Z",
-                            "skuZ-A" => "Reference Z-A",
-                            "recent" => "Newest",
-                            "old" => "Oldest",
-                            "top" => "Best Sellers"
-                        ];
-                        foreach ($sort_args as $value => $title)
-                            echo $sort === $value ? '<option value="' . $value . '" selected>' . $title . '</option>' : '<option value="' . $value . '">' . $title . '</option>';
-                        ?>
-                    </select>
-                    <i class="fa fa-angle-down"></i>
-                </div>
-                <div class="per_page">
-                    <?php
-                    echo per_page($wp_query); ?>
-                </div>
-                <div class="pagination">
-                    <ul>
-                        <?php echo the_product_pagination($wp_query); ?>
-                    </ul>
-                </div>
-            </header>
-        </div>
+<section>
 
-        <div class="container">
+<style>
+.clerk-facet-group.clerk-facet-price .clerk-range-label-left:before {
+    content: '£';
+}
 
-            <div class="product_feed_wrap clearfix">
-                <?php
-                /**
-                 * woocommerce_sidebar hook.
-                 *
-                 * @hooked woocommerce_get_sidebar - 10
-                 */
-                do_action('woocommerce_sidebar');
-                ?>
-                <div class="products" id="product_feed_loader"
+.clerk-facet-price .clerk-range-label-left:before,
+.clerk-range-label-right:before {
+    content: '£';
+}
 
-                     data-colour="<?php echo json_encode($colour); ?>"
-                     data-sizes="<?php echo json_encode($sizes); ?>"
-                     data-brand="<?php echo json_encode($brand); ?>"
-                     data-age_group="<?php echo json_encode($age_group); ?>"
-                     data-formulation="<?php echo json_encode($formulation); ?>"
-                     data-skin_type="<?php echo json_encode($skin_type); ?>"
-                     data-hazardous_goods="<?php echo json_encode($hazardous_goods); ?>"
-                     data-gender="<?php echo json_encode($gender); ?>"
-                     data-spf="<?php echo json_encode($spf); ?>"
-                     data-sort="<?php echo $sort; ?>"
-                     data-page="<?php echo $page; ?>"
-                     data-per_page="<?php echo $per_page; ?>"
-                     data-cat="<?php echo json_encode($cat); ?>"
-                     data-cat_default="<?php echo json_encode($cat_init); ?>"
-                     data-search="<?php echo htmlentities($search); ?>"
+div#clerk-category-filters {
+                width: 20%;
+	            float: left;
+            }
+	
+  @media only screen and (max-width:1024px) {
+            div#clerk-category-filters {
+                display: none;
+            }
+                          }
+
+
+ /*Addtional Styles*/
+
+                            div#clerk-category-filters * {
+                                color: black;
+                            }
+
+                            input.clerk-facet-search::placeholder {
+                                color: black;
+                            }
+                            .clerk-facet-selected .clerk-facet-name:before {
+                                background-color: #40E0D0;
+                                border-color: #40E0D0;
+                            }
+                            .clerk-range-selected-range {
+                                background-color: #40E0D0;
+                            }
+                           
+</style>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <ul id="clerk-category-results"></ul>
+            <span
+                id="clerk-category"
+                class="clerk"
+                data-template="@brand-page-results"
+                
+                data-target="#clerk-category-results"
+                data-filter="brands = '<?php echo $brands; ?>"
                 >
-                    <?php if (have_posts()) : ?>
-                        <div class="row justify-content-center" id="product_row">
-                            <?php while (have_posts()) : the_post(); ?>
-                                <?php
-                                /**
-                                 * woocommerce_shop_loop hook.
-                                 *
-                                 * @hooked WC_Structured_Data::generate_product_data() - 10
-                                 */
-                                do_action('woocommerce_shop_loop');
-                                ?>
-                                <?php // wc_get_template_part('content', 'product'); ?>
-                            <?php endwhile; // end of the loop. ?>
-                        </div>
-                        <?php
-                    else:
-                        do_action('woocommerce_no_products_found');
-                    endif;
-                    ?>
-
-
-                </div>
-
-            </div>
-
+            </span>
         </div>
 
-        <div class="container margin_top_2">
-            <footer class="product_feed_footer clearfix">
-                <div class="per_page">
-                    <?php echo per_page($wp_query); ?>
-                </div>
-                <div class="pagination">
-                    <ul>
-                        <?php echo the_product_pagination($wp_query); ?>
-                    </ul>
-                </div>
-            </footer>
-        </div>
 
-    </div>
+
+    </div><!-- end row -->
+</div><!-- end container -->
+
+</section>
+
+
+
+<script type="text/javascript">
+
+/*issue happening here:
+
+https://www.thebeautystore.com/hair-care/hair-treatments/dandruff-products/
+
+/hair-care/
+*/
+
+                            console.log('hair-treatments/dandruff-products/');
+                             console.log('HELLO WORLD :-');
+
+
+
+  // handle rendered events but only for popular products
+
+
+    //   var clerk_response = false;
+    //   var category_page_selector = "clerk-category";
+
+
+
+
+  setTimeout(function(){ 
+      
+        const gotEle = document.querySelector = 'clerk-category-results';
+        console.log(gotEle);
+
+        const newError = document.getElementById('error-page');
+        console.log(`the length is £{newError.length}`);
+
+        if(gotEle.length > 1){
+            console.log('Products are loaded')
+        } else {
+            console.log('NO Products are loaded')
+        }
+
+
+
+
+      
+    }, 3000);
+
+
+
+
+
+    //   Clerk('on','response', function(data,content){
+    //     if (content.result.length > 0) {
+    //         clerk_response = true;
+    //         console.log('logging true')
+    //     }
+    //   });
+    //   setTimeout(
+    //     function(){
+    //       if (clerk_response == false) {
+    //          $(category_page_selector).show();
+    //          console.log('logging false')
+    //       }
+    //     }
+    //   ,2750)
+</script>
+
+
+
+    <?php } ?>
+    
+    
+    
+    
+    
+
+<style>
+.newnewBye{
+	display:none!important;
+}
+div#product_content_wrapper {
+    display: none;
+}
+
+</style>
+
+
+  
 
     <?php
     /**
@@ -259,6 +309,4 @@ $spf = isset($_GET['gender']) ? array_map('intval', explode(',', $_GET['spf'])) 
 
 
 </section>
-
-
 <?php get_footer('shop'); ?>
