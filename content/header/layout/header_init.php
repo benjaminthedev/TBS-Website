@@ -1,5 +1,4 @@
 <?php
-get_header_part('tagline');
 get_header_part('main_header');
 get_header_part('main_nav');
 get_header_part('mobile_nav');
@@ -38,8 +37,9 @@ get_header_part('mobile_nav');
 
 <?php endif; ?>
 
-
-
+<?php
+get_header_part('tagline');
+?>
 
 
 

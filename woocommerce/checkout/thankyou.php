@@ -111,55 +111,5 @@ if (!defined('ABSPATH')) {
 
 <?php if( $order && !$order->has_status('failed') ) : ?>
 
-<script type="text/javascript">
-
-    var _kkstrack = {
-        merchantInfo : [{ country:"uk", merchantId:"100457878" }],
-        orderValue: <?php echo $order->get_total(); ?>,
-        orderId: "<?php echo $order->get_id(); ?>",
-        basket:  [
-            <?php 
-            $product_details = array();
-            $order_items = $order->get_items();
-
-            foreach( $order_items as $order_item ) {
-
-                $product = wc_get_product( $order_item['product_id'] );
-
-                echo '{';
-                    echo 'productname: "' . $order_item['name'] . '",';
-                    echo 'productid: "' . $order_item['product_id'] . '",';
-                    echo 'quantity: ' . $order_item['quantity'] . ',';
-                    echo 'price: ' . $product->get_price() . '';
-                echo '},';
-
-            } ?>
-        ]
-    };
-    (function() {
-      var s = document.createElement('script');
-      s.type = 'text/javascript';
-      s.async = true;
-      s.src = 'https://s.kk-resources.com/ks.js';
-      var x = document.getElementsByTagName('script')[0];
-      x.parentNode.insertBefore(s, x);
-    })();
-
-</script>
-<script language="javascript" src="https://scripts.affiliatefuture.com/AFFunctions.js"></script>
-<script language="javascript">
- 
-                var merchantID = 6927;
-                var orderValue = '<?php echo $order->get_total(); ?>';
-    
-                var orderRef = '<?php echo $order->get_order_number(); ?>';
-                var payoutCodes = '';
-                var offlineCode = '';
-                var voucher = '';
-                var products = '';
-                var curr = '';              
- 
-AFProcessSaleV5(merchantID,orderValue,orderRef,payoutCodes,offlineCode,voucher,products,curr);
-</script>
 <?php
 endif;

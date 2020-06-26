@@ -238,6 +238,28 @@ function send_custom_email_notifications( $order_id, $old_status, $new_status, $
 			
 	 }
 
+// Switch off Refund and Restock by Default
+
+add_action('admin_footer', 'uncheck_restock_refund_checkbox');
+function uncheck_restock_refund_checkbox() {
+	echo '<script>jQuery("#restock_refunded_items").prop("checked", false);</script>';
+}
+
+// YITH Product Page Badge
+
+//if ( !function_exists( 'yith_wcbm_customization_badge_container_start' ) && !function_exists( 'yith_wcbm_customization_badge_container_end' ) ) {
+//   add_action( 'woocommerce_before_single_product_summary', 'yith_wcbm_customization_badge_container_start', 15 );
+//   add_action( 'woocommerce_before_single_product_summary', 'yith_wcbm_customization_badge_container_end', 25 );
+
+//   function yith_wcbm_customization_badge_container_start() {
+//       do_action( 'yith_wcbm_theme_badge_container_start' );
+//   }
+
+//   function yith_wcbm_customization_badge_container_end() {
+//       do_action( 'yith_wcbm_theme_badge_container_end' );
+//   }
+//}
+
 //Test
 // function theme_enqueue_styles() {
 //     wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/assets/custom-css.css', array( 'stylesheet' ) );

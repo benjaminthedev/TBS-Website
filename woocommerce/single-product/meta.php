@@ -27,7 +27,7 @@ global $product;
 <div class="countdown">
         <div class="title">
             <?php /* ORDER BY 2PM FOR NEXT DAY DELIVERY */ ?>
-            NEXT DAY DELIVERY is just £2.95 on orders over &#163;25
+            NEXT DAY DELIVERY is just £2.95 on orders over &#163;35
         </div>
         <div id="count_down_text"></div>
     </div>

@@ -4,6 +4,8 @@ get_header();
 
 get_hero('slider');
 
+get_hero('mobile_slider');
+
 get_section('brands_slider');
 
 get_section_layout('product_display');
