@@ -51,13 +51,11 @@ Template Name: Search Results Latest
                             .clerk-facet-stock,
                             .clerk-facet-_yoast_wpseo_focuskw,
 							.clerk-facet-on_sale,
-							.clerk-facet-_wc_average_rating{
-                                display: none !important;
-                            }
-								
+							.clerk-facet-_wc_average_rating,
 							.clerk-facet-stock,
-                            .clerk-facet-_msrp_price {
-								display: none !important;
+                            .clerk-facet-_msrp_price,
+							.clerk-facet-brands{
+                                display: none !important;
                             }
 
                             @media only screen and (max-width:1024px) {
