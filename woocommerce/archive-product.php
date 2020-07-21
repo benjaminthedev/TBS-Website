@@ -99,7 +99,7 @@ global $product;
 
                 <div class="row">
 
-                    <div class="col-md-8">
+                    <div class="col-md-6">
 
                         <div class="vlog_content">
 
@@ -128,7 +128,7 @@ global $product;
 
                     <?php if ($term_img) : ?>
 
-                        <div class="col-md-4 video_wrap"
+                        <div class="col-md-6 video_wrap"
 
                             <?php echo "style='background-image: url($term_img)'" ?> >
 
@@ -142,52 +142,53 @@ global $product;
 
         </section>
 
+	<style> 
+        #brand_collections_link { 
+            text-decoration: none; 
+        } 
+    </style> 
+	
+<section>
+	<?php
 
+// vars
+$queried_object = get_queried_object();
+$taxonomy = $queried_object->taxonomy;
+$term_id = $queried_object->term_id;
+
+$GLOBALS['wp_embed']->post_ID = $taxonomy . '_' . $term_id;
+
+/*
+* Loop through a Repeater field
+*/
+
+if( get_field('brand_collections', $taxonomy.'_'.$term_id) ): ?>
+
+    <div class="brand_collections">
+        <div class="container-fluid">
+            <div class="inner">
+                <div class="row">
+                    <?php while (have_rows('brand_collections', $taxonomy.'_'.$term_id)) : the_row();
+                        $image = get_sub_field('image');
+                        $title = get_sub_field('title');
+                        $link = get_sub_field('link');
+                        echo "<div class='col-md'>
+						<a id='brand_collections_link' href=$link 
+						<span class='brand_collections_image'><img src=$image /></span>
+						<h2 class='brand_collections_title' style='text-align:center;'>$title</h2>
+						</a>
+						</div>";
+                    endwhile; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php endif; ?>
+
+	</section>
 
 
 <section>
-
-<style>
-.clerk-facet-group.clerk-facet-price .clerk-range-label-left:before {
-    content: '£';
-}
-
-.clerk-facet-price .clerk-range-label-left:before,
-.clerk-range-label-right:before {
-    content: '£';
-}
-
-div#clerk-category-filters {
-                width: 20%;
-	            float: left;
-            }
-	
-  @media only screen and (max-width:1024px) {
-            div#clerk-category-filters {
-                display: none;
-            }
-                          }
-
-
- /*Addtional Styles*/
-
-                            div#clerk-category-filters * {
-                                color: black;
-                            }
-
-                            input.clerk-facet-search::placeholder {
-                                color: black;
-                            }
-                            .clerk-facet-selected .clerk-facet-name:before {
-                                background-color: #40E0D0;
-                                border-color: #40E0D0;
-                            }
-                            .clerk-range-selected-range {
-                                background-color: #40E0D0;
-                            }
-                           
-</style>
-
 
 <div class="container-fluid">
     <div class="row">
@@ -197,7 +198,7 @@ div#clerk-category-filters {
                 id="clerk-category"
                 class="clerk"
                 data-template="@brand-page-results"
-                
+                data-facets-in-url="true"
                 data-target="#clerk-category-results"
                 data-filter="brands = '<?php echo $brands; ?>"
                 >
