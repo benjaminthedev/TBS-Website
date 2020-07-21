@@ -96,7 +96,7 @@ global $product;
 
             <div class="container-fluid">
 
-                <div class="row">
+                <div class="row" id="category-header">
 
                     <div class="col-md-8">
 
@@ -188,7 +188,7 @@ div#clerk-category-filters {
 </style>
 
 
-<div class="container-fluid">
+<div class="container-fluid" id="category">
     <div class="row">
         <div class="col">
             <div id="clerk-category-filters"></div>
