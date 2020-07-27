@@ -10006,6 +10006,8 @@ header#offer {
   @media (min-width: 1200px) {
     .left_side_checkout {
       padding: 3rem 5rem 3rem 15px; } }
+  .left_side_checkout .woocommerce-info {
+    display: none; }
   .left_side_checkout #deliver_info_js {
     display: none; }
     .left_side_checkout #deliver_info_js > div {
@@ -10203,7 +10205,7 @@ header#offer {
       margin: 0; }
     #payment .payment_methods li .payment_box {
       width: 100%;
-      padding: 0.5rem;
+      padding: 1rem;
       background-color: #ffffff; }
       #payment .payment_methods li .payment_box p:last-of-type {
         margin: 0; }
@@ -10697,6 +10699,8 @@ form.woocommerce-checkout {
   }
 
   form.woocommerce-checkout {
+    margin-top: 60px;
+    margin-bottom: 60px;
     font-size: 0;
   }
 
@@ -10763,12 +10767,16 @@ form.woocommerce-checkout {
   }
 
   #customer_details {
-    padding: 2rem 1rem;
+    padding: 3rem 5rem;
   }
 
   #order_review .shop_table {
-    padding: 2rem 1rem;
+    padding: 3rem 5rem 2rem;
   }
+
+  #order_review #payment {
+    padding: 0px 5rem;
+}
 
   .place-order {
     padding-bottom: 3rem;
