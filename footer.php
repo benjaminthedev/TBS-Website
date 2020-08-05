@@ -1,12 +1,12 @@
 <footer id="social_footer">
 
-    <div class="container">
+    <div class="container-fluid">
 
         <div class="row">
 
             <?php if (have_rows('social_links', 'options')) : ?>
 
-                <div class="col-lg-4 col-xs-12">
+                <div class="col">
 
                     <div class="social_links">
 
@@ -20,7 +20,7 @@
 
                                 $extra_attributes = get_sub_field('extra_attributes');
 
-                                echo $link && $icon ? "<li><a href='$link' target='_blank' $extra_attributes>$icon</a></li>" : '';
+                                echo $link && $icon ? "<li><a href='$link' rel='nofollow noopener noreferrer' target='_blank' $extra_attributes>$icon</a></li>" : '';
 
                             endwhile; ?>
 
@@ -32,24 +32,26 @@
 
             <?php endif; ?>
 
-            <div class="col-lg-4 col-sm-6">
+        </div>
 
-                <div class="sign_up_title">
+    </div>
 
-                    SIGN UP FOR THE LATEST <span>Offers</span>
+</footer>
 
-                </div>
+<footer id="email_sign_up">
+	
+	<div class="container-fluid">
 
-            </div>
-
-            <div class="col-lg-4 col-sm-6">
+        <div class="row">
+	
+            <div class="col">
 
              <!-- Begin Mailchimp Signup Form -->
 <div id="mc_embed_signup">
-<form action="https://thebeautystore.us8.list-manage.com/subscribe/post?u=a256b3433ee594374bef00ca6&amp;id=2d603aff8f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+<form action="https://thebeautystore.us8.list-manage.com/subscribe/post?u=a256b3433ee594374bef00ca6&amp;id=2d603aff8f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" rel="nofollow noopener noreferrer" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
 	
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter your email" required>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="SIGN UP FOR THE LATEST Offers" required>
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a256b3433ee594374bef00ca6_2d603aff8f" tabindex="-1" value=""></div>
     <div class="clear"><input type="submit" value="SIGN UP" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
@@ -60,12 +62,10 @@
 <!--End mc_embed_signup-->
 
             </div>
-
-        </div>
+	 </div>
 
     </div>
-
-</footer>
+	</footer>
 
 <footer id="footer_navigation">
 
@@ -125,7 +125,7 @@
 
                      data-theme="dark">
 
-                    <a href="https://www.trustpilot.com/review/www.thebeautystore.co.uk" target="_blank">Trustpilot</a>
+                    <a href="https://www.trustpilot.com/review/www.thebeautystore.co.uk" rel="nofollow noopener noreferrer" target="_blank">Trustpilot</a>
 
                 </div>
 

@@ -22,7 +22,7 @@ get_header_part('mobile_nav');
                         $content = get_sub_field('content');
                         $link = get_sub_field('link');
                         echo "<div class='col-3'>
-						<a href=$link 
+						<a href=$link rel='nofollow noopener noreferrer'
 						<span class='image'><img src=$image /></span>
 						<span class='title'>$title</span>
 						<span class='content'>$content</span>
