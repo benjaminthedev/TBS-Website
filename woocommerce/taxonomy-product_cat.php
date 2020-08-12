@@ -201,8 +201,8 @@ div#clerk-category-filters {
                 data-target="#clerk-category-results"
                 data-category="<?php echo get_queried_object()->term_id;?>"
                 data-facets-target="#clerk-category-filters"
-                data-facets-attributes='["price","categories","product_brand","product_gender","product_fragrance_name","product_formulation","product_size","product_colour","product_skin_type","product_spf","product_age_group"]'
-                data-facets-titles='{"price":"Price","categories":"Categories","product_brand":"Brands","product_gender":"Gender","product_fragrance_name":"Product Range","product_formulation":"Formulation","product_size":"Size","product_colour":"Colour","product_skin_type":"Skin Type","product_spf":"Skin Type","product_age_group":"Age Group"}'
+                data-facets-attributes='["categories","product_brand","product_fragrance_name","product_gender","product_formulation","product_colour","product_skin_type","product_spf","brands","price","product_size"]'
+                data-facets-titles='{"categories":"Categories","product_brand":"Brands","product_fragrance_name":"Product Range","product_gender":"Gender","product_formulation":"Formulation","product_colour":"Colour","product_skin_type":"Skin Type","product_spf":"Skin Type","brands":"Brands","price":"Price","product_size":"Size"}'
                 >
             </span>
         </div>

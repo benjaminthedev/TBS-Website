@@ -115,7 +115,7 @@
 
 
     <div class=" myCartSection">
-    		<a href="<?php echo wc_get_cart_url(); ?>"><i class="fa fa-shopping-bag fa-lg"></i> </a>
+    		<?php echo do_shortcode("[xoo_wsc_cart]"); ?>
     </div>
   </div><!-- end itemsWrap -->
 </div>
@@ -161,15 +161,15 @@
 }
 
 nav.account_navigation {
-    width: 30px;
+    width: 40px;
 }
 
 .hearts {
-    width: 40px;
+    width: 50px;
 }
 
 .myCartSection {
-    width: 40px;
+    width: 50px;
 }
 
 
@@ -206,9 +206,15 @@ nav.account_navigation {
   .mobileWrap {
     display: flex;
   }
+   nav.account_navigation {
+    width: 30px;
+}
   .hearts{
     display: none;
   }
+	.myCartSection {
+    width: 40px;
+}
 
   .logoSection{
     margin: 0;
