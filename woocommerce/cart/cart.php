@@ -31,7 +31,7 @@ wc_print_notices();
     <div class="row">
         <div class="col-xl-6 left_side_checkout">
             <form class="woocommerce-cart-form" action="<?php echo esc_url(wc_get_cart_url()); ?>" method="post">
-                <h1>Your basket contents:</h1>
+                <h1>Your bag contents:</h1>
                 <table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
                     <thead>
                     <tr>

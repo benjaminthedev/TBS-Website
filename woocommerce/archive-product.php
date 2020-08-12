@@ -190,9 +190,52 @@ if( get_field('brand_collections', $taxonomy.'_'.$term_id) ): ?>
 
 <section>
 
+<style>
+.clerk-facet-group.clerk-facet-price .clerk-range-label-left:before {
+    content: '£';
+}
+
+.clerk-facet-price .clerk-range-label-left:before,
+.clerk-range-label-right:before {
+    content: '£';
+}
+
+div#clerk-category-filters {
+                width: 20%;
+	            float: left;
+            }
+	
+  @media only screen and (max-width:1024px) {
+            div#clerk-category-filters {
+                display: none;
+            }
+                          }
+
+
+ /*Addtional Styles*/
+
+                            div#clerk-category-filters * {
+                                color: black;
+                            }
+
+                            input.clerk-facet-search::placeholder {
+                                color: black;
+                            }
+                            .clerk-facet-selected .clerk-facet-name:before {
+                                background-color: #40E0D0;
+                                border-color: #40E0D0;
+                            }
+                            .clerk-range-selected-range {
+                                background-color: #40E0D0;
+                            }
+                           
+</style>
+	
+	
 <div class="container-fluid">
     <div class="row">
         <div class="col">
+			 <div id="clerk-category-filters"></div>
             <ul id="clerk-category-results"></ul>
             <span
                 id="clerk-category"
@@ -201,6 +244,9 @@ if( get_field('brand_collections', $taxonomy.'_'.$term_id) ): ?>
                 data-facets-in-url="true"
                 data-target="#clerk-category-results"
                 data-filter="brands = '<?php echo $brands; ?>"
+				data-facets-target="#clerk-category-filters"
+                  data-facets-attributes='["categories","product_brand","product_fragrance_name","product_gender","product_formulation","product_colour","product_skin_type","product_spf","brands","price","product_size"]'
+                data-facets-titles='{"categories":"Categories","product_brand":"Brands","product_fragrance_name":"Product Range","product_gender":"Gender","product_formulation":"Formulation","product_colour":"Colour","product_skin_type":"Skin Type","product_spf":"Skin Type","brands":"Brands","price":"Price","product_size":"Size"}'  
                 >
             </span>
         </div>
