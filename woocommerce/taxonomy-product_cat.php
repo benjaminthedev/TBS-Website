@@ -146,6 +146,8 @@ global $product;
 
 <section>
 
+<hr class="wp-block-separator is-style-wide" />
+	
 <style>
 .clerk-facet-group.clerk-facet-price .clerk-range-label-left:before {
     content: '£';
@@ -192,13 +194,10 @@ div#clerk-category-filters {
     <div class="row">
         <div class="col">
             <div id="clerk-category-filters"></div>
-            <ul id="clerk-category-results"></ul>
             <span
-                id="clerk-category"
                 class="clerk"
                 data-template="@category-page-results"
                 data-facets-in-url="true"
-                data-target="#clerk-category-results"
                 data-category="<?php echo get_queried_object()->term_id;?>"
                 data-facets-target="#clerk-category-filters"
                 data-facets-attributes='["categories","product_brand","product_fragrance_name","product_gender","product_formulation","product_colour","product_skin_type","product_spf","brands","price","product_size"]'

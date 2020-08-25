@@ -40,27 +40,6 @@
 
     $options = get_option('clerk_options');
     ?>
-    <span id="clerk-search"
-          class="clerk"
-          data-template="@<?php echo esc_attr(strtolower(str_replace(' ', '-', $options['search_template']))); ?>"
-          data-limit="40"
-          data-offset="0"
-          data-target="#clerk-search-results"
-          data-after-render="_clerk_after_load_event"
-          <?php
-          if (count($Attributes) > 0) {
-
-              echo 'data-facets-target="#clerk-search-filters"';
-              echo "data-facets-attributes='".$facets_attributes;
-              echo "data-facets-titles='".$facets_titles;
-
-          }
-
-          ?>
-          data-query="<?php echo esc_attr(get_query_var('searchterm')); ?>">
-    </span>
-
-
      <form role="search" method="get" class="search-form float-md"
   action="<?php echo esc_url( get_page_link( $options['search_page'] ) ); ?>">
   <label>
@@ -207,7 +186,7 @@ nav.account_navigation {
     display: flex;
   }
    nav.account_navigation {
-    width: 30px;
+    width: 40px;
 }
   .hearts{
     display: none;
@@ -222,7 +201,7 @@ nav.account_navigation {
 
   .hamburgerMenu {
     z-index: 1;
-    margin-left: 10px;
+    margin-left: 25px;
 
 }
 
