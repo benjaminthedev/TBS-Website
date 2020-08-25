@@ -149,6 +149,7 @@ function cart_update_qty_script() {
         <?php
     endif;
 }
+add_filter( 'woocommerce_defer_transactional_emails', '__return_true' );
 add_action('woocommerce_order_status_changed', 'send_custom_email_notifications', 10, 4 );
 function send_custom_email_notifications( $order_id, $old_status, $new_status, $order ){
     if ( $new_status == 'cancelled' || $new_status == 'failed' ){
@@ -243,6 +244,35 @@ function send_custom_email_notifications( $order_id, $old_status, $new_status, $
 add_action('admin_footer', 'uncheck_restock_refund_checkbox');
 function uncheck_restock_refund_checkbox() {
 	echo '<script>jQuery("#restock_refunded_items").prop("checked", false);</script>';
+}
+
+//assign user in guest order
+add_action( 'woocommerce_new_order', 'action_woocommerce_new_order', 10, 1 );
+function action_woocommerce_new_order( $order_id ) {
+	$order = new WC_Order($order_id);
+	$user = $order->get_user();
+	
+	if( !$user ){
+		//guest order
+		$userdata = get_user_by( 'email', $order->get_billing_email() );
+		if(isset( $userdata->ID )){
+			//registered
+			update_post_meta($order_id, '_customer_user', $userdata->ID );
+		}else{
+			//Guest
+		}
+	}
+}
+
+//add brand to product page
+add_action( 'woocommerce_single_product_summary', 'brand_product_page', 5 );
+  
+function brand_product_page() {
+   global $product;
+
+    $term_ids = wp_get_post_terms( $product->get_id(), 'product_brand', array('fields' => 'ids') );
+
+    echo get_the_term_list( $product->get_id(), 'product_brand', '<span class="brand_product_page">' . _n( 'by', 'product_brand:', count( $term_ids ), 'woocommerce' ) . ' ', ', ', '</span>' );
 }
 
 // YITH Product Page Badge
