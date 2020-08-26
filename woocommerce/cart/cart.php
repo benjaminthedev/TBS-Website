@@ -189,4 +189,13 @@ h1.right {
     margin-bottom: 8px !important;
     padding: 0px !important;
 }
+
+/* Hide Free Shipping Notice as per Jacks Requests */
+div#woocommerce-cart-notice-free-delivery{
+    display: none;
+}
+
+ins:before{
+    display:none;
+}
 </style>
