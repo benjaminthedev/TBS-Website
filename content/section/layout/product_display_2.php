@@ -10,8 +10,8 @@
 <section class="section_container">
 	
 	    <div class="container-fluid">
-
-        <h2 class="section_title"><span>Trending</span></h2>
+        <h2 class="section_title">
+         <span>Trending</span></h2>
 
 		<span class="clerk"
   data-template="@home-page-trending"

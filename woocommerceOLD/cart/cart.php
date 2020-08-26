@@ -31,14 +31,15 @@ wc_print_notices();
     <div class="row">
         <div class="col-xl-6 left_side_checkout">
             <form class="woocommerce-cart-form" action="<?php echo esc_url(wc_get_cart_url()); ?>" method="post">
-                <h1>Your bag contents </h1>
+                <h1>Your bag contents: hello </h1>
                 <table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
                     <thead>
                     <tr>
                         <th class="product-thumbnail">&nbsp;</th>
                         <th class="product-name"><?php _e('Product', 'woocommerce'); ?></th>
                         <th class="product-quantity"><?php _e('Quantity', 'woocommerce'); ?></th>
-                        <th class="product-subtotal"><?php _e('Price', 'woocommerce'); ?></th>                        
+                        <th class="product-subtotal"><?php _e('Price', 'woocommerce'); ?></th>
+                        <th><?php wc_cart_totals_subtotal_html(); ?></th>
                     </tr>
                     </thead>
                     <tbody>
@@ -111,27 +112,32 @@ wc_print_notices();
                                         echo apply_filters( 'woocommerce_cart_item_price', WC()->cart->get_product_price( $_product ), $cart_item, $cart_item_key );
                                     ?>
                                 </td>
+
+                                <td>
+                                    <h1>fytuvgibhjnokmp</h1> 
+                                    <?php wc_cart_totals_subtotal_html(); ?>
+                                    <?php wc_cart_totals_subtotal_html(); ?>
+                                    <?php wc_cart_totals_subtotal_html(); ?>
+
+                                    <?php wc_cart_totals_subtotal_html(); ?>
+                                </td>
                             </tr>
-    
+
+
+
+
+                            <tr class="spacer">
+                                <td><th></th></td>
+                            </tr>
                             <?php
                         }
                     }
                     ?>
 
-                            
-
-
                     <?php do_action('woocommerce_cart_contents'); ?>
 
                     <tr>
                         <td colspan="6" class="actions">
-
-                    <hr />
-
-                    <h1 class="right">Subtotal</h1>
-                    <h1 class="right"><?php wc_cart_totals_subtotal_html(); ?></h1>
-                    
-                    
 
                             <?php do_action('woocommerce_cart_actions'); ?>
 
@@ -143,7 +149,6 @@ wc_print_notices();
                     </tbody>
                 </table>
                 <?php do_action('woocommerce_after_cart_table'); ?>
-                
             </form>
             <div class="row bellow_form">
                 <div class="col-sm-6">
@@ -179,14 +184,3 @@ wc_print_notices();
     </div>
 </div>
 <?php do_action('woocommerce_after_cart'); ?>
-
-
-<style>
-h1.right {
-    display: block !important; 
-    width: 100% !important;
-    text-align: right  !important;
-    margin-bottom: 8px !important;
-    padding: 0px !important;
-}
-</style>
