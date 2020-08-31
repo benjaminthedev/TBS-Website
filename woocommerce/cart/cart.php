@@ -35,6 +35,7 @@ wc_print_notices();
                 <table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
                     <thead>
                     <tr>
+                        <th class="product-remove">&nbsp;</th>
                         <th class="product-thumbnail">&nbsp;</th>
                         <th class="product-name"><?php _e('Product', 'woocommerce'); ?></th>
                         <th class="product-quantity"><?php _e('Quantity', 'woocommerce'); ?></th>
