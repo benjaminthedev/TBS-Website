@@ -1,0 +1,533 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wf_estimated_delivery\n"
+"POT-Creation-Date: 2018-01-05 19:53+0530\n"
+"PO-Revision-Date: 2018-03-12 18:26+0530\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"Last-Translator: \n"
+"Language: ja\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/class-wf-estimated-delivery-settings.php:9
+#: includes/class-wf-estimated-delivery-settings.php:167
+#: includes/class-wf-estimated-delivery-settings.php:168
+msgid "Estimated Delivery"
+msgstr "配達予定日"
+
+#: includes/class-wf-estimated-delivery-settings.php:43
+#: includes/class-wf-estimated-delivery-settings.php:102
+msgid "General Settings"
+msgstr "一般設定"
+
+#: includes/class-wf-estimated-delivery-settings.php:44
+#: includes/class-wf-estimated-delivery-settings.php:82
+msgid "Holidays"
+msgstr "休日"
+
+#: includes/class-wf-estimated-delivery-settings.php:45
+#: includes/class-wf-estimated-delivery-settings.php:302
+#: includes/html-shipping-class.php:5
+msgid "Shipping Class"
+msgstr "配送区分"
+
+#: includes/class-wf-estimated-delivery-settings.php:46
+msgid "Shipping Zones"
+msgstr "配送ゾーン"
+
+#: includes/class-wf-estimated-delivery-settings.php:47
+#: includes/class-wf-estimated-delivery-settings.php:339
+#: includes/html-shipping-methods.php:5
+msgid "Shipping methods"
+msgstr "配送方法"
+
+#: includes/class-wf-estimated-delivery-settings.php:114
+msgid "Text Format"
+msgstr "テキストの属性"
+
+#: includes/class-wf-estimated-delivery-settings.php:116
+msgid ""
+"You can select a format for text display. There are three available "
+"choices \n"
+"\t\t\t\t\t\t\t<br/>Simple – Allows you to set simple text display as defined "
+"in the Product Page Text field below the Text Format option.<br/>Simple "
+"Range – Allows you to set a simple date range within which the package is "
+"estimated to be delivered. The Product Page Text (Range) field is enabled "
+"instead of Product Page Text field(for simple format), where you can set "
+"custom text for date range. <br/>Date Range – Allows you to set a date range "
+"within which the package is estimated to be delivered."
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:120
+msgid "Simple"
+msgstr "シンプル"
+
+#: includes/class-wf-estimated-delivery-settings.php:121
+msgid "Simple Range"
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:122
+msgid "Date Range"
+msgstr "期間"
+
+#: includes/class-wf-estimated-delivery-settings.php:128
+msgid ""
+" Enter the custom text with the date delimiter. This text gets visible on "
+"the product page just above the add to cart button.<br/>For Example: "
+"Estimated delivery by [date].<br/>Note: To Display the text the product must "
+"be linked with a shipping class."
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:129
+#: includes/class-wf-estimated-delivery-settings.php:139
+msgid "Estimated delivery by "
+msgstr "配達予定日"
+
+#: includes/class-wf-estimated-delivery-settings.php:133
+msgid "Product Page Text"
+msgstr "商品ページのテキスト"
+
+#: includes/class-wf-estimated-delivery-settings.php:138
+msgid ""
+"Enter your custom text here with the delimiter [date_1] & [date_2].<br/"
+">Note: To Display the text the product must be linked with a shipping class."
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:143
+msgid "Product Page Text (Range)"
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:148
+msgid ""
+"Allows you to set a numerical value for lower range of the delivery date. "
+"For example, if the date lower range value is 2 and delivery date is "
+"3/1/2017, the start range for delivery date will be 1/1/2017."
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:152
+msgid "Date Lower Range [date_1]"
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:157
+msgid ""
+"Allows you to set a numerical value for higher range of the delivery date. "
+"For example, if the date higher range value is 2 and delivery date is "
+"3/1/2017, the end range for delivery date will be 5/1/2017."
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:160
+msgid "Date Higher Range [date_2]"
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:166
+msgid ""
+"Enter text which gets displayed on Cart, Checkout, Admin Order, Order "
+"Received Page, and Email beside which the estimated delivery date is shown."
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:169
+msgid "Display Text"
+msgstr "表示テキスト"
+
+#: includes/class-wf-estimated-delivery-settings.php:176
+msgid "Time Zone"
+msgstr "タイムゾーン"
+
+#: includes/class-wf-estimated-delivery-settings.php:177
+msgid ""
+"The plugin provides two time zones for calculating delivery date. UTC – This "
+"time zone is the time standard commonly used across the world. WP Time Zone "
+"– This time zone is the selected GMT time zone in the General Settings "
+"section of WordPress. By default, the time zones are city names, which "
+"constitute to string values."
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:189
+msgid "Date Display"
+msgstr "日付表示。"
+
+#: includes/class-wf-estimated-delivery-settings.php:190
+msgid "Select the required date format from the drop-down list."
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:209
+msgid "Minimum Delivery Days"
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:210
+msgid "Enter the minimum number of days for the delivery of all the products."
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:225
+msgid "Working Days"
+msgstr "勤務日"
+
+#: includes/class-wf-estimated-delivery-settings.php:226
+msgid ""
+"Select the working days of the week and according to these days the date of "
+"delivery can be estimated."
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:231
+#: includes/class-wf-estimated-delivery-settings.php:397
+msgid "Monday"
+msgstr "月曜日"
+
+#: includes/class-wf-estimated-delivery-settings.php:232
+#: includes/class-wf-estimated-delivery-settings.php:398
+msgid "Tuesday"
+msgstr "火曜日"
+
+#: includes/class-wf-estimated-delivery-settings.php:233
+#: includes/class-wf-estimated-delivery-settings.php:399
+msgid "Wednesday"
+msgstr "水曜日"
+
+#: includes/class-wf-estimated-delivery-settings.php:234
+#: includes/class-wf-estimated-delivery-settings.php:400
+msgid "Thursday"
+msgstr "木曜日"
+
+#: includes/class-wf-estimated-delivery-settings.php:235
+#: includes/class-wf-estimated-delivery-settings.php:401
+msgid "Friday"
+msgstr "金曜日"
+
+#: includes/class-wf-estimated-delivery-settings.php:236
+#: includes/class-wf-estimated-delivery-settings.php:402
+msgid "Saturday"
+msgstr "土曜日"
+
+#: includes/class-wf-estimated-delivery-settings.php:237
+#: includes/class-wf-estimated-delivery-settings.php:403
+msgid "Sunday"
+msgstr "日曜日"
+
+#: includes/class-wf-estimated-delivery-settings.php:255
+msgid "Start from Next Working Day"
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:256
+msgid "Calculation Based On"
+msgstr "基づく計算"
+
+#: includes/class-wf-estimated-delivery-settings.php:259
+#: includes/class-wf-estimated-delivery-settings.php:278
+#: includes/class-wf-estimated-delivery-settings.php:286
+#: includes/class-wf-estimated-delivery-settings.php:287
+msgid "Enable"
+msgstr "有効"
+
+#: includes/class-wf-estimated-delivery-settings.php:259
+msgid ""
+"Calculated based on consecutive working days of the week. For example, if "
+"the order date is 6/1/2017 (Thursday), next day is not holiday and estimated "
+"day is 3, then the delivery date will be 6/5/2017 (Monday), based on time "
+"zone."
+msgstr ""
+"今週の連続労働日数に基づいて計算されます。たとえば、2017/06/01 (木) 次の日は"
+"休日ではない注文日が、予定日は 3、し、納期になります 2017/06/05 (月) タイム "
+"ゾーンに基づいています。"
+
+#: includes/class-wf-estimated-delivery-settings.php:265
+msgid "Calculation Mode"
+msgstr "計算モード"
+
+#: includes/class-wf-estimated-delivery-settings.php:270
+msgid "Consider holiday For Shipper Only"
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:271
+msgid "Consider holiday for Shipper and Recipient"
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:275
+msgid "Display on Items"
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:279
+msgid ""
+"Enable <br/><small>Display the estimated delivery time of each item.</small>"
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:283
+msgid "Record Log"
+msgstr "enregistrement"
+
+#: includes/class-wf-estimated-delivery-settings.php:287
+msgid ""
+"To debug the problem, select the checkbox to record log which gets generated "
+"in folder wordpress\\wp-content\\uploads\\wc-logs. Here, you can check the "
+"estimation input and result pair."
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:321
+#: includes/html-shipping-zone.php:5
+msgid "Shipping Zone"
+msgstr "配送ゾーンを編集"
+
+#: includes/class-wf-estimated-delivery-settings.php:392
+msgid "Shipping Times"
+msgstr ""
+
+#: includes/html-holiday.php:5
+msgid "Name"
+msgstr "名前"
+
+#: includes/html-holiday.php:6
+msgid "From"
+msgstr "から"
+
+#: includes/html-holiday.php:7
+msgid "To"
+msgstr "まで"
+
+#: includes/html-holiday.php:68
+msgid "Add Holiday"
+msgstr "休日を追加します。"
+
+#: includes/html-holiday.php:69
+msgid "Remove Holiday(s)"
+msgstr ""
+
+#: includes/html-holiday.php:74
+msgid ""
+"You can mark holidays using the date range in this tab. For the particular "
+"date range, the plugin will not consider the days for estimation of delivery "
+"(For single day holiday, set same date for both from and to)."
+msgstr ""
+
+#: includes/html-holiday.php:88
+msgid "Holiday Name"
+msgstr "ホリデー"
+
+#: includes/html-shipping-class.php:4 includes/html-shipping-zone.php:4
+msgid "Id"
+msgstr "ID"
+
+#: includes/html-shipping-class.php:6 includes/html-shipping-methods.php:6
+#: includes/html-shipping-zone.php:6
+msgid "No. of Days"
+msgstr "日数"
+
+#: includes/html-shipping-class.php:67
+msgid "Set delivery days for a particular Woocommerce Shipping Class."
+msgstr ""
+
+#: includes/html-shipping-methods.php:44
+msgid "Add Method"
+msgstr "メソッドを追加"
+
+#: includes/html-shipping-methods.php:45
+msgid "Remove Method(s)"
+msgstr ""
+
+#: includes/html-shipping-methods.php:50
+msgid "Set delivery days for Woocommerce Shipping methods."
+msgstr ""
+
+#: includes/html-shipping-zone.php:68
+msgid "Set delivery days for Woocommerce Shipping Zones."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:373
+#, php-format
+msgid ""
+"The license key for %s has expired. You can reactivate or purchase a license "
+"key from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"%sのライセンスキーの有効期限が切れています。 アカウントの <a href=“%s” "
+"target=“_blank”>ダッシュボード</a>からライセンスキーを再アクティブ化または購"
+"入することができます。"
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:384
+#, php-format
+msgid ""
+"The subscription for %s is on-hold. You can reactivate the subscription from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"%sの購読は保留中です。 アカウント<a href=“%s” target=“_blank”>ダッシュボード"
+"</a>から定期購入を再開することができます。"
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:395
+#, php-format
+msgid ""
+"The subscription for %s has been cancelled. You can renew the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>. A new "
+"license key will be emailed to you after your order has been completed."
+msgstr ""
+"%sの購読はキャンセルされました。 アカウントの<a href=“%s” target=“_blank”>"
+"ダッシュボード</a>から定期購入を更新することができます。 注文完了後、新しいラ"
+"イセンスキーが電子メールで送信されます。"
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:406
+#, php-format
+msgid ""
+"The subscription for %s has expired. You can reactivate the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"%sの購読が失効しました。 アカウント<a href=“%s” target=“_blank”>ダッシュボー"
+"ド</a>から定期購入を再開することができます。"
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:417
+#, php-format
+msgid ""
+"The subscription for %s has been suspended. You can reactivate the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+"%sの購読は中断されました。 アカウント<a href=“%s” target=“_blank”>ダッシュ"
+"ボード</a>から定期購入を再開することができます。"
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:428
+#, php-format
+msgid ""
+"The subscription for %s is still pending. You can check on the status of the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+"%sのサブスクリプションは依然として保留中です。 サブスクリプションのステータス"
+"は、アカウントの<a href=“%s” target=“_blank”>ダッシュボード</a>から確認できま"
+"す。"
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:439
+#, php-format
+msgid ""
+"The subscription for %s has been placed in the trash and will be deleted "
+"soon. You can purchase a new subscription from your account <a href=\"%s\" "
+"target=\"_blank\">dashboard</a>."
+msgstr ""
+"%sの購読はごみ箱に置かれ、すぐに削除されます。 新しいサブスクリプションは、ア"
+"カウントの<a href=“%s” target=“_blank”>ダッシュボード</a>から購入できます。"
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:450
+#, php-format
+msgid ""
+"A subscription for %s could not be found. You can purchase a subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"%sのサブスクリプションが見つかりませんでした。 アカウント<a href=“%s” "
+"target=“_blank”>ダッシュボード</a>から定期購入を購入することができます。"
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:461
+#, php-format
+msgid ""
+"A license key for %s could not be found. Maybe you forgot to enter a license "
+"key when setting up %s, or the key was deactivated in your account. You can "
+"reactivate license key at your plugin <a href=\"%s\" target=\"_blank"
+"\">settings page</a>."
+msgstr ""
+"%sのライセンスキーが見つかりませんでした。 %sの設定時にライセンスキーを入力す"
+"るのを忘れたか、アカウントでキーが無効になっていた可能性があります。 プラグイ"
+"ン<a href=“%s” target=“_blank”>設定ページ</a>でライセンスキーを再度有効にする"
+"ことができます。"
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:472
+#, php-format
+msgid ""
+"Download permission for %s has been revoked possibly due to a license key or "
+"subscription expiring. You can reactivate or purchase a license key from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"ライセンスキーまたはサブスクリプションの有効期限が切れているため、%sのダウン"
+"ロード許可が取り消されている可能性があります。 アカウントの<a href=“%s” "
+"target=“_blank”>ダッシュボード</a>からライセンスキーを再アクティブ化または購"
+"入することができます。"
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:483
+#, php-format
+msgid ""
+"%s has not been activated. Go to the plugin <a href=\"%s\" target=\"_blank"
+"\">settings page</a> and enter the license key and license email to activate "
+"%s."
+msgstr ""
+"%sはアクティブ化されていません。 プラグインの<a href=“%s” target=“_blank”>設"
+"定ページ</a>にアクセスし、ライセンスキーとライセンスメールを入力して%sを有効"
+"にします。"
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:494
+#, php-format
+msgid ""
+"You changed the subscription for %s, so you will need to enter your new API "
+"License Key in the settings page. The License Key should have arrived in "
+"your email inbox, if not you can get it by logging into your account <a href="
+"\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"%sのサブスクリプションを変更したため、新しいAPIライセンスキーを設定ページに入"
+"力する必要があります。 ライセンスキーが電子メールの受信トレイに到着しているは"
+"ずです。アカウントの<a href=“%s” target=“_blank”>ダッシュボード</a>にログイン"
+"することで取得できます。"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:108
+msgid "Licence Activation"
+msgstr "ライセンスのアクティベーション"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:112
+msgid "API Licence Key:"
+msgstr "API のライセンス キー:"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:113
+msgid "Licence Key"
+msgstr "ライセンスキー"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:116
+msgid "Email:"
+msgstr "メールアドレス:"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:117
+msgid "Licence Email"
+msgstr ""
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:121
+msgid "Activate"
+msgstr "有効化"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:124
+msgid "Check"
+msgstr "確認"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:124
+msgid "My Account"
+msgstr "マイアカウント"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:124
+msgid " for API Keys and API Downloads."
+msgstr ""
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:131
+msgid "Licence:"
+msgstr "ライセンス"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:132
+msgid "Mail:"
+msgstr "メール"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:133
+msgid "Status:"
+msgstr "ステータス："
+
+#: wf-estimated-delivery.php:37
+msgid ""
+"Oops! You tried installing the premium version without deactivating and "
+"deleting the basic version. Kindly deactivate and delete <b>Estimated "
+"Delivery Date for Woocommerce (Basic)</b> and then try again"
+msgstr ""
+
+#: wf-estimated-delivery.php:60
+msgid "Settings"
+msgstr "設定"
+
+#: wf-estimated-delivery.php:61
+msgid "Documentation"
+msgstr "ドキュメント"
+
+#: wf-estimated-delivery.php:62
+msgid "Support"
+msgstr "サポート"

@@ -29,9 +29,9 @@ $calculator_text          = '';
 <div class="woocommerce-shipping-totals shipping">
     <div class="shipping_calculator">
 
-        <div class="form_select_wrap">
+        <div class="form_select_wrap">  
             <div class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6"> 
                     <label for="calc_shipping_country">Shipping Method</label>
                 </div>
                 <div class="col-sm-6">

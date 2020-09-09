@@ -1,0 +1,731 @@
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Project-Id-Version: Estimated Delivery Plugin\n"
+"POT-Creation-Date: 2018-10-16 14:33+0530\n"
+"PO-Revision-Date: 2019-10-26 13:11+0530\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: wf-estimated-delivery.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Last-Translator: \n"
+"Language: es\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/class-wf-estimated-delivery-settings.php:9
+#: includes/class-wf-estimated-delivery-settings.php:166
+#: includes/class-wf-estimated-delivery-settings.php:167
+#: includes/class-wf-estimated-delivery.php:28
+msgid "Estimated Delivery"
+msgstr "Entrega estimada"
+
+#: includes/class-wf-estimated-delivery-settings.php:42
+#: includes/class-wf-estimated-delivery-settings.php:101
+msgid "General Settings"
+msgstr "Configuración General"
+
+#: includes/class-wf-estimated-delivery-settings.php:43
+#: includes/class-wf-estimated-delivery-settings.php:81
+msgid "Holidays"
+msgstr "Días festivos"
+
+#: includes/class-wf-estimated-delivery-settings.php:44
+#: includes/class-wf-estimated-delivery-settings.php:338
+#: includes/html-shipping-class.php:19
+msgid "Shipping Class"
+msgstr "Clase de envío"
+
+#: includes/class-wf-estimated-delivery-settings.php:45
+msgid "Shipping Zones"
+msgstr "Zonas de envío"
+
+#: includes/class-wf-estimated-delivery-settings.php:46
+#: includes/class-wf-estimated-delivery-settings.php:375
+msgid "Shipping methods"
+msgstr "Métodos de envío"
+
+#: includes/class-wf-estimated-delivery-settings.php:113
+msgid "Text Format"
+msgstr "Formato de texto"
+
+#: includes/class-wf-estimated-delivery-settings.php:115
+msgid ""
+"You can select a format for text display. There are three available "
+"choices \n"
+"\t\t\t\t\t\t\t<br/>Simple – Allows you to set simple text display as defined "
+"in the Product Page Text field below the Text Format option.<br/>Simple "
+"Range – Allows you to set a simple date range within which the package is "
+"estimated to be delivered. The Product Page Text (Range) field is enabled "
+"instead of Product Page Text field(for simple format), where you can set "
+"custom text for date range. <br/>Date Range – Allows you to set a date range "
+"within which the package is estimated to be delivered."
+msgstr ""
+"Puede seleccionar un formato para la visualización de texto. Hay tres "
+"opciones disponibles.\n"
+"<br/> Simple: le permite establecer una visualización de texto simple como "
+"se define en el campo Texto de la página del producto debajo de la opción "
+"Formato de texto. <br/> Rango simple: le permite establecer un rango de "
+"fechas simple dentro del cual se estima que el paquete entregado. El campo "
+"Texto de la página del producto (Rango) está habilitado en lugar del campo "
+"Texto de la página del producto (para formato simple), donde puede "
+"establecer texto personalizado para el rango de fechas. <br/> Intervalo de "
+"fechas: le permite establecer un intervalo de fechas dentro del cual se "
+"estima que se entregará el paquete."
+
+#: includes/class-wf-estimated-delivery-settings.php:119
+msgid "Simple"
+msgstr "Sencilla"
+
+#: includes/class-wf-estimated-delivery-settings.php:120
+msgid "Simple Range"
+msgstr "Rango simple"
+
+#: includes/class-wf-estimated-delivery-settings.php:121
+msgid "Date Range"
+msgstr "Rango de fechas"
+
+#: includes/class-wf-estimated-delivery-settings.php:127
+msgid ""
+" Enter the custom text with the date delimiter. This text gets visible on "
+"the product page just above the add to cart button.<br/>For Example: "
+"Estimated delivery by [date].<br/>Note: To Display the text the product must "
+"be linked with a shipping class. HTML tags accepted"
+msgstr ""
+" Ingrese el texto personalizado con el delimitador de fecha. Este texto se "
+"hace visible en la página del producto, justo encima del botón Agregar al "
+"carrito. <br/> Por ejemplo: Entrega estimada antes del [fecha]. <br/> Nota: "
+"Para mostrar el texto, el producto debe estar vinculado con una clase de "
+"envío. Etiquetas HTML aceptadas"
+
+#: includes/class-wf-estimated-delivery-settings.php:128
+#: includes/class-wf-estimated-delivery-settings.php:138
+msgid "Estimated delivery by "
+msgstr "Entrega estimada por "
+
+#: includes/class-wf-estimated-delivery-settings.php:132
+msgid "Product Page Text"
+msgstr "Texto de la página del producto"
+
+#: includes/class-wf-estimated-delivery-settings.php:137
+msgid ""
+"Enter your custom text here with the delimiter [date_1] & [date_2].<br/"
+">Note: To Display the text the product must be linked with a shipping class. "
+"HTML tags accepted"
+msgstr ""
+"Ingrese su texto personalizado aquí con el delimitador [fecha_1] y "
+"[fecha_2]. <br/> Nota: Para mostrar el texto, el producto debe estar "
+"vinculado con una clase de envío. Etiquetas HTML aceptadas"
+
+#: includes/class-wf-estimated-delivery-settings.php:142
+msgid "Product Page Text (Range)"
+msgstr "Texto de la página del producto (rango)"
+
+#: includes/class-wf-estimated-delivery-settings.php:147
+msgid ""
+"Allows you to set a numerical value for lower range of the delivery date. "
+"For example, if the date lower range value is 2 and delivery date is "
+"3/1/2017, the start range for delivery date will be 1/1/2017."
+msgstr ""
+"Le permite establecer un valor numérico para el rango inferior de la fecha "
+"de entrega. Por ejemplo, si el valor del rango inferior de la fecha es 2 y "
+"la fecha de entrega es el 3/1/2017, el rango de inicio para la fecha de "
+"entrega será el 1/1/2017."
+
+#: includes/class-wf-estimated-delivery-settings.php:151
+msgid "Date Lower Range [date_1]"
+msgstr "Rango inferior de fecha [date_1]"
+
+#: includes/class-wf-estimated-delivery-settings.php:156
+msgid ""
+"Allows you to set a numerical value for higher range of the delivery date. "
+"For example, if the date higher range value is 2 and delivery date is "
+"3/1/2017, the end range for delivery date will be 5/1/2017."
+msgstr ""
+"Le permite establecer un valor numérico para un rango más alto de la fecha "
+"de entrega. Por ejemplo, si el valor del rango superior de la fecha es 2 y "
+"la fecha de entrega es el 3/1/2017, el rango final para la fecha de entrega "
+"será el 5/1/2017."
+
+#: includes/class-wf-estimated-delivery-settings.php:159
+msgid "Date Higher Range [date_2]"
+msgstr "Rango superior de fecha [date_2]"
+
+#: includes/class-wf-estimated-delivery-settings.php:165
+msgid ""
+"Enter text which gets displayed on Cart, Checkout, Admin Order, Order "
+"Received Page, and Email beside which the estimated delivery date is shown."
+msgstr ""
+"Ingrese el texto que se muestra en el carrito, el pago, el pedido de "
+"administrador, la página de pedido recibido y el correo electrónico junto al "
+"cual se muestra la fecha de entrega estimada."
+
+#: includes/class-wf-estimated-delivery-settings.php:168
+msgid "Display Text"
+msgstr "Mostrar texto"
+
+#: includes/class-wf-estimated-delivery-settings.php:175
+msgid "Time Zone"
+msgstr "Zona horaria"
+
+#: includes/class-wf-estimated-delivery-settings.php:176
+msgid ""
+"The plugin provides two time zones for calculating delivery date. UTC – This "
+"time zone is the time standard commonly used across the world. WP Time Zone "
+"– This time zone is the selected GMT time zone in the General Settings "
+"section of WordPress. By default, the time zones are city names, which "
+"constitute to string values."
+msgstr ""
+"El complemento proporciona dos zonas horarias para calcular la fecha de "
+"entrega. UTC: esta zona horaria es el estándar de tiempo comúnmente "
+"utilizado en todo el mundo. Zona horaria de WP: esta zona horaria es la zona "
+"horaria GMT seleccionada en la sección Configuración general de WordPress. "
+"Por defecto, las zonas horarias son nombres de ciudades, que constituyen "
+"valores de cadena."
+
+#: includes/class-wf-estimated-delivery-settings.php:188
+msgid "Date Display"
+msgstr "Visualización de fecha"
+
+#: includes/class-wf-estimated-delivery-settings.php:189
+msgid "Select the required date format from the drop-down list."
+msgstr "Seleccione el formato de fecha requerido de la lista desplegable."
+
+#: includes/class-wf-estimated-delivery-settings.php:208
+msgid "Minimum Delivery Days"
+msgstr "Días mínimos de entrega"
+
+#: includes/class-wf-estimated-delivery-settings.php:209
+msgid "Enter the minimum number of days for the delivery of all the products."
+msgstr ""
+"Ingrese el número mínimo de días para la entrega de todos los productos."
+
+#: includes/class-wf-estimated-delivery-settings.php:216
+msgid "Adjustment for Back Ordered Products"
+msgstr "Ajuste para productos pendientes"
+
+#: includes/class-wf-estimated-delivery-settings.php:217
+msgid ""
+"The specified numer of days will be adjusted if product is backordered "
+"enabled."
+msgstr ""
+"El número de días especificado se ajustará si el producto se encuentra en "
+"espera."
+
+#: includes/class-wf-estimated-delivery-settings.php:232
+msgid "Working Days"
+msgstr "Días laborables"
+
+#: includes/class-wf-estimated-delivery-settings.php:233
+msgid ""
+"Select the working days of the week and according to these days the date of "
+"delivery can be estimated."
+msgstr ""
+"Seleccione los días hábiles de la semana y de acuerdo con estos días se "
+"puede estimar la fecha de entrega."
+
+#: includes/class-wf-estimated-delivery-settings.php:238
+#: includes/class-wf-estimated-delivery-settings.php:433
+#: includes/html-shipping-methods.php:4 includes/html-shipping-zone.php:5
+msgid "Monday"
+msgstr "Lunes"
+
+#: includes/class-wf-estimated-delivery-settings.php:239
+#: includes/class-wf-estimated-delivery-settings.php:434
+#: includes/html-shipping-methods.php:5 includes/html-shipping-zone.php:6
+msgid "Tuesday"
+msgstr "Martes"
+
+#: includes/class-wf-estimated-delivery-settings.php:240
+#: includes/class-wf-estimated-delivery-settings.php:435
+#: includes/html-shipping-methods.php:6 includes/html-shipping-zone.php:7
+msgid "Wednesday"
+msgstr "Miércoles"
+
+#: includes/class-wf-estimated-delivery-settings.php:241
+#: includes/class-wf-estimated-delivery-settings.php:436
+#: includes/html-shipping-methods.php:7 includes/html-shipping-zone.php:8
+msgid "Thursday"
+msgstr "Jueves"
+
+#: includes/class-wf-estimated-delivery-settings.php:242
+#: includes/class-wf-estimated-delivery-settings.php:437
+#: includes/html-shipping-methods.php:8 includes/html-shipping-zone.php:9
+msgid "Friday"
+msgstr "Viernes"
+
+#: includes/class-wf-estimated-delivery-settings.php:243
+#: includes/class-wf-estimated-delivery-settings.php:438
+#: includes/html-shipping-methods.php:9 includes/html-shipping-zone.php:10
+msgid "Saturday"
+msgstr "Sábado"
+
+#: includes/class-wf-estimated-delivery-settings.php:244
+#: includes/class-wf-estimated-delivery-settings.php:439
+#: includes/html-shipping-methods.php:3 includes/html-shipping-zone.php:4
+msgid "Sunday"
+msgstr "Domingo"
+
+#: includes/class-wf-estimated-delivery-settings.php:249
+msgid "Start from Next Working Day"
+msgstr "Comience desde el siguiente día hábil"
+
+#: includes/class-wf-estimated-delivery-settings.php:250
+msgid "Calculation Based On"
+msgstr "Cálculo basado en"
+
+#: includes/class-wf-estimated-delivery-settings.php:253
+#: includes/class-wf-estimated-delivery-settings.php:271
+#: includes/class-wf-estimated-delivery-settings.php:279
+#: includes/class-wf-estimated-delivery-settings.php:287
+#: includes/class-wf-estimated-delivery-settings.php:295
+#: includes/class-wf-estimated-delivery-settings.php:303
+#: includes/class-wf-estimated-delivery-settings.php:304
+#: includes/class-wf-estimated-delivery-settings.php:322
+#: includes/class-wf-estimated-delivery-settings.php:323
+msgid "Enable"
+msgstr "Habilitar"
+
+#: includes/class-wf-estimated-delivery-settings.php:253
+msgid ""
+"Calculated based on consecutive working days of the week. For example, if "
+"the order date is 6/1/2017 (Thursday), next day is not holiday and estimated "
+"day is 3, then the delivery date will be 6/5/2017 (Monday), based on time "
+"zone."
+msgstr ""
+"Calculado en base a días hábiles consecutivos de la semana. Por ejemplo, si "
+"la fecha del pedido es el 6/1/2017 (jueves), el día siguiente no es feriado "
+"y el día estimado es el 3, entonces la fecha de entrega será el 6/5/2017 "
+"(lunes), según la zona horaria."
+
+#: includes/class-wf-estimated-delivery-settings.php:259
+msgid "Calculation Mode"
+msgstr "Modo de cálculo"
+
+#: includes/class-wf-estimated-delivery-settings.php:263
+msgid "Consider holiday For Shipper Only"
+msgstr "Considere vacaciones solo para remitentes"
+
+#: includes/class-wf-estimated-delivery-settings.php:264
+msgid "Consider holiday for Shipper and Recipient"
+msgstr "Considere vacaciones para remitente y destinatario"
+
+#: includes/class-wf-estimated-delivery-settings.php:268
+msgid "Display for every Item in Cart/Checkout"
+msgstr "Exhibición para cada artículo en el carro / pago"
+
+#: includes/class-wf-estimated-delivery-settings.php:272
+msgid ""
+"Enable <br/><small>Display the Estimated Delivery Date of each item in cart "
+"and checkout page.</small>"
+msgstr ""
+"Habilitar <br/> <small> Muestra la fecha de entrega estimada de cada "
+"artículo en el carrito y en la página de pago. </small>"
+
+#: includes/class-wf-estimated-delivery-settings.php:276
+msgid "Display on Shop"
+msgstr "Mostrar en la tienda"
+
+#: includes/class-wf-estimated-delivery-settings.php:280
+msgid ""
+"Enable <br/><small>Display the Estimated Delivery Date of each item in Shop "
+"page, Search page and on Suggested items.</small>"
+msgstr ""
+"Habilitar <br/> <small> Muestra la fecha de entrega estimada de cada "
+"artículo en la página de la tienda, la página de búsqueda y en los artículos "
+"sugeridos. </small>"
+
+#: includes/class-wf-estimated-delivery-settings.php:284
+msgid "Display on Product Page"
+msgstr "Mostrar en la página del producto"
+
+#: includes/class-wf-estimated-delivery-settings.php:288
+msgid ""
+"Enable <br/><small>Display the Estimated Delivery Date on Individual Product "
+"Page for In-Stock Products.</small>"
+msgstr ""
+"Habilitar <br/> <small> Mostrar la fecha de entrega estimada en la página de "
+"productos individuales para productos en existencia. </small>"
+
+#: includes/class-wf-estimated-delivery-settings.php:292
+msgid "Display on All Products"
+msgstr "Mostrar en todos los productos"
+
+#: includes/class-wf-estimated-delivery-settings.php:296
+msgid ""
+"Enable <br/><small>Display the Estimated Delivery Date on Product page "
+"regardless of Product Stock Status.</small>"
+msgstr ""
+"Habilitar <br/> <small> Mostrar la fecha de entrega estimada en la página "
+"del producto, independientemente del estado del stock del producto. </small>"
+
+#: includes/class-wf-estimated-delivery-settings.php:300
+msgid "Consider Non Working Days in Transit Time"
+msgstr "Considere días no laborables en tiempo de tránsito"
+
+#: includes/class-wf-estimated-delivery-settings.php:304
+msgid "To Consider Non Working days, Holidays in Transit Time."
+msgstr ""
+"Para considerar días no laborables, días festivos en tiempo de tránsito."
+
+#: includes/class-wf-estimated-delivery-settings.php:310
+msgid "Position for Estimated Delivery on Cart & Checkout"
+msgstr "Posición para entrega estimada en carrito y pago"
+
+#: includes/class-wf-estimated-delivery-settings.php:313
+msgid "Above the Shipping Field"
+msgstr "Por encima del campo de envío"
+
+#: includes/class-wf-estimated-delivery-settings.php:314
+msgid "Below the Shipping Field"
+msgstr "Debajo del campo de envío"
+
+#: includes/class-wf-estimated-delivery-settings.php:319
+msgid "Record Log"
+msgstr "Registro de registro"
+
+#: includes/class-wf-estimated-delivery-settings.php:323
+msgid ""
+"To debug the problem, select the checkbox to record log which gets generated "
+"in folder wordpress\\wp-content\\uploads\\wc-logs. Here, you can check the "
+"estimation input and result pair."
+msgstr ""
+"Para depurar el problema, seleccione la casilla de verificación para "
+"registrar el registro que se genera en la carpeta wordpress\\wp-content"
+"\\uploads\\wc-logs. Aquí puede verificar la entrada de estimación y el par "
+"de resultados."
+
+#: includes/class-wf-estimated-delivery-settings.php:357
+#: includes/html-shipping-zone.php:30
+msgid "Shipping Zone"
+msgstr "Zona de embarque"
+
+#: includes/class-wf-estimated-delivery-settings.php:428
+msgid "Shipping Times"
+msgstr "Tiempos de envío"
+
+#: includes/class-wf-estimated-delivery.php:173
+#: includes/class-wf-estimated-delivery.php:176
+msgid "Estimated delivery by"
+msgstr "Entrega estimada por"
+
+#: includes/class-wf-estimated-delivery.php:388
+#: includes/class-wf-estimated-delivery.php:500
+#: includes/class-wf-estimated-delivery.php:597
+msgid "days"
+msgstr "dias"
+
+#: includes/class-wf-estimated-delivery.php:625
+msgid ""
+"Calculate Estimated Delivery Date. Estimated Delivery Date calculation will "
+"start from Order Creation date."
+msgstr ""
+"Calcular la fecha estimada de entrega. El cálculo de la fecha de entrega "
+"estimada comenzará a partir de la fecha de creación del pedido."
+
+#: includes/class-wf-estimated-delivery.php:625
+msgid "Calculate Estimated Delivery"
+msgstr "Calcular entrega estimada"
+
+#: includes/html-holiday.php:5
+msgid "Name"
+msgstr "Nombre"
+
+#: includes/html-holiday.php:6
+msgid "From"
+msgstr "De"
+
+#: includes/html-holiday.php:7
+msgid "To"
+msgstr "A"
+
+#: includes/html-holiday.php:68
+msgid "Add Holiday"
+msgstr "Agregar vacaciones"
+
+#: includes/html-holiday.php:69
+msgid "Remove Holiday(s)"
+msgstr "Eliminar vacaciones"
+
+#: includes/html-holiday.php:74
+msgid ""
+"You can mark holidays using the date range in this tab. For the particular "
+"date range, the plugin will not consider the days for estimation of delivery "
+"(For single day holiday, set same date for both from and to)."
+msgstr ""
+"Puede marcar días festivos utilizando el rango de fechas en esta pestaña. "
+"Para el rango de fechas en particular, el complemento no considerará los "
+"días para la estimación de la entrega (para vacaciones de un solo día, "
+"establezca la misma fecha para ambos)."
+
+#: includes/html-holiday.php:88
+msgid "Holiday Name"
+msgstr "Nombre de vacaciones"
+
+#: includes/html-shipping-class.php:20 includes/html-shipping-methods.php:35
+#: includes/html-shipping-zone.php:31
+msgid "No. of Days"
+msgstr "No. de dias"
+
+#: includes/html-shipping-methods.php:31
+msgid "Shipping Methods"
+msgstr "Métodos de envío"
+
+#: includes/html-shipping-methods.php:38 includes/html-shipping-zone.php:34
+msgid "No Delivery On"
+msgstr "No hay entrega en"
+
+#: includes/html-shipping-methods.php:96
+msgid "Add Method"
+msgstr "Agregar método"
+
+#: includes/html-shipping-methods.php:97
+msgid "Remove Method(s)"
+msgstr "Eliminar método (s)"
+
+#: includes/html-shipping-methods.php:102
+msgid "Set delivery days for Woocommerce Shipping methods."
+msgstr "Establecer días de entrega para los métodos de envío de Woocommerce."
+
+#: includes/html-shipping-zone.php:29
+msgid "Id"
+msgstr "Carné de identidad"
+
+#: includes/html-shipping-zone.php:120
+msgid "Set delivery days for Woocommerce Shipping Zones."
+msgstr "Establezca días de entrega para las zonas de envío de WooCommerce."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:373
+#, php-format
+msgid ""
+"The license key for %s has expired. You can reactivate or purchase a license "
+"key from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"La clave de licencia para %s ha caducado. Puede reactivar o comprar una "
+"clave de licencia de su cuenta <a href=“%s” target=“_blank”> tablero </a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:384
+#, php-format
+msgid ""
+"The subscription for %s is on-hold. You can reactivate the subscription from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"La suscripción para %s está en espera. Puede reactivar la suscripción desde "
+"su cuenta <a href=“%s” target=“_blank”> panel de control </a>"
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:395
+#, php-format
+msgid ""
+"The subscription for %s has been cancelled. You can renew the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>. A new "
+"license key will be emailed to you after your order has been completed."
+msgstr ""
+"La suscripción de %s ha sido cancelada. Puede renovar la suscripción desde "
+"su cuenta <a href=“%s” target=“_blank”> panel de control </a>. Se le enviará "
+"por correo electrónico una nueva clave de licencia una vez que se haya "
+"completado su pedido."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:406
+#, php-format
+msgid ""
+"The subscription for %s has expired. You can reactivate the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"La suscripción para %s ha expirado. Puede reactivar la suscripción desde su "
+"cuenta <a href=“%s” target=“_blank”> panel de control </a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:417
+#, php-format
+msgid ""
+"The subscription for %s has been suspended. You can reactivate the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+"La suscripción de %s ha sido suspendida. Puede reactivar la suscripción "
+"desde su cuenta <a href=“%s” target=“_blank”> panel de control </a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:428
+#, php-format
+msgid ""
+"The subscription for %s is still pending. You can check on the status of the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+"La suscripción para %s aún está pendiente. Puede verificar el estado de la "
+"suscripción desde su cuenta <a href=“%s” tarjen=“_blank”> panel de control </"
+"a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:439
+#, php-format
+msgid ""
+"The subscription for %s has been placed in the trash and will be deleted "
+"soon. You can purchase a new subscription from your account <a href=\"%s\" "
+"target=\"_blank\">dashboard</a>."
+msgstr ""
+"La suscripción de %s se ha colocado en la papelera y se eliminará pronto. "
+"Puede comprar una nueva suscripción desde su cuenta <a href=“%s” "
+"target=“_blank”> panel de control </a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:450
+#, php-format
+msgid ""
+"A subscription for %s could not be found. You can purchase a subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"No se pudo encontrar una suscripción para %s. Puede comprar una suscripción "
+"desde su cuenta <a href=“%s” target=“_blank”> panel de control </a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:461
+#, php-format
+msgid ""
+"A license key for %s could not be found. Maybe you forgot to enter a license "
+"key when setting up %s, or the key was deactivated in your account. You can "
+"reactivate license key at your plugin <a href=\"%s\" target=\"_blank"
+"\">settings page</a>."
+msgstr ""
+"No se pudo encontrar una clave de licencia para% s. Tal vez olvidó ingresar "
+"una clave de licencia al configurar %s, o la clave se desactivó en su "
+"cuenta. Puede reactivar la clave de licencia en la <a href=“%s” "
+"target=“_blank”> página de configuración </a> del complemento."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:472
+#, php-format
+msgid ""
+"Download permission for %s has been revoked possibly due to a license key or "
+"subscription expiring. You can reactivate or purchase a license key from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"Se ha revocado el permiso de descarga para %s posiblemente debido a que una "
+"clave de licencia o suscripción ha caducado. Puede reactivar o comprar una "
+"clave de licencia de su cuenta <a href=“%s” target=“_blank”> tablero </a>."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:483
+#, php-format
+msgid ""
+"%s has not been activated. Go to the plugin <a href=\"%s\" target=\"_blank"
+"\">settings page</a> and enter the license key and license email to activate "
+"%s."
+msgstr ""
+"%s no ha sido activado. Vaya a la <a href=“%s” target=“_blank”> página de "
+"configuración </a> del complemento e ingrese la clave de licencia y el "
+"correo electrónico de licencia para activar %s."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:494
+#, php-format
+msgid ""
+"You changed the subscription for %s, so you will need to enter your new API "
+"License Key in the settings page. The License Key should have arrived in "
+"your email inbox, if not you can get it by logging into your account <a href="
+"\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"Cambió la suscripción de %s, por lo que deberá ingresar su nueva clave de "
+"licencia API en la página de configuración. La clave de licencia debería "
+"haber llegado a su bandeja de entrada de correo electrónico, si no puede "
+"obtenerla iniciando sesión en su cuenta <a href=“%s” target=“_blank”> panel "
+"de control </a>."
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:108
+msgid "License Activation"
+msgstr "Activación de licencia"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:112
+msgid "API License Key:"
+msgstr "Clave de licencia API:"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:113
+msgid "License Key"
+msgstr "Clave de licencia"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:116
+msgid "Email:"
+msgstr "Email:"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:117
+msgid "License Email"
+msgstr "Correo electrónico de licencia"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:121
+msgid "Activate"
+msgstr "Activar"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:124
+msgid "Check"
+msgstr "Check"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:124
+msgid "My Account"
+msgstr "Mi cuenta"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:124
+msgid " for API Keys and API Downloads."
+msgstr "para API Keys y API Downloads."
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:131
+msgid "License:"
+msgstr "Licencia:"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:132
+msgid "Mail:"
+msgstr "Correo:"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:133
+msgid "Status:"
+msgstr "Estado:"
+
+#: wf-estimated-delivery.php:39
+msgid ""
+"Oops! You tried installing the premium version without deactivating and "
+"deleting the basic version. Kindly deactivate and delete <b>Estimated "
+"Delivery Date for Woocommerce (Basic)</b> and then try again"
+msgstr ""
+"¡Uy! Intentó instalar la versión premium sin desactivar y eliminar la "
+"versión básica. Desactive y elimine amablemente <b> Fecha de entrega "
+"estimada para Woocommerce (Básico) </b> y luego intente nuevamente"
+
+#: wf-estimated-delivery.php:65
+msgid "Settings"
+msgstr "Configuraciones"
+
+#: wf-estimated-delivery.php:66
+msgid "Documentation"
+msgstr "Documentación"
+
+#: wf-estimated-delivery.php:67
+msgid "Support"
+msgstr "Apoy"
+
+#. Plugin Name of the plugin/theme
+msgid "Estimated Delivery Plugin"
+msgstr "Estimated Delivery Plugin"
+
+#. Plugin URI of the plugin/theme
+msgid ""
+"https://www.pluginhive.com/product/estimated-delivery-date-plugin-"
+"woocommerce/"
+msgstr ""
+"https://www.pluginhive.com/product/estimated-delivery-date-plugin-"
+"woocommerce/"
+
+#. Description of the plugin/theme
+msgid ""
+"Intuitive order delivery date plugin using which you can set delivery dates "
+"for your orders based on shipping class, zones and host of other features."
+msgstr ""
+"Complemento de fecha de entrega de pedido intuitivo mediante el cual puede "
+"establecer fechas de entrega para sus pedidos en función de la clase de "
+"envío, las zonas y el host de otras características."
+
+#. Author of the plugin/theme
+msgid "PluginHive"
+msgstr "PluginHive"
+
+#. Author URI of the plugin/theme
+msgid "https://www.pluginhive.com/about/"
+msgstr "https://www.pluginhive.com/about/"

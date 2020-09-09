@@ -1,0 +1,549 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wf_estimated_delivery\n"
+"POT-Creation-Date: 2018-01-05 19:53+0530\n"
+"PO-Revision-Date: 2018-03-12 18:21+0530\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"Last-Translator: \n"
+"Language: ru\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/class-wf-estimated-delivery-settings.php:9
+#: includes/class-wf-estimated-delivery-settings.php:167
+#: includes/class-wf-estimated-delivery-settings.php:168
+msgid "Estimated Delivery"
+msgstr "Ожидаемая  доставка"
+
+#: includes/class-wf-estimated-delivery-settings.php:43
+#: includes/class-wf-estimated-delivery-settings.php:102
+msgid "General Settings"
+msgstr "Общие настройки"
+
+#: includes/class-wf-estimated-delivery-settings.php:44
+#: includes/class-wf-estimated-delivery-settings.php:82
+msgid "Holidays"
+msgstr "Праздники"
+
+#: includes/class-wf-estimated-delivery-settings.php:45
+#: includes/class-wf-estimated-delivery-settings.php:302
+#: includes/html-shipping-class.php:5
+msgid "Shipping Class"
+msgstr "Класс доставки"
+
+#: includes/class-wf-estimated-delivery-settings.php:46
+msgid "Shipping Zones"
+msgstr "Зоны доставки"
+
+#: includes/class-wf-estimated-delivery-settings.php:47
+#: includes/class-wf-estimated-delivery-settings.php:339
+#: includes/html-shipping-methods.php:5
+msgid "Shipping methods"
+msgstr "Способы доставки"
+
+#: includes/class-wf-estimated-delivery-settings.php:114
+msgid "Text Format"
+msgstr "Текстовый формат"
+
+#: includes/class-wf-estimated-delivery-settings.php:116
+msgid ""
+"You can select a format for text display. There are three available "
+"choices \n"
+"\t\t\t\t\t\t\t<br/>Simple – Allows you to set simple text display as defined "
+"in the Product Page Text field below the Text Format option.<br/>Simple "
+"Range – Allows you to set a simple date range within which the package is "
+"estimated to be delivered. The Product Page Text (Range) field is enabled "
+"instead of Product Page Text field(for simple format), where you can set "
+"custom text for date range. <br/>Date Range – Allows you to set a date range "
+"within which the package is estimated to be delivered."
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:120
+msgid "Simple"
+msgstr "Простой"
+
+#: includes/class-wf-estimated-delivery-settings.php:121
+msgid "Simple Range"
+msgstr "Линейка «Simple»"
+
+#: includes/class-wf-estimated-delivery-settings.php:122
+msgid "Date Range"
+msgstr "Диапазон дат"
+
+#: includes/class-wf-estimated-delivery-settings.php:128
+msgid ""
+" Enter the custom text with the date delimiter. This text gets visible on "
+"the product page just above the add to cart button.<br/>For Example: "
+"Estimated delivery by [date].<br/>Note: To Display the text the product must "
+"be linked with a shipping class."
+msgstr ""
+"Введите текст с разделителями даты. Этот текст получает видимым на странице "
+"продукта чуть выше добавить в корзину кнопку.<br>Например: по оценкам "
+"доставки до [Дата].<br>Примечание: Для отображения текста продукта должны "
+"быть связаны с классом судоходство."
+
+#: includes/class-wf-estimated-delivery-settings.php:129
+#: includes/class-wf-estimated-delivery-settings.php:139
+msgid "Estimated delivery by "
+msgstr "Ожидаемая  доставка"
+
+#: includes/class-wf-estimated-delivery-settings.php:133
+msgid "Product Page Text"
+msgstr "Страница продукта"
+
+#: includes/class-wf-estimated-delivery-settings.php:138
+msgid ""
+"Enter your custom text here with the delimiter [date_1] & [date_2].<br/"
+">Note: To Display the text the product must be linked with a shipping class."
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:143
+msgid "Product Page Text (Range)"
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:148
+msgid ""
+"Allows you to set a numerical value for lower range of the delivery date. "
+"For example, if the date lower range value is 2 and delivery date is "
+"3/1/2017, the start range for delivery date will be 1/1/2017."
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:152
+msgid "Date Lower Range [date_1]"
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:157
+msgid ""
+"Allows you to set a numerical value for higher range of the delivery date. "
+"For example, if the date higher range value is 2 and delivery date is "
+"3/1/2017, the end range for delivery date will be 5/1/2017."
+msgstr ""
+"Позволяет задать числовое значение для более высокий диапазон даты поставки. "
+"Например, если значение даты выше диапазона 2 и дата поставки является "
+"3/1/2017, конец диапазона для Дата доставки будет 5/1/2017."
+
+#: includes/class-wf-estimated-delivery-settings.php:160
+msgid "Date Higher Range [date_2]"
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:166
+msgid ""
+"Enter text which gets displayed on Cart, Checkout, Admin Order, Order "
+"Received Page, and Email beside which the estimated delivery date is shown."
+msgstr ""
+"Введите текст, который отображается на корзину, извлечение, Admin порядок, "
+"получил страницу заказа и рядом с которой показана предполагаемая дата "
+"доставки электронной почты."
+
+#: includes/class-wf-estimated-delivery-settings.php:169
+msgid "Display Text"
+msgstr "Показать Текст"
+
+#: includes/class-wf-estimated-delivery-settings.php:176
+msgid "Time Zone"
+msgstr "Часовой пояс"
+
+#: includes/class-wf-estimated-delivery-settings.php:177
+msgid ""
+"The plugin provides two time zones for calculating delivery date. UTC – This "
+"time zone is the time standard commonly used across the world. WP Time Zone "
+"– This time zone is the selected GMT time zone in the General Settings "
+"section of WordPress. By default, the time zones are city names, which "
+"constitute to string values."
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:189
+msgid "Date Display"
+msgstr "Формат вывода даты"
+
+#: includes/class-wf-estimated-delivery-settings.php:190
+msgid "Select the required date format from the drop-down list."
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:209
+msgid "Minimum Delivery Days"
+msgstr "Минимальная поставка дней"
+
+#: includes/class-wf-estimated-delivery-settings.php:210
+msgid "Enter the minimum number of days for the delivery of all the products."
+msgstr "Введите минимальное количество дней для доставки всех продуктов."
+
+#: includes/class-wf-estimated-delivery-settings.php:225
+msgid "Working Days"
+msgstr "Рабочие дни"
+
+#: includes/class-wf-estimated-delivery-settings.php:226
+msgid ""
+"Select the working days of the week and according to these days the date of "
+"delivery can be estimated."
+msgstr ""
+"Выберите рабочие дни недели и по данным эти дни могут быть оценены с даты "
+"поставки."
+
+#: includes/class-wf-estimated-delivery-settings.php:231
+#: includes/class-wf-estimated-delivery-settings.php:397
+msgid "Monday"
+msgstr "Понедельник"
+
+#: includes/class-wf-estimated-delivery-settings.php:232
+#: includes/class-wf-estimated-delivery-settings.php:398
+msgid "Tuesday"
+msgstr "Вторник"
+
+#: includes/class-wf-estimated-delivery-settings.php:233
+#: includes/class-wf-estimated-delivery-settings.php:399
+msgid "Wednesday"
+msgstr "Среда"
+
+#: includes/class-wf-estimated-delivery-settings.php:234
+#: includes/class-wf-estimated-delivery-settings.php:400
+msgid "Thursday"
+msgstr "Четверг"
+
+#: includes/class-wf-estimated-delivery-settings.php:235
+#: includes/class-wf-estimated-delivery-settings.php:401
+msgid "Friday"
+msgstr "Пятница"
+
+#: includes/class-wf-estimated-delivery-settings.php:236
+#: includes/class-wf-estimated-delivery-settings.php:402
+msgid "Saturday"
+msgstr "Суббота"
+
+#: includes/class-wf-estimated-delivery-settings.php:237
+#: includes/class-wf-estimated-delivery-settings.php:403
+msgid "Sunday"
+msgstr "Воскресенье"
+
+#: includes/class-wf-estimated-delivery-settings.php:255
+msgid "Start from Next Working Day"
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:256
+msgid "Calculation Based On"
+msgstr "расчет на основе"
+
+#: includes/class-wf-estimated-delivery-settings.php:259
+#: includes/class-wf-estimated-delivery-settings.php:278
+#: includes/class-wf-estimated-delivery-settings.php:286
+#: includes/class-wf-estimated-delivery-settings.php:287
+msgid "Enable"
+msgstr "Включить"
+
+#: includes/class-wf-estimated-delivery-settings.php:259
+msgid ""
+"Calculated based on consecutive working days of the week. For example, if "
+"the order date is 6/1/2017 (Thursday), next day is not holiday and estimated "
+"day is 3, then the delivery date will be 6/5/2017 (Monday), based on time "
+"zone."
+msgstr ""
+"Рассчитано на основе последовательных рабочих дней недели. Например, если "
+"дата заказа - 6/1/2017 (четверг), следующий день не является праздничным и "
+"расчетный день равен 3, то дата доставки будет 6/5/2017 (понедельник), "
+"исходя из часового пояса."
+
+#: includes/class-wf-estimated-delivery-settings.php:265
+msgid "Calculation Mode"
+msgstr "Способ расчета"
+
+#: includes/class-wf-estimated-delivery-settings.php:270
+msgid "Consider holiday For Shipper Only"
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:271
+msgid "Consider holiday for Shipper and Recipient"
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:275
+msgid "Display on Items"
+msgstr "Отображение элементов"
+
+#: includes/class-wf-estimated-delivery-settings.php:279
+msgid ""
+"Enable <br/><small>Display the estimated delivery time of each item.</small>"
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:283
+msgid "Record Log"
+msgstr "Запись лога (F9)"
+
+#: includes/class-wf-estimated-delivery-settings.php:287
+msgid ""
+"To debug the problem, select the checkbox to record log which gets generated "
+"in folder wordpress\\wp-content\\uploads\\wc-logs. Here, you can check the "
+"estimation input and result pair."
+msgstr ""
+"Чтобы отладить проблему, установите флажок для записи журнала, который "
+"генерируется в папке wordpress \\ wp-content \\ uploads \\ wc-logs. Здесь вы "
+"можете проверить пар оценки и результат."
+
+#: includes/class-wf-estimated-delivery-settings.php:321
+#: includes/html-shipping-zone.php:5
+msgid "Shipping Zone"
+msgstr "Области доставки"
+
+#: includes/class-wf-estimated-delivery-settings.php:392
+msgid "Shipping Times"
+msgstr "Время доставки"
+
+#: includes/html-holiday.php:5
+msgid "Name"
+msgstr "Имя"
+
+#: includes/html-holiday.php:6
+msgid "From"
+msgstr "От"
+
+#: includes/html-holiday.php:7
+msgid "To"
+msgstr "До"
+
+#: includes/html-holiday.php:68
+msgid "Add Holiday"
+msgstr "Добавить Праздник"
+
+#: includes/html-holiday.php:69
+msgid "Remove Holiday(s)"
+msgstr ""
+
+#: includes/html-holiday.php:74
+msgid ""
+"You can mark holidays using the date range in this tab. For the particular "
+"date range, the plugin will not consider the days for estimation of delivery "
+"(For single day holiday, set same date for both from and to)."
+msgstr ""
+"Вы можете отметить праздники, используя диапазон дат в этой вкладке. Для "
+"конкретной даты диапазона плагин не будет рассматривать дней для оценки "
+"доставки (для одного дня отдыха, установить же дату для обоих от и до)."
+
+#: includes/html-holiday.php:88
+msgid "Holiday Name"
+msgstr "Название праздника"
+
+#: includes/html-shipping-class.php:4 includes/html-shipping-zone.php:4
+msgid "Id"
+msgstr "Id"
+
+#: includes/html-shipping-class.php:6 includes/html-shipping-methods.php:6
+#: includes/html-shipping-zone.php:6
+msgid "No. of Days"
+msgstr "Кол-во дней"
+
+#: includes/html-shipping-class.php:67
+msgid "Set delivery days for a particular Woocommerce Shipping Class."
+msgstr ""
+
+#: includes/html-shipping-methods.php:44
+msgid "Add Method"
+msgstr "Добавить метод"
+
+#: includes/html-shipping-methods.php:45
+msgid "Remove Method(s)"
+msgstr ""
+
+#: includes/html-shipping-methods.php:50
+msgid "Set delivery days for Woocommerce Shipping methods."
+msgstr ""
+
+#: includes/html-shipping-zone.php:68
+msgid "Set delivery days for Woocommerce Shipping Zones."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:373
+#, php-format
+msgid ""
+"The license key for %s has expired. You can reactivate or purchase a license "
+"key from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"Лицензионный ключ для %s истек. Вы можете активировать его или приобрести "
+"новый для вашей учетной записи <a href=\"%s\" target=\"_blank\">админ "
+"панель</a> ."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:384
+#, php-format
+msgid ""
+"The subscription for %s is on-hold. You can reactivate the subscription from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"Подписка %s приостановлена. Вы можете активировать подписку в  <a href=\"%s"
+"\" target=\"_blank\">админ панели</a> вашего аккаунта."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:395
+#, php-format
+msgid ""
+"The subscription for %s has been cancelled. You can renew the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>. A new "
+"license key will be emailed to you after your order has been completed."
+msgstr ""
+"Подписка на %s была отменена. Вы можете возобновить подписку в <a href=\"%s"
+"\" target=\"_blank\">админ панели</a> вашего аккаунта ."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:406
+#, php-format
+msgid ""
+"The subscription for %s has expired. You can reactivate the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"Подписка на %s истекла. Вы можете активировать подписку в <a href=\"%s\" "
+"target=\"_blank\">админ панели</a> вашего аккаунта."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:417
+#, php-format
+msgid ""
+"The subscription for %s has been suspended. You can reactivate the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+"Подписка на %s была приостановлена. Вы можете активировать подписку в  <a "
+"href=\"%s\" target=\"_blank\">админ панели</a> вашего аккаунта."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:428
+#, php-format
+msgid ""
+"The subscription for %s is still pending. You can check on the status of the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+"Подписка на %s еще не принята. Вы можете проверить статус подписки в <a href="
+"\"%s\" target=\"_blank\">админ панели</a> вашего аккаунта."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:439
+#, php-format
+msgid ""
+"The subscription for %s has been placed in the trash and will be deleted "
+"soon. You can purchase a new subscription from your account <a href=\"%s\" "
+"target=\"_blank\">dashboard</a>."
+msgstr ""
+"Подписка на %s была помещена в корзину и скоро будет удалена. Вы можете "
+"приобрести новую подписку в <a href=\"%s\" target=\"_blank\">админ панели</"
+"a> вашего аккаунта ."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:450
+#, php-format
+msgid ""
+"A subscription for %s could not be found. You can purchase a subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"Подписка для %s не найдена. Вы можете приобрести подписку в <a href=\"%s\" "
+"target=\"_blank\">админ панели</a> вашего аккаунта ."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:461
+#, php-format
+msgid ""
+"A license key for %s could not be found. Maybe you forgot to enter a license "
+"key when setting up %s, or the key was deactivated in your account. You can "
+"reactivate license key at your plugin <a href=\"%s\" target=\"_blank"
+"\">settings page</a>."
+msgstr ""
+"Лицензионный ключ для %s не найден. Может быть, Вы забыли ввести "
+"лицензионный ключ при настройке %s, или ключ был деактивирован в вашей "
+"учетной записи. Вы можете активировать или приобрести лицензионный ключ в <a "
+"href=\"%s\" target=\"_blank\">админ панели</a> вашего аккаунта."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:472
+#, php-format
+msgid ""
+"Download permission for %s has been revoked possibly due to a license key or "
+"subscription expiring. You can reactivate or purchase a license key from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"Разрешение на скачивание %s было отозвано, возможно из-за лицензионного "
+"ключа или окончания подписки. Вы можете повторно активировать или приобрести "
+"лицензионный ключ в <a href=\"%s\" target=\"_blank\">админ панели</a> вашего "
+"аккаунта."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:483
+#, php-format
+msgid ""
+"%s has not been activated. Go to the plugin <a href=\"%s\" target=\"_blank"
+"\">settings page</a> and enter the license key and license email to activate "
+"%s."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:494
+#, php-format
+msgid ""
+"You changed the subscription for %s, so you will need to enter your new API "
+"License Key in the settings page. The License Key should have arrived in "
+"your email inbox, if not you can get it by logging into your account <a href="
+"\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"Вы изменили подписку для %s, так что вам нужно будет ввести новый "
+"лицензионный ключ API на странице настроек. Лицензионный ключ должен был "
+"прийти на Ваш почтовый ящик, если вы не можете получить его, войдите в <a "
+"href=\"%s\" target=\"_blank\">админ панель</a> своего аккаунта."
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:108
+msgid "Licence Activation"
+msgstr "Активация лицензии"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:112
+msgid "API Licence Key:"
+msgstr "Ключ лицензии"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:113
+msgid "Licence Key"
+msgstr "Ключ лицензии"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:116
+msgid "Email:"
+msgstr "Email:"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:117
+msgid "Licence Email"
+msgstr "Лицензия электронной почты"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:121
+msgid "Activate"
+msgstr "Активировать"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:124
+msgid "Check"
+msgstr "Проверить"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:124
+msgid "My Account"
+msgstr "Мой аккаунт"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:124
+msgid " for API Keys and API Downloads."
+msgstr "для ключей API и API загрузки."
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:131
+msgid "Licence:"
+msgstr "Лицензия:"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:132
+msgid "Mail:"
+msgstr "Эл. почта"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:133
+msgid "Status:"
+msgstr "Статус:"
+
+#: wf-estimated-delivery.php:37
+msgid ""
+"Oops! You tried installing the premium version without deactivating and "
+"deleting the basic version. Kindly deactivate and delete <b>Estimated "
+"Delivery Date for Woocommerce (Basic)</b> and then try again"
+msgstr ""
+
+#: wf-estimated-delivery.php:60
+msgid "Settings"
+msgstr "Настройки"
+
+#: wf-estimated-delivery.php:61
+msgid "Documentation"
+msgstr "Документация"
+
+#: wf-estimated-delivery.php:62
+msgid "Support"
+msgstr "Поддержка"
