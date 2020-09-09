@@ -1,0 +1,532 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: wf_estimated_delivery\n"
+"POT-Creation-Date: 2018-01-05 19:53+0530\n"
+"PO-Revision-Date: 2018-03-12 18:32+0530\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.12\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"Last-Translator: \n"
+"Language: zh_CN\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/class-wf-estimated-delivery-settings.php:9
+#: includes/class-wf-estimated-delivery-settings.php:167
+#: includes/class-wf-estimated-delivery-settings.php:168
+msgid "Estimated Delivery"
+msgstr "预计送达"
+
+#: includes/class-wf-estimated-delivery-settings.php:43
+#: includes/class-wf-estimated-delivery-settings.php:102
+msgid "General Settings"
+msgstr "常规设置"
+
+#: includes/class-wf-estimated-delivery-settings.php:44
+#: includes/class-wf-estimated-delivery-settings.php:82
+msgid "Holidays"
+msgstr "假期"
+
+#: includes/class-wf-estimated-delivery-settings.php:45
+#: includes/class-wf-estimated-delivery-settings.php:302
+#: includes/html-shipping-class.php:5
+msgid "Shipping Class"
+msgstr "类"
+
+#: includes/class-wf-estimated-delivery-settings.php:46
+msgid "Shipping Zones"
+msgstr "配送区域"
+
+#: includes/class-wf-estimated-delivery-settings.php:47
+#: includes/class-wf-estimated-delivery-settings.php:339
+#: includes/html-shipping-methods.php:5
+msgid "Shipping methods"
+msgstr "يەتكۈزۈش ئۇسۇلى"
+
+#: includes/class-wf-estimated-delivery-settings.php:114
+msgid "Text Format"
+msgstr "文本格式"
+
+#: includes/class-wf-estimated-delivery-settings.php:116
+msgid ""
+"You can select a format for text display. There are three available "
+"choices \n"
+"\t\t\t\t\t\t\t<br/>Simple – Allows you to set simple text display as defined "
+"in the Product Page Text field below the Text Format option.<br/>Simple "
+"Range – Allows you to set a simple date range within which the package is "
+"estimated to be delivered. The Product Page Text (Range) field is enabled "
+"instead of Product Page Text field(for simple format), where you can set "
+"custom text for date range. <br/>Date Range – Allows you to set a date range "
+"within which the package is estimated to be delivered."
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:120
+msgid "Simple"
+msgstr "简单"
+
+#: includes/class-wf-estimated-delivery-settings.php:121
+msgid "Simple Range"
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:122
+msgid "Date Range"
+msgstr "日期范围"
+
+#: includes/class-wf-estimated-delivery-settings.php:128
+msgid ""
+" Enter the custom text with the date delimiter. This text gets visible on "
+"the product page just above the add to cart button.<br/>For Example: "
+"Estimated delivery by [date].<br/>Note: To Display the text the product must "
+"be linked with a shipping class."
+msgstr ""
+"输入带有日期分隔符的自定义文本。此文本在 \"添加到购物车\" 按钮上方的产品页面"
+"上可见。<br>例如: 按 [日期] 估计交货。<br>注意: 要显示文本, 产品必须与装运类"
+"链接。"
+
+#: includes/class-wf-estimated-delivery-settings.php:129
+#: includes/class-wf-estimated-delivery-settings.php:139
+msgid "Estimated delivery by "
+msgstr "预计送达"
+
+#: includes/class-wf-estimated-delivery-settings.php:133
+msgid "Product Page Text"
+msgstr "商品页面"
+
+#: includes/class-wf-estimated-delivery-settings.php:138
+msgid ""
+"Enter your custom text here with the delimiter [date_1] & [date_2].<br/"
+">Note: To Display the text the product must be linked with a shipping class."
+msgstr ""
+"在此处输入您的自定义文本, 其中带有分隔符 [date_1] 和 [date_2]。<br>注意: 要显"
+"示文本, 产品必须与装运类链接。"
+
+#: includes/class-wf-estimated-delivery-settings.php:143
+msgid "Product Page Text (Range)"
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:148
+msgid ""
+"Allows you to set a numerical value for lower range of the delivery date. "
+"For example, if the date lower range value is 2 and delivery date is "
+"3/1/2017, the start range for delivery date will be 1/1/2017."
+msgstr ""
+"允许您为交货日期的较低范围设置数值。例如, 如果日期下限值为 2, 并且交货日期为 "
+"3/1/2017, 则交货日期的开始范围将为 1/1/2017。"
+
+#: includes/class-wf-estimated-delivery-settings.php:152
+msgid "Date Lower Range [date_1]"
+msgstr "日期更低范围 [date_1]"
+
+#: includes/class-wf-estimated-delivery-settings.php:157
+msgid ""
+"Allows you to set a numerical value for higher range of the delivery date. "
+"For example, if the date higher range value is 2 and delivery date is "
+"3/1/2017, the end range for delivery date will be 5/1/2017."
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:160
+msgid "Date Higher Range [date_2]"
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:166
+msgid ""
+"Enter text which gets displayed on Cart, Checkout, Admin Order, Order "
+"Received Page, and Email beside which the estimated delivery date is shown."
+msgstr ""
+"输入在购物车、结帐、管理订单、订单接收页和电子邮件旁边显示的文本, 并在其中显"
+"示预计交货日期。"
+
+#: includes/class-wf-estimated-delivery-settings.php:169
+msgid "Display Text"
+msgstr "显示文本"
+
+#: includes/class-wf-estimated-delivery-settings.php:176
+msgid "Time Zone"
+msgstr "时区"
+
+#: includes/class-wf-estimated-delivery-settings.php:177
+msgid ""
+"The plugin provides two time zones for calculating delivery date. UTC – This "
+"time zone is the time standard commonly used across the world. WP Time Zone "
+"– This time zone is the selected GMT time zone in the General Settings "
+"section of WordPress. By default, the time zones are city names, which "
+"constitute to string values."
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:189
+msgid "Date Display"
+msgstr "日期显示"
+
+#: includes/class-wf-estimated-delivery-settings.php:190
+msgid "Select the required date format from the drop-down list."
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:209
+msgid "Minimum Delivery Days"
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:210
+msgid "Enter the minimum number of days for the delivery of all the products."
+msgstr "输入所有产品交付的最短天数。"
+
+#: includes/class-wf-estimated-delivery-settings.php:225
+msgid "Working Days"
+msgstr "工作日"
+
+#: includes/class-wf-estimated-delivery-settings.php:226
+msgid ""
+"Select the working days of the week and according to these days the date of "
+"delivery can be estimated."
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:231
+#: includes/class-wf-estimated-delivery-settings.php:397
+msgid "Monday"
+msgstr "星期一"
+
+#: includes/class-wf-estimated-delivery-settings.php:232
+#: includes/class-wf-estimated-delivery-settings.php:398
+msgid "Tuesday"
+msgstr "星期二"
+
+#: includes/class-wf-estimated-delivery-settings.php:233
+#: includes/class-wf-estimated-delivery-settings.php:399
+msgid "Wednesday"
+msgstr "星期三"
+
+#: includes/class-wf-estimated-delivery-settings.php:234
+#: includes/class-wf-estimated-delivery-settings.php:400
+msgid "Thursday"
+msgstr "星期四"
+
+#: includes/class-wf-estimated-delivery-settings.php:235
+#: includes/class-wf-estimated-delivery-settings.php:401
+msgid "Friday"
+msgstr "星期五"
+
+#: includes/class-wf-estimated-delivery-settings.php:236
+#: includes/class-wf-estimated-delivery-settings.php:402
+msgid "Saturday"
+msgstr "星期六"
+
+#: includes/class-wf-estimated-delivery-settings.php:237
+#: includes/class-wf-estimated-delivery-settings.php:403
+msgid "Sunday"
+msgstr "星期日"
+
+#: includes/class-wf-estimated-delivery-settings.php:255
+msgid "Start from Next Working Day"
+msgstr "从下一个工作日开始"
+
+#: includes/class-wf-estimated-delivery-settings.php:256
+msgid "Calculation Based On"
+msgstr "基于计算"
+
+#: includes/class-wf-estimated-delivery-settings.php:259
+#: includes/class-wf-estimated-delivery-settings.php:278
+#: includes/class-wf-estimated-delivery-settings.php:286
+#: includes/class-wf-estimated-delivery-settings.php:287
+msgid "Enable"
+msgstr "启用"
+
+#: includes/class-wf-estimated-delivery-settings.php:259
+msgid ""
+"Calculated based on consecutive working days of the week. For example, if "
+"the order date is 6/1/2017 (Thursday), next day is not holiday and estimated "
+"day is 3, then the delivery date will be 6/5/2017 (Monday), based on time "
+"zone."
+msgstr ""
+"根据一周的连续工作日计算。例如, 如果订单日期为 6/1/2017 (星期四), 则第二天不"
+"是假日, 估计日期为 3, 则交货日期将为 6/5/2017 (星期一), 基于时区。"
+
+#: includes/class-wf-estimated-delivery-settings.php:265
+msgid "Calculation Mode"
+msgstr "计算模式"
+
+#: includes/class-wf-estimated-delivery-settings.php:270
+msgid "Consider holiday For Shipper Only"
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:271
+msgid "Consider holiday for Shipper and Recipient"
+msgstr "考虑托运人和收件人的假期"
+
+#: includes/class-wf-estimated-delivery-settings.php:275
+msgid "Display on Items"
+msgstr "在项目上显示"
+
+#: includes/class-wf-estimated-delivery-settings.php:279
+msgid ""
+"Enable <br/><small>Display the estimated delivery time of each item.</small>"
+msgstr "使<br><small>显示每个物料的预计交货时间。</small>"
+
+#: includes/class-wf-estimated-delivery-settings.php:283
+msgid "Record Log"
+msgstr "记录日志"
+
+#: includes/class-wf-estimated-delivery-settings.php:287
+msgid ""
+"To debug the problem, select the checkbox to record log which gets generated "
+"in folder wordpress\\wp-content\\uploads\\wc-logs. Here, you can check the "
+"estimation input and result pair."
+msgstr ""
+
+#: includes/class-wf-estimated-delivery-settings.php:321
+#: includes/html-shipping-zone.php:5
+msgid "Shipping Zone"
+msgstr "運送區域"
+
+#: includes/class-wf-estimated-delivery-settings.php:392
+msgid "Shipping Times"
+msgstr "装运时间"
+
+#: includes/html-holiday.php:5
+msgid "Name"
+msgstr "名称"
+
+#: includes/html-holiday.php:6
+msgid "From"
+msgstr "从"
+
+#: includes/html-holiday.php:7
+msgid "To"
+msgstr "到"
+
+#: includes/html-holiday.php:68
+msgid "Add Holiday"
+msgstr "添加假期"
+
+#: includes/html-holiday.php:69
+msgid "Remove Holiday(s)"
+msgstr "删除假日"
+
+#: includes/html-holiday.php:74
+msgid ""
+"You can mark holidays using the date range in this tab. For the particular "
+"date range, the plugin will not consider the days for estimation of delivery "
+"(For single day holiday, set same date for both from and to)."
+msgstr ""
+"可以使用此选项卡中的日期范围标记假日。对于特定的日期范围, 插件将不考虑交付估"
+"计的天数 (对于单天假日, 为从和到) 设置相同的日期。"
+
+#: includes/html-holiday.php:88
+msgid "Holiday Name"
+msgstr "节日的名字"
+
+#: includes/html-shipping-class.php:4 includes/html-shipping-zone.php:4
+msgid "Id"
+msgstr "ID"
+
+#: includes/html-shipping-class.php:6 includes/html-shipping-methods.php:6
+#: includes/html-shipping-zone.php:6
+msgid "No. of Days"
+msgstr "第. 天"
+
+#: includes/html-shipping-class.php:67
+msgid "Set delivery days for a particular Woocommerce Shipping Class."
+msgstr "为特定的 Woocommerce 装运类设置交货天数。"
+
+#: includes/html-shipping-methods.php:44
+msgid "Add Method"
+msgstr "添加方法"
+
+#: includes/html-shipping-methods.php:45
+msgid "Remove Method(s)"
+msgstr ""
+
+#: includes/html-shipping-methods.php:50
+msgid "Set delivery days for Woocommerce Shipping methods."
+msgstr "为 Woocommerce 装运方法设置交货天数。"
+
+#: includes/html-shipping-zone.php:68
+msgid "Set delivery days for Woocommerce Shipping Zones."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:373
+#, php-format
+msgid ""
+"The license key for %s has expired. You can reactivate or purchase a license "
+"key from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"％s的许可密钥已过期。 您可以从您的帐户<a href=\"%s\" target=\"_blank\">信息中"
+"心</a>重新激活或购买许可密钥。"
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:384
+#, php-format
+msgid ""
+"The subscription for %s is on-hold. You can reactivate the subscription from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"％s的订阅处于暂停状态。 您可以从您的帐户<a href=\"%s\" target=\"_blank\">信息"
+"中心</a>重新激活订阅。"
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:395
+#, php-format
+msgid ""
+"The subscription for %s has been cancelled. You can renew the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>. A new "
+"license key will be emailed to you after your order has been completed."
+msgstr ""
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:406
+#, php-format
+msgid ""
+"The subscription for %s has expired. You can reactivate the subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"％s的订阅已过期。 您可以从您的帐户<a href=\"%s\" target=\"_blank\">信息中心</"
+"a>重新激活订阅。"
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:417
+#, php-format
+msgid ""
+"The subscription for %s has been suspended. You can reactivate the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+"％s的订阅已被暂停。 您可以从您的帐户<a href=\"%s\" target=\"_blank\">信息中心"
+"</a>重新激活订阅。"
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:428
+#, php-format
+msgid ""
+"The subscription for %s is still pending. You can check on the status of the "
+"subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</"
+"a>."
+msgstr ""
+"％s的订阅已被暂停。 您可以从您的帐户<a href=\"%s\" target=\"_blank\">信息中心"
+"</a>重新激活订阅。..."
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:439
+#, php-format
+msgid ""
+"The subscription for %s has been placed in the trash and will be deleted "
+"soon. You can purchase a new subscription from your account <a href=\"%s\" "
+"target=\"_blank\">dashboard</a>."
+msgstr ""
+"％s的订阅已被放入垃圾箱，并将很快被删除。 您可以从您的帐户<a href=\"%s\" "
+"target=\"_blank\">信息中心</a>购买新的订阅。"
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:450
+#, php-format
+msgid ""
+"A subscription for %s could not be found. You can purchase a subscription "
+"from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"无法找到％s的订阅。 您可以从您的帐户<a href=\"%s\" target=\"_blank\">信息中心"
+"</a>购买订阅。"
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:461
+#, php-format
+msgid ""
+"A license key for %s could not be found. Maybe you forgot to enter a license "
+"key when setting up %s, or the key was deactivated in your account. You can "
+"reactivate license key at your plugin <a href=\"%s\" target=\"_blank"
+"\">settings page</a>."
+msgstr ""
+"无法找到％s的许可密钥。 也许您在设置％s时忘记输入许可证密钥，或者您的帐户中的"
+"密钥已被停用。 您可以从您的帐户<a href=\"%s\" target=\"_blank\">信息中心</a>"
+"重新激活或购买许可密钥。"
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:472
+#, php-format
+msgid ""
+"Download permission for %s has been revoked possibly due to a license key or "
+"subscription expiring. You can reactivate or purchase a license key from "
+"your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"％s的下载权限已被吊销，可能是由于许可密钥或订阅过期。 您可以从您的帐户<a "
+"href=\"%s\" target=\"_blank\">信息中心</a>重新激活或购买许可密钥。"
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:483
+#, php-format
+msgid ""
+"%s has not been activated. Go to the plugin <a href=\"%s\" target=\"_blank"
+"\">settings page</a> and enter the license key and license email to activate "
+"%s."
+msgstr ""
+"％s没有被激活。 进入设置页面并输入许可证密钥和许可证电子邮件来激活％s。"
+
+#: includes/wf_api_manager/class-wc-am-plugin-update.php:494
+#, php-format
+msgid ""
+"You changed the subscription for %s, so you will need to enter your new API "
+"License Key in the settings page. The License Key should have arrived in "
+"your email inbox, if not you can get it by logging into your account <a href="
+"\"%s\" target=\"_blank\">dashboard</a>."
+msgstr ""
+"％s没有被激活。 进入设置页面并输入许可证密钥和许可证电子邮件来激活％s。..."
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:108
+msgid "Licence Activation"
+msgstr "许可证激活"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:112
+msgid "API Licence Key:"
+msgstr "许可证密钥"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:113
+msgid "Licence Key"
+msgstr "许可证密钥"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:116
+msgid "Email:"
+msgstr "电子邮件："
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:117
+msgid "Licence Email"
+msgstr "API 许可证邮箱："
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:121
+msgid "Activate"
+msgstr "激活"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:124
+msgid "Check"
+msgstr "检查"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:124
+msgid "My Account"
+msgstr "我的账户"
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:124
+msgid " for API Keys and API Downloads."
+msgstr ""
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:131
+msgid "Licence:"
+msgstr "许可："
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:132
+msgid "Mail:"
+msgstr "邮箱："
+
+#: includes/wf_api_manager/html/html-wf-activation-window.php:133
+msgid "Status:"
+msgstr "状态："
+
+#: wf-estimated-delivery.php:37
+msgid ""
+"Oops! You tried installing the premium version without deactivating and "
+"deleting the basic version. Kindly deactivate and delete <b>Estimated "
+"Delivery Date for Woocommerce (Basic)</b> and then try again"
+msgstr ""
+"哎呀!您尝试安装特优版本, 而不停用并删除基本版本。请停用并删除<b>Woocommerce "
+"(基本) 的预计交货日期</b>, 然后重试"
+
+#: wf-estimated-delivery.php:60
+msgid "Settings"
+msgstr "设置"
+
+#: wf-estimated-delivery.php:61
+msgid "Documentation"
+msgstr "文档"
+
+#: wf-estimated-delivery.php:62
+msgid "Support"
+msgstr "支持"
