@@ -315,6 +315,12 @@ function get_scripts() {
 	// if (is_page(262)) {
 	// 	wp_enqueue_script( 'homeJs', get_stylesheet_directory_uri() . '/js/home-page.js', array(), '1.0.0', true );
 	// }
+
+
+	// Checkout JS
+	if (is_page(20)) {
+		wp_enqueue_script( 'customCheckoutJS', get_stylesheet_directory_uri() . '/assets/js/customCheckoutJS.js', array(), '1.0.0', true );
+	}
   
 	
 }
