@@ -12,7 +12,7 @@ get_header_part('mobile_nav');
 
 <?php if (have_rows('header_store_info', 'options')) : ?>
 
-    <div class="header_store_info">
+    <div class="header_store_info hidden-md-down">
         <div class="container-fluid">
             <div class="inner">
                 <div class="row">
@@ -23,7 +23,7 @@ get_header_part('mobile_nav');
                         $link = get_sub_field('link');
                         echo "<div class='col-3'>
 						<a href=$link rel='nofollow noopener noreferrer'
-						<span class='image'><img src=$image /></span>
+						<span class='image'><img src=$image aria-label='$title'/></span>
 						<span class='title'>$title</span>
 						<span class='content'>$content</span>
 						</a>

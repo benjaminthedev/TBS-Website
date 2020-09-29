@@ -29,17 +29,16 @@ wc_print_notices();
 <?php do_action('woocommerce_before_cart_table'); ?>
 <div class="container">
     <div class="row">
-        <div class="col-xl-6 left_side_checkout">
+        <div class="col left_side_checkout">
             <form class="woocommerce-cart-form" action="<?php echo esc_url(wc_get_cart_url()); ?>" method="post">
-                <h1>Your bag contents </h1>
+                <h1>Your bag contents:</h1>
                 <table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
                     <thead>
                     <tr>
-                        <th class="product-remove">&nbsp;</th>
                         <th class="product-thumbnail">&nbsp;</th>
                         <th class="product-name"><?php _e('Product', 'woocommerce'); ?></th>
                         <th class="product-quantity"><?php _e('Quantity', 'woocommerce'); ?></th>
-                        <th class="product-subtotal"><?php _e('Price', 'woocommerce'); ?></th>                        
+                        <th class="product-subtotal"><?php _e('Price', 'woocommerce'); ?></th>
                     </tr>
                     </thead>
                     <tbody>
@@ -54,22 +53,6 @@ wc_print_notices();
                             $product_permalink = apply_filters('woocommerce_cart_item_permalink', $_product->is_visible() ? $_product->get_permalink($cart_item) : '', $cart_item, $cart_item_key);
                             ?>
                             <tr class="woocommerce-cart-form__cart-item <?php echo esc_attr(apply_filters('woocommerce_cart_item_class', 'cart_item', $cart_item, $cart_item_key)); ?>">
-
-                                <td class="product-remove">
-							<?php
-								echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-									'woocommerce_cart_item_remove_link',
-									sprintf(
-										'<a href="%s" class="remove" aria-label="%s" data-product_id="%s" data-product_sku="%s">&times;</a>',
-										esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
-										esc_html__( 'Remove this item', 'woocommerce' ),
-										esc_attr( $product_id ),
-										esc_attr( $_product->get_sku() )
-									),
-									$cart_item_key
-								);
-							?>
-						</td>
 
 
                                 <td class="product-thumbnail">
@@ -129,26 +112,18 @@ wc_print_notices();
                                     ?>
                                 </td>
                             </tr>
-    
+                            <tr class="spacer">
+                                <td></td>
+                            </tr>
                             <?php
                         }
                     }
                     ?>
 
-                            
-
-
                     <?php do_action('woocommerce_cart_contents'); ?>
 
                     <tr>
                         <td colspan="6" class="actions">
-
-                    <hr />
-
-                    <h1 class="right">Subtotal</h1>
-                    <h1 class="right"><?php //wc_cart_totals_subtotal_html(); ?></h1>
-                    
-                    
 
                             <?php do_action('woocommerce_cart_actions'); ?>
 
@@ -160,26 +135,13 @@ wc_print_notices();
                     </tbody>
                 </table>
                 <?php do_action('woocommerce_after_cart_table'); ?>
-                
             </form>
-            <div class="row bellow_form">
-                <div class="col-sm-6">
-                    <?php echo get_img('smalllogo.jpg', 'Small Logo') ?>
-                </div>
-                <div class="col-sm-6">
-                    <small>Customer Service</small>
-                    <?php
-                    $telephone_number = get_field('telephone_number', 'options');
-                    $telephone_number_attributes = get_field('telephone_number_attributes', 'options');
-                    $telephone_number_converted = preg_replace("/[^0-9+]/", "", $telephone_number);
-                    echo $telephone_number ? '<a href="tel:' . $telephone_number_converted . '" class="telephone_number" ' . $telephone_number_attributes . '>' . $telephone_number . '</a>' : '';
-                    ?>
-                </div>
-            </div>
             <?php do_action('woocommerce_before_cart'); ?>
             <?php wc_get_template('checkout/form-coupon.php', array('checkout' => WC()->checkout()));; ?>
         </div>
-        <div class="col-xl-6 right_side_checkout">
+		</div>
+		<div class="row">
+        <div class="col right_side_checkout">
             <div class="right_side_inner">
                 <?php
                 /**
@@ -193,26 +155,6 @@ wc_print_notices();
                 ?>
             </div>
         </div>
-    </div>
+	</div>
 </div>
 <?php do_action('woocommerce_after_cart'); ?>
-
-
-<style>
-h1.right {
-    display: block !important; 
-    width: 100% !important;
-    text-align: right  !important;
-    margin-bottom: 8px !important;
-    padding: 0px !important;
-}
-
-/* Hide Free Shipping Notice as per Jacks Requests */
-div#woocommerce-cart-notice-free-delivery{
-    display: none;
-}
-
-ins:before{
-    display:none;
-}
-</style>

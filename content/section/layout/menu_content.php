@@ -19,9 +19,8 @@ if (have_rows('menu_content', 'options')) : ?>
             if (!in_array($item_label, $menu_label)) continue;
 
             ?>
-            <div class="col-sm-6">
-                <?php $title = get_sub_field('title');
-                echo $title ? "<div class='title'>$title</div>" : "";
+            <div class="col-sm">
+                <?php
                 if (get_row_layout() === 'one_block')
                     get_section('menu_content_block');
                 if (have_rows('blocks'))

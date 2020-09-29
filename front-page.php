@@ -2,9 +2,7 @@
 
 get_header();
 
-get_hero('slider');
-
-get_hero('mobile_slider');
+echo do_shortcode('[smartslider3 slider="2"]');
 
 get_section_layout('product_display');
 

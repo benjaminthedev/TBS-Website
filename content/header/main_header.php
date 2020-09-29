@@ -16,16 +16,16 @@
 <div class="newHeaderWrap">
 
 <div class="hamburgerMenu">
-  <a href="#" class="hidden-md-up hidden-lg-up hidden-xl-up telephone_number float-left menu_expand_toggle"><i class="fa fa-bars fa-lg"></i></a>
+  <a href="#" class="hidden-lg-up hidden-xl-up telephone_number float-left menu_expand_toggle" aria-label="Mobile Menu"><i class="fa fa-bars fa-lg"></i></a>
 </div>
 
 
-<div id="mob-logo-container" class="container hidden-md-up text-center">
-  <?php echo '<a href="' . get_site_url() . '" id="logo_mob">' . get_img('logo.png') . '</a>'; ?>
+<div id="mob-logo-container" class="container hidden-lg-up text-center">
+  <?php echo '<a href="' . get_site_url() . '" id="logo_mob" aria-label="The Beauty Store Logo for Mobile">' . get_img('logo.png') . '</a>'; ?>
 </div>
 
 <div class=" logoSection">
-  <?php echo '<a href="' . get_site_url() . '" id="logo" class="float-md-left hidden-sm-down">' . get_img('logo.png') . '</a>'; ?>
+  <?php echo '<a href="' . get_site_url() . '" id="logo" class="float-md-left hidden-md-down" aria-label="The Beauty Store Logo for Desktop">' . get_img('logo.png') . '</a>'; ?>
 </div><!-- end logoSection -->
 
 
@@ -84,12 +84,12 @@
 <div class="myaccSection">
   <div class="itemsWrap">
     <nav class="account_navigation">
-        <a href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>"><i class="fa fa-user fa-lg"></i></a>
+        <a href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>" aria-label="My Account"><i class="fa fa-user fa-lg"></i></a>
     </nav>
 
 
     <div class="hearts">
-      <a href="<?php the_field('wishlist_page', 'options'); ?>"><i class="fa fa-heart fa-lg"></i> </a>
+      <a href="<?php echo $wlisturl; ?>" aria-label="My Wishlist"><i class="fa fa-heart fa-lg"></i> </a>
     </div>
 
 
@@ -153,7 +153,7 @@ nav.account_navigation {
 
 
 /* @media (max-width: 769px) { */
-@media (max-width: 767px) {
+@media (max-width: 991px) {
 
   .newHeaderWrap{
       flex-direction: column;

@@ -76,10 +76,3 @@ global $product;
         do_action( 'woocommerce_after_shop_loop_item' );
         ?>
     </div>
-<?php
-/**
- * Created by PhpStorm.
- * User: connormulhall
- * Date: 23/05/2017
- * Time: 11:55
- */
