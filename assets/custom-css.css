@@ -3,6 +3,9 @@
 All custom styles!
 
 */
+
+/* Global Custom CSS */
+
   .products .product .button {
     text-align: center;
     display: block;
@@ -13,77 +16,68 @@ All custom styles!
     margin: 1rem 0 0; 
 color: #fff;}
 
-ins {
-    clear: both;
-    display: block;
-    font-weight: 700;
-}
-
-ins:before {content: "Multi Buy Price ";}
-
-del {
-    text-decoration: none;
-}
-
-
+/*Billing Fields*/
 
 .woocommerce-billing-fields__field-wrapper {
   display: flex;
   flex-wrap: wrap;
 }
-.woocommerce form .form-row {
-}
-.woocommerce form .form-row input.input-text {
-}
 #billing_email_field {
   order: 1;
 	width: 100%;
 }
-#billing_country_field {
-  order: 2;
-	width: 100%;
-}
 #billing_first_name_field {
-  order: 3;
+  order: 2;
 	width: 50%;
 }
 #billing_last_name_field {
-  order: 4;
-	width: 50%;
-}
-#billing_address_1_field {
-  order: 5;
-	width: 100%;
-}
-#billing_address_2_field {
-  order: 6;
-  width: 50%;
-}
-#billing_city_field {
-  order: 7;
-	width: 50%;
-}
-#billing_postcode_field {
-  order: 8;
-	width: 50%;
-}
-#billing_state_field {
-  order: 9;
+  order: 3;
 	width: 50%;
 }
 #billing_phone_field {
-  order: 10;
+  order: 4;
 	width: 100%;
 }
+#billing_country_field {
+  order: 5;
+	width: 100%;
+}
+#find_address_postcode_field {
+  order: 6;
+	width: 100%;
+}
+#billing_company_field {
+  order: 7;
+	width: 100%;
+}
+#billing_address_1_field {
+  order: 8;
+	width: 100%;
+}
+#billing_address_2_field {
+  order: 9;
+  width: 50%;
+}
+#billing_city_field {
+  order: 10;
+	width: 50%;
+}
+#billing_postcode_field {
+  order: 11;
+	width: 50%;
+}
+#billing_state_field {
+  order: 12;
+	width: 50%;
+}
+
+/*Shipping Fields*/
+
 .woocommerce-shipping-fields__field-wrapper {
   display: flex;
   flex-wrap: wrap;
 }
-.woocommerce form .form-row {
-}
-.woocommerce form .form-row input.input-text {
-}
-#shipping_country_field {
+#shipping_email_field {
   order: 1;
 	width: 100%;
 }
@@ -92,41 +86,68 @@ del {
 	width: 50%;
 }
 #shipping_last_name_field {
- order: 3;
+  order: 3;
 	width: 50%;
 }
-#shipping_address_1_field {
+#shipping_phone_field {
   order: 4;
 	width: 100%;
 }
-#shipping_address_2_field {
+#shipping_country_field {
   order: 5;
+	width: 100%;
+}
+#shipping_phone_field {
+  order: 6;
+	width: 100%;
+}
+#shipping_company_field {
+  order: 7;
+	width: 100%;
+}
+#shipping_address_1_field {
+  order: 8;
+	width: 100%;
+}
+#shipping_address_2_field {
+  order: 9;
   width: 50%;
 }
 #shipping_city_field {
-  order: 6;
+  order: 10;
 	width: 50%;
 }
 #shipping_postcode_field {
-  order: 7;
+  order: 11;
 	width: 50%;
 }
 #shipping_state_field {
-  order: 9;
+  order: 12;
 	width: 50%;
 }
 .woocommerce-additional-fields__field-wrapper {
   display: flex;
   flex-wrap: wrap;
 }
-.woocommerce form .form-row {
-}
-.woocommerce form .form-row input.input-text {
-}
+
+/*Addressian Field*/
+
+#postcode-dropdown{width:100%;}
+#postcode-dropdown-shipping{width:100%;}
+.postcode_addr{width:100%;}
+.postcode_addr_shipping{width:100%;}
+.button.findaddr.button.alt{width:100%;background-color:#000;color:#fff;border-color:#000; font-weight:bold;font:inherit;height: 40px;}
+.findaddr_shipping.button.alt{width:100%;background-color:#000;color:#fff;border-color:#000; font-weight:bold;font:inherit;height: 40px;}
+
+/*Order Comments Field*/
+
 #order_comments_field {
   order: 1;
 	width: 100%;
 }
+
+/* Checkout Customisations*/
+
 input[name='update_cart'] {
 display: none !important;
 }
@@ -139,6 +160,9 @@ background-size: 30px 30px
 .woocommerce-checkout form .payment_methods label {
 display: none;
 }
+
+/*Email Signup*/
+
 #mc_embed_signup { border: none; text-align: center; width: 100%; } /* Signup form container */
 
 .mc-field-group { display: inline-block; } /* positions input field horizontally */

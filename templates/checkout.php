@@ -29,7 +29,7 @@ get_header(); ?>
 
                     <?php if (!is_wc_endpoint_url( 'order-received' )) : ?>
 
-                        <header class="checkout_header hidden-sm-down">
+                        <header class="checkout_header">
 
                             <ul class="clearfix">
 

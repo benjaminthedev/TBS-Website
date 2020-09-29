@@ -6,7 +6,7 @@
  * Time: 16:15
  */?>
 
-<header id="mobile_nav" class="hidden-md-up">
+<header id="mobile_nav" class="hidden-lg-up">
    <div class="mobile_menu_wrap">
        <header>
            Menu <a href="#" class="menu_expand_toggle"><i class="fa fa-times"></i></a>

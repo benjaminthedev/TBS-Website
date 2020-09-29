@@ -1,6 +1,6 @@
 /**
  * Created by connormulhall on 25/05/2017.
- */
+
 
 initMap();
 function initMap() {
@@ -24,3 +24,4 @@ function initMap() {
 
     });
 }
+ */

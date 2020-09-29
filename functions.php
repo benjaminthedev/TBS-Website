@@ -91,18 +91,18 @@ add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
 
 // Our hooked in function - $fields is passed via the filter!
 function custom_override_checkout_fields( $fields ) {
-	 unset($fields['billing']['billing_company']);
-     unset($fields['shipping']['shipping_company']);
 	 $fields['billing']['billing_email']['placeholder'] = 'Email Address*';
 	 $fields['billing']['billing_first_name']['placeholder'] = 'First Name*';
 	 $fields['billing']['billing_last_name']['placeholder'] = 'Last Name*';
+	 $fields['billing']['billing_phone']['placeholder'] = 'Contact Number*';
+	 $fields['billing']['billing_company']['placeholder'] = 'Company Name';
 	 $fields['billing']['billing_address_1']['placeholder'] = 'Address Line 1*';
 	 $fields['billing']['billing_address_2']['placeholder'] = 'Address Line 2';
 	 $fields['billing']['billing_city']['placeholder'] = 'Town/City*';
 	 $fields['billing']['billing_postcode']['placeholder'] = 'Postcode*';
-	 $fields['billing']['billing_phone']['placeholder'] = 'Contact Number';
 	 $fields['shipping']['shipping_first_name']['placeholder'] = 'First Name*';
 	 $fields['shipping']['shipping_last_name']['placeholder'] = 'Last Name*';
+	 $fields['shipping']['shipping_company']['placeholder'] = 'Company Name';
 	 $fields['shipping']['shipping_address_1']['placeholder'] = 'Address Line 1*';
 	 $fields['shipping']['shipping_address_2']['placeholder'] = 'Address Line 2';
 	 $fields['shipping']['shipping_city']['placeholder'] = 'Town/City*';
@@ -275,28 +275,94 @@ function brand_product_page() {
     echo get_the_term_list( $product->get_id(), 'product_brand', '<span class="brand_product_page">' . _n( 'by', 'product_brand:', count( $term_ids ), 'woocommerce' ) . ' ', ', ', '</span>' );
 }
 
-// YITH Product Page Badge
+//hide the Payment Request button on the single Product page
 
-//if ( !function_exists( 'yith_wcbm_customization_badge_container_start' ) && !function_exists( 'yith_wcbm_customization_badge_container_end' ) ) {
-//   add_action( 'woocommerce_before_single_product_summary', 'yith_wcbm_customization_badge_container_start', 15 );
-//   add_action( 'woocommerce_before_single_product_summary', 'yith_wcbm_customization_badge_container_end', 25 );
+add_filter( 'wc_stripe_hide_payment_request_on_product_page', '__return_true' );
 
-//   function yith_wcbm_customization_badge_container_start() {
-//       do_action( 'yith_wcbm_theme_badge_container_start' );
-//   }
+// show the Payment Request button on the Checkout page
 
-//   function yith_wcbm_customization_badge_container_end() {
-//       do_action( 'yith_wcbm_theme_badge_container_end' );
-//   }
-//}
+add_filter( 'wc_stripe_show_payment_request_on_checkout', '__return_true' );
 
-//Test
-// function theme_enqueue_styles() {
-//     wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/assets/custom-css.css', array( 'stylesheet' ) );
-// }
-// add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+//remove cart notices from checkout page
+
+function sv_remove_cart_notice_on_checkout() {
+	if ( function_exists( 'wc_cart_notices' ) ) {
+		remove_action( 'woocommerce_before_checkout_form', array( wc_cart_notices(), 'add_cart_notice' ) );
+	}
+}
+add_action( 'init', 'sv_remove_cart_notice_on_checkout' );
+
+// Get wishlist for current user.
+$wl = tinv_wishlist_get();
+
+// Get share key for wishlist if exists.
+$share_key = ( $wl && isset( $wl['share_key'] ) ) ? $wl['share_key'] : '';
+
+// Get wishlist url with share key if exists.
+$url = tinv_url_wishlist_by_key( $share_key );
+
+// Strikethrough Price - Simple Product
+
+add_filter( 'woocommerce_get_price_html', 'strike_though_simple_woocommerce_get_price_html', 9999, 2 );function strike_though_simple_woocommerce_get_price_html( $price_html, $product ) {   if ( $product->get_type() == 'variable' ) {      $prices = $product->get_variation_prices();      $regular_lowest_sale_price         = current( $prices['sale_price'] );      $regular_lowest_variation_price    = current( $prices['regular_price'] );      $discounted_lowest_variation_price = current( $prices['price'] );      $abs_lowest = min( $regular_lowest_sale_price, $regular_lowest_variation_price, $discounted_lowest_variation_price );      if ( $regular_lowest_variation_price != $abs_lowest ) {         $price_html = 'From ' . wc_format_sale_price( $regular_lowest_variation_price, $discounted_lowest_variation_price );      }   }   return $price_html;}
+
+// Strikethrough Price - Variation Product
+
+add_filter( 'woocommerce_get_price_html', 'strike_though_woocommerce_get_price_html', 10, 2 );
+
+function strike_though_woocommerce_get_price_html( $price_html, $product ) {
+
+   if ( $product->get_type() == 'variable' ) {
+      $prices = $product->get_variation_prices();
+
+      $regular_lowest_variation_price  = current( $prices['regular_price'] );
+      $regular_highest_variation_price = end( $prices['regular_price'] );
+
+      $discounted_lowest_variation_price  = current( $prices['price'] );
+      $discounted_highest_variation_price = end( $prices['price'] );
 
 
+      if ( $regular_lowest_variation_price != $discounted_lowest_variation_price ) {
+         $price_html = '<del>' . wc_format_price_range( $regular_lowest_variation_price, $regular_highest_variation_price ) . '</del>';
+         $price_html .= ' ' . wc_format_price_range( $discounted_lowest_variation_price, $discounted_highest_variation_price );
+      }
+
+   }
+
+
+   return $price_html;
+
+}
+
+// Remove Contact Form 7 Scripts
+
+function remove_contactform_css_js() {
+    global $post;
+    if( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'contact-form-7') ) {
+        wp_enqueue_script('contact-form-7');
+         wp_enqueue_style('contact-form-7');
+
+    }else{
+        wp_dequeue_script( 'contact-form-7' );
+        wp_dequeue_style( 'contact-form-7' );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'remove_contactform_css_js');
+
+// Dequeue Styles
+function dequeue_unnecessary_styles() {
+    wp_dequeue_style( 'videoJS' );
+        wp_deregister_style( 'videoJS' );
+}
+add_action( 'wp_print_styles', 'dequeue_unnecessary_styles' );
+
+// Dequeue JavaScripts
+function dequeue_unnecessary_scripts() {
+    wp_dequeue_script( 'videoJS' );
+        wp_deregister_script( 'videoJS' );
+	 wp_dequeue_script( 'Youtube' );
+        wp_deregister_script( 'Youtube' );
+}
+add_action( 'wp_print_scripts', 'dequeue_unnecessary_scripts' );
 
 /**
  * Proper way to enqueue scripts and styles.
@@ -315,12 +381,6 @@ function get_scripts() {
 	// if (is_page(262)) {
 	// 	wp_enqueue_script( 'homeJs', get_stylesheet_directory_uri() . '/js/home-page.js', array(), '1.0.0', true );
 	// }
-
-
-	// Checkout JS
-	if (is_page(20)) {
-		wp_enqueue_script( 'customCheckoutJS', get_stylesheet_directory_uri() . '/assets/js/customCheckoutJS.js', array(), '1.0.0', true );
-	}
   
 	
 }

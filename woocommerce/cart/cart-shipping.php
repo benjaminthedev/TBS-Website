@@ -43,19 +43,6 @@ $calculator_text          = '';
 					</li>
 				<?php endforeach; ?>
 			</ul>
-			<?php if ( is_cart() ) : ?>
-				<p class="woocommerce-shipping-destination">
-					<?php
-					if ( $formatted_destination ) {
-						// Translators: $s shipping destination.
-						printf( esc_html__( 'Estimate for %s.', 'woocommerce' ) . ' ', '<strong>' . esc_html( $formatted_destination ) . '</strong>' );
-						$calculator_text = __( 'Change address', 'woocommerce' );
-					} else {
-						echo esc_html__( 'This is only an estimate. Prices will be updated during checkout.', 'woocommerce' );
-					}
-					?>
-				</p>
-			<?php endif; ?>
 		<?php
 		elseif ( ! $has_calculated_shipping || ! $formatted_destination ) :
 			esc_html_e( 'Enter your address to view shipping options.', 'woocommerce' );

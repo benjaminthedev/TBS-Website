@@ -1,6 +1,9 @@
 <?php
 /*
-Template Name: Search Results Latest (JACK M EDITED 21.08.20)
+Template Name: Custom Search
+* User: jackm
+* Date: 15/09/2020
+* Time: 15:21
 */
 ?>
 <?php get_header(); ?>

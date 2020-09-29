@@ -31,34 +31,8 @@ global $product;
         </div>
         <div id="count_down_text"></div>
     </div>
-    <div class="social_links">
-        <ul>
-            <li>
-                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_the_permalink()); ?>"
-                   target="_blank">
-                    <i class="fa fa-facebook-official"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://twitter.com/home?status=<?php echo urlencode(get_the_title() . ' | The Beauty Store ' . get_the_permalink()); ?>"
-                   target="_blank">
-                    <i class="fa fa-twitter"></i>
-                </a>
-            </li>
-            <?php if (has_post_thumbnail()) :
-                global $post;
-                $post_thumbnail_id = get_post_thumbnail_id($post->ID);
-                $large_images = wp_get_attachment_image_src($post_thumbnail_id, 'full');
-                ?>
-                <li>
-                    <a href="https://pinterest.com/pin/create/button/?url=<?php echo urlencode(get_the_permalink()); ?>&media=<?php echo urlencode($large_images) ?>&description=<?php echo urlencode(get_the_title()) ?>"
-                       target="_blank">
-                        <i class="fa fa-pinterest"></i>
-                    </a>
-                </li>
-            <?php endif; ?>
-        </ul>
-
+    <div class="my_wishlist">
+        <?php echo do_shortcode("[ti_wishlists_addtowishlist]"); ?>	
     </div>
 
 

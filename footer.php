@@ -20,7 +20,7 @@
 
                                 $extra_attributes = get_sub_field('extra_attributes');
 
-                                echo $link && $icon ? "<li><a href='$link' rel='nofollow noopener noreferrer' target='_blank' $extra_attributes>$icon</a></li>" : '';
+                                echo $link && $icon ? "<li><a href='$link' rel='nofollow noopener noreferrer' target='_blank' aria-label='$extra_attributes'>$icon</a></li>" : '';
 
                             endwhile; ?>
 
@@ -51,7 +51,7 @@
 <form action="https://thebeautystore.us8.list-manage.com/subscribe/post?u=a256b3433ee594374bef00ca6&amp;id=2d603aff8f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" rel="nofollow noopener noreferrer" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
 	
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="SIGN UP FOR THE LATEST Offers" required>
+	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" aria-label="Sign up for the Latest Offers" placeholder="SIGN UP FOR THE LATEST Offers" required>
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a256b3433ee594374bef00ca6_2d603aff8f" tabindex="-1" value=""></div>
     <div class="clear"><input type="submit" value="SIGN UP" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
@@ -81,7 +81,7 @@
 
                         <?php $title = get_sub_field('title');
 
-                        echo $title ? "<h4>$title</h4>" : '';
+                        echo $title ? "<div class='footer_navigation_title'>$title</div>" : '';
 
                         if (have_rows('navigation')) : ?>
 
@@ -123,7 +123,7 @@
 
                      data-businessunit-id="52fb37910000640005783555" data-style-height="100px" data-style-width="165px"
 
-                     data-theme="dark">
+                     data-theme="light">
 
                     <a href="https://www.trustpilot.com/review/www.thebeautystore.co.uk" rel="nofollow noopener noreferrer" target="_blank">Trustpilot</a>
 
@@ -150,7 +150,7 @@
 
             <div class="col-md-6 cards text-lg-right">
 
-                <?php echo get_img('cards.jpg', 'Accepted Cards') ?>
+                <?php echo get_img('cards.png', 'Accepted Cards') ?>
 
             </div>
 
@@ -162,7 +162,6 @@
 
 
 <?php wp_footer(); ?>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
-<?php echo get_field('body_scripts', 'option'); ?>
+
 
 <script src="https://apis.google.com/js/platform.js" async defer></script>​

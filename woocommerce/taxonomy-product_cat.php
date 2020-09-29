@@ -98,7 +98,7 @@ global $product;
 
                 <div class="row" id="category-header">
 
-                    <div class="col-md-8">
+                    <div class="col-md-6">
 
                         <div class="vlog_content">
 
@@ -127,7 +127,7 @@ global $product;
 
                     <?php if ($term_img) : ?>
 
-                        <div class="col-md-4 video_wrap"
+                        <div class="col-md-6 video_wrap"
 
                             <?php echo "style='background-image: url($term_img)'" ?> >
 

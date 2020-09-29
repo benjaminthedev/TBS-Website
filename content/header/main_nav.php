@@ -6,7 +6,7 @@
  * Time: 16:15
  */ ?>
 
-<header id="main_nav" class="hidden-sm-down">
+<header id="main_nav" class="hidden-md-down">
     <div class="container">
         <?php
         wp_nav_menu(array(
