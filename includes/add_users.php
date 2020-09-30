@@ -1,12 +1,5 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: connormulhall
- * Date: 12/05/2017
- * Time: 09:47
- */
-
-/**
  * @param array $users
  * @param array $meta - $meta_key => $meta_value
  */

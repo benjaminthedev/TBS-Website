@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: connormulhall
- * Date: 25/05/2017
- * Time: 14:05
- */
 
 $featured_video = get_field('featured_video');
 

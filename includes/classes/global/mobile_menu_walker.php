@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: connormulhall
- * Date: 22/05/2017
- * Time: 14:14
- */
 
 
 class mobile_menu_walker extends Walker_Nav_Menu {

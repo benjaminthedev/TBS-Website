@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by Connor Mulhall.
- * Date: 19/09/2017
- * Time: 13:38
- * @var $item_label
- */
-
 $brands = [];
 
 $product_brand = get_terms(['taxonomy' => 'product_brand', 'hide_empty' => true]);

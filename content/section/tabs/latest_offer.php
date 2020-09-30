@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: connormulhall
- * Date: 23/05/2017
- * Time: 10:54
- */
 
 $latest_offers = get_field('latest_offers', 'options');
 

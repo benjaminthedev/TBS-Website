@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: connormulhall
- * Date: 25/05/2017
- * Time: 13:44
- * Template Name: Content Center
- */
 
 get_header(); ?>
 

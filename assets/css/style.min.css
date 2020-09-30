@@ -8437,7 +8437,7 @@ header#offer {
   display: block !important;
   background: #ffffff;
   border-bottom: 1px solid #d7d7d7; }
-  @media (max-width: 991px) {
+  @media (max-width: 767px) {
     #main_header .middle_header {
       padding: 1rem 0 0;
       display: none; } }
@@ -10788,6 +10788,3 @@ form.woocommerce-checkout {
 .woocommerce form .woocommerce-terms-and-conditions-wrapper input[type="checkbox"] + label:before, .woocommerce form .woocommerce-terms-and-conditions-wrapper input[type="checkbox"] + span:before {
   content: none;
 }
-/* jack-css (assets/css/css/_jack-css.css) */
-.close_sidebar {
-  margin-bottom: 1em; }

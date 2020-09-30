@@ -1,10 +1,8 @@
 <?php
 
 /**
- * Created by PhpStorm.
- * User: connormulhall
- * Date: 15/06/2017
- * Time: 14:29
+
+
  * @property  get_post_object
  */
 class get_all_tags

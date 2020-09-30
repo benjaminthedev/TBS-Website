@@ -1,11 +1,6 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: connormulhall
- * Date: 19/05/2017
- * Time: 10:19
- */
+
 class main_menu_walker extends Walker_Nav_Menu
 {
 

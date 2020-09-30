@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: connormulhall
- * Date: 16/05/2017
- * Time: 10:04
- */
 
 /**
  * Add Custom Meta

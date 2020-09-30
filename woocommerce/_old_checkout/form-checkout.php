@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: connormulhall
- * Date: 03/07/2017
- * Time: 14:52
- */
 wc_print_notices();
 ?>
 <div class="loader">
