@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: connormulhall
- * Date: 24/05/2017
- * Time: 13:49
- */
 $args = [
     'posts_per_page' => 2,
 //    'category__not_in' => array( 2268 ),

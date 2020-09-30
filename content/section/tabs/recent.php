@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: connormulhall
- * Date: 23/05/2017
- * Time: 10:53
- */
 
 $args = [
     'post_type' => 'product',

@@ -1,12 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: connormulhall
- * Date: 22/05/2017
- * Time: 16:14
- */
-?>
-
 <header id="main_header">
     <div class="middle_header">
         <div class="container-fluid">
@@ -50,22 +41,6 @@
   </label>
   <input type="submit" class="search-submit" value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>"/>
   </form>
-
-
-   <!-- <form action="<?php echo esc_url( get_page_link( $options['search_page'] ) ); ?>" class="search_form" class="float-md-right">
-        <div id="search_form_inner">
-            <div class="input_wrap">
-                <i class="fa fa-search"></i>
-                <input type="text" name="searchterm" placeholder="I am looking for..." id="clerk-live-search">
-            </div>
-            <button type="submit" class="btn btn-primary btn-sm">Search</button>
-        </div>
-    </form> -->
-
-
-
-
-
 
   <span class="clerk" data-template="@live-search" data-instant-search="#clerk-searchfield" data-instant-search-suggestions="6" data-instant-search-categories="6" data-instant-search-pages="6" data-instant-search-positioning="below"></span>
 
@@ -216,9 +191,4 @@ nav.account_navigation {
         border-right: 1px solid #d7d7d7;;
   }
 }
-
-
-
-
-
 </style>

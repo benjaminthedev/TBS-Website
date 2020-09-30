@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: connormulhall
- * Date: 08/03/2017
- * Time: 09:27
- */
 
 add_action('tgmpa_register', 'default_plugins_register_required_plugins');
 

@@ -1,12 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: connormulhall
- * Date: 18/05/2017
- * Time: 09:24
- */
-
-?>
     <div id="poststuff" class="clearfix">
         <div class="postbox-container">
             <div class="meta-box-sortables ui-sortable">

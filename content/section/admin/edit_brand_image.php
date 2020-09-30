@@ -1,14 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: connormulhall
- * Date: 10/07/2017
- * Time: 09:21
- */
-
-
-?>
-
 
 <tr class="form-field">
     <th scope="row" valign="top"><label><?php _e( 'Thumbnail', 'woocommerce' ); ?></label></th>

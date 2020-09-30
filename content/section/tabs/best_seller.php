@@ -1,14 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: connormulhall
- * Date: 23/05/2017
- * Time: 10:54
- */
-
 $trending = get_field('trending', 'options');
-
-
 
 $args = [
     'post_type' => 'product',

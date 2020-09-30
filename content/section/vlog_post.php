@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: connormulhall
- * Date: 23/05/2017
- * Time: 16:32
- */
 
 $featured_vlog = get_field('featured_vlog');
 
@@ -116,4 +110,4 @@ if ($the_query->have_posts() && $featured_vlog && $featured_video) :
 
 endif;
 
-wp_reset_postdata();
+wp_reset_postdata(); ?>

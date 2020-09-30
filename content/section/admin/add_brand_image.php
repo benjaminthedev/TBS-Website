@@ -1,12 +1,3 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: connormulhall
- * Date: 10/07/2017
- * Time: 09:21
- */
-?>
-
 <div class="form-field term-thumbnail-wrap">
     <label><?php _e( 'Thumbnail', 'woocommerce' ); ?></label>
     <div id="product_cat_thumbnail" style="float: left; margin-right: 10px;"><img src="<?php echo esc_url( wc_placeholder_img_src() ); ?>" width="60px" height="60px" /></div>

@@ -1,11 +1,6 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * User: connormulhall
- * Date: 18/05/2017
- * Time: 14:40
- */
+
 class import_products
 {
 
