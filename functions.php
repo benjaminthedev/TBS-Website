@@ -340,29 +340,29 @@ function remove_contactform_css_js() {
     if( is_a( $post, 'WP_Post' ) && has_shortcode( $post->post_content, 'contact-form-7') ) {
         wp_enqueue_script('contact-form-7');
          wp_enqueue_style('contact-form-7');
-
-    }else{
+}
+	else {
         wp_dequeue_script( 'contact-form-7' );
         wp_dequeue_style( 'contact-form-7' );
     }
 }
 add_action( 'wp_enqueue_scripts', 'remove_contactform_css_js');
 
-// Dequeue Styles
-function dequeue_unnecessary_styles() {
-    wp_dequeue_style( 'videoJS' );
-        wp_deregister_style( 'videoJS' );
-}
-add_action( 'wp_print_styles', 'dequeue_unnecessary_styles' );
+// Remove Gutenberg Block Styling
 
-// Dequeue JavaScripts
-function dequeue_unnecessary_scripts() {
-    wp_dequeue_script( 'videoJS' );
-        wp_deregister_script( 'videoJS' );
-	 wp_dequeue_script( 'Youtube' );
-        wp_deregister_script( 'Youtube' );
-}
-add_action( 'wp_print_scripts', 'dequeue_unnecessary_scripts' );
+function remove_wp_block_library_css(){
+if (is_page('about-us')){
+    wp_enqueue_style( 'wp-block-library' );
+    wp_enqueue_style( 'wp-block-library-theme' );
+    wp_enqueue_style( 'wc-block-style' ); // Remove WooCommerce block CSS
+} 
+else {
+	wp_dequeue_style( 'wp-block-library' );
+    wp_dequeue_style( 'wp-block-library-theme' );
+    wp_dequeue_style( 'wc-block-style' ); // Remove WooCommerce block CSS
+}	
+}	
+add_action( 'wp_enqueue_scripts', 'remove_wp_block_library_css');
 
 /**
  * Proper way to enqueue scripts and styles.
@@ -380,7 +380,10 @@ function get_scripts() {
 
 	// if (is_page(262)) {
 	// 	wp_enqueue_script( 'homeJs', get_stylesheet_directory_uri() . '/js/home-page.js', array(), '1.0.0', true );
-	// }
+    // }
+    
+        
+        
   
 	
 }

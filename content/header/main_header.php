@@ -1,3 +1,12 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: connormulhall
+ * Date: 22/05/2017
+ * Time: 16:14
+ */
+?>
+
 <header id="main_header">
     <div class="middle_header">
         <div class="container-fluid">
@@ -39,8 +48,24 @@
            placeholder="I am looking for..."
            value="<?php echo get_search_query() ?>" name="searchterm"/>
   </label>
-  <input type="submit" class="search-submit" value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>"/>
+  <input type="submit" class="search-submit" value="&#xf002"/>
   </form>
+
+
+   <!-- <form action="<?php echo esc_url( get_page_link( $options['search_page'] ) ); ?>" class="search_form" class="float-md-right">
+        <div id="search_form_inner">
+            <div class="input_wrap">
+                <i class="fa fa-search"></i>
+                <input type="text" name="searchterm" placeholder="I am looking for..." id="clerk-live-search">
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm">Search</button>
+        </div>
+    </form> -->
+
+
+
+
+
 
   <span class="clerk" data-template="@live-search" data-instant-search="#clerk-searchfield" data-instant-search-suggestions="6" data-instant-search-categories="6" data-instant-search-pages="6" data-instant-search-positioning="below"></span>
 
@@ -58,13 +83,13 @@
 
 <div class="myaccSection">
   <div class="itemsWrap">
-    <nav class="account_navigation">
-        <a href="<?php echo get_permalink(get_option('woocommerce_myaccount_page_id')); ?>" aria-label="My Account"><i class="fa fa-user fa-lg"></i></a>
+  <nav class="account_navigation">
+		<?php echo '<a href="' . get_permalink(get_option('woocommerce_myaccount_page_id')) . '"  aria-label="My Account">' . get_img('user-solid.svg') . '</a>'; ?>
     </nav>
 
 
     <div class="hearts">
-      <a href="<?php echo $wlisturl; ?>" aria-label="My Wishlist"><i class="fa fa-heart fa-lg"></i> </a>
+     <?php echo '<a href="" aria-label="My Wishlist">' . get_img('heart-solid.svg') . '</a>'; ?>
     </div>
 
 
@@ -89,6 +114,9 @@
 
 <style>
 
+nav.account_navigation img {max-width: 50%;}
+div.hearts img {max-width: 50%;}
+	
 .newHeaderWrap{
   display: flex;
   width: 100%;
@@ -191,4 +219,9 @@ nav.account_navigation {
         border-right: 1px solid #d7d7d7;;
   }
 }
+
+
+
+
+
 </style>

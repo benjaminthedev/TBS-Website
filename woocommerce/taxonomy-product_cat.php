@@ -129,7 +129,7 @@ global $product;
 
                         <div class="col-md-6 video_wrap"
 
-                            <?php echo "style='background-image: url($term_img)'" ?> >
+                            <?php echo "style='background-position: center;background-image: url($term_img)'" ?> >
 
                         </div>
 

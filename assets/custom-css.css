@@ -171,7 +171,7 @@ display: none;
 
 .clear { display: inline-block; } /* positions button horizontally in line with input */
 
-input.button { font-family: 'Helvetica Neue', Helvetica,  Arial, sans-serif; font-weight: bold; font-size: 1em; letter-spacing: .03em; color: #fff; background-color: #08b6c6 ; padding: .7em 2em; border: 1px solid #08b6c6 ; -webkit-border-radius: 1px; -moz-border-radius: 3px; border-radius: 3px; display: inline-block; margin: 0; } /* Button Styles */
+input.button { font-family: 'Helvetica Neue', Helvetica,  Arial, sans-serif; font-weight: bold; font-size: 1em; letter-spacing: .03em; color: #fff; background-color: #000 ; padding: .7em 2em; border: 1px solid #000 ; -webkit-border-radius: 1px; -moz-border-radius: 3px; border-radius: 3px; display: inline-block; margin: 0; } /* Button Styles */
 
 
 /* Clerk Search */
@@ -198,12 +198,9 @@ input#clerk-searchfield {
 input.search-submit {
     float: right;
     color: #fff;
-    background-color: #0fb4c2;
-    border-color: #0fb4c2;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    padding: 0.8125rem 1rem;
-    font-size: 0.9rem;
-    border-radius: 0;
+    background-color: #000;
+    border-color: #000;
+    padding: 0.2rem 1rem;
+    font-size: 1.6rem;
+	font-family: FontAwesome;
 }

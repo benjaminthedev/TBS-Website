@@ -1,4 +1,11 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: connormulhall
+ * Date: 25/05/2017
+ * Time: 16:08
+ * Template Name: Brands
+ */
 
 $the_post_thumbnail_url = get_the_post_thumbnail_url(null, 'full');
 

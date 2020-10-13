@@ -54,7 +54,7 @@ $cat = isset($_GET['category']) ? (int)$_GET['category'] : $cat_init;
 $brand = is_tax('product_brand') ? [ get_queried_object()->term_id ] : [];
 $brand = isset($_GET['brand']) ? array_map('intval', explode(',', $_GET['brand'])) : $brand;
 
-$brands = get_queried_object()->term_id;
+$brands = get_queried_object()->name;
 
 $colour = isset($_GET['colour']) ? array_map('intval', explode(',', $_GET['colour'])) : [];
 $colour = isset($_GET['colour']) ? array_map('intval', explode(',', $_GET['colour'])) : [];
@@ -130,7 +130,7 @@ global $product;
 
                         <div class="col-md-6 video_wrap"
 
-                            <?php echo "style='background-image: url($term_img)'" ?> >
+                            <?php echo "style='background-position: center;background-image: url($term_img)'" ?> >
 
                         </div>
 
@@ -242,9 +242,9 @@ div#clerk-category-filters {
 			 <div id="clerk-category-filters"></div>
             <span
                 class="clerk"
-                data-template="@brand-page-results"
+                data-template="@brand-page"
                 data-facets-in-url="true"
-                data-filter="brands = '<?php echo $brands; ?>"
+                data-query="<?php echo $brands; ?>"
 				data-facets-target="#clerk-category-filters"
                   data-facets-attributes='["categories","product_brand","product_fragrance_name","product_gender","product_formulation","product_colour","product_skin_type","product_spf","brands","price","product_size"]'
                 data-facets-titles='{"categories":"Categories","product_brand":"Brands","product_fragrance_name":"Product Range","product_gender":"Gender","product_formulation":"Formulation","product_colour":"Colour","product_skin_type":"Skin Type","product_spf":"Skin Type","brands":"Brands","price":"Price","product_size":"Size"}'  

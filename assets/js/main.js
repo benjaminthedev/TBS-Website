@@ -2,8 +2,6 @@
  * Mobile Nav
  */
 
-console.log('Updated JS');
-
 $('#mobile_nav').find('select').change(function (e) {
     var val = $(this).val();
 

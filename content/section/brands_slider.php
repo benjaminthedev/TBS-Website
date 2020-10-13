@@ -1,4 +1,10 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: connormulhall
+ * Date: 23/05/2017
+ * Time: 15:32
+ */
 if (have_rows('brands_slider', 'options')) : ?>
 
     <div id="brands_slider">

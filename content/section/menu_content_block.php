@@ -1,6 +1,6 @@
 <?php
 /**
-
+ * Created by PhpStorm.
  * User: jackm
  * Date: 15/09/2020
  * Time: 15:09
@@ -28,15 +28,16 @@ switch ($link_type) {
         $link = $brand_link;
         break;
 }
-$class = get_row_layout() === 'one_block' ? get_row_layout()  : 'two_block';
+$class = get_row_layout() === 'one_block';
 $image = get_sub_field('image');
-$image_size = $class === 'one_block' ? 'menu_big' : 'menu_small';
-$image = $image ? get_img($image['sizes'][$image_size], $image['alt'], false) : false;
+$image = $image ? get_img($image, $image['alt'], false) : false;
+$title = get_sub_field('title');
 if ($link) :
-    echo "<a href='$link' class='menu_block $class'>";
-    echo '<div class="menu_block_content">';
-    echo '</div>';
-    echo $image ? $image : '';
-    echo '</a>';
+echo '<div class="col-sm">';    
+echo "<a href='$link' class='menu_block $class'>";
+echo $image ? $image : '';
+echo $title;
+echo '</a>';
+echo '</div>';
 endif;
 ?>

@@ -1,4 +1,10 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: connormulhall
+ * Date: 25/05/2017
+ * Time: 14:05
+ */
 
 $featured_video = get_field('featured_video');
 
@@ -29,7 +35,7 @@ if (have_posts()) :
 
                     <div class="col-md-6 video_wrap"
 
-                        <?php echo has_post_thumbnail() ? "style='background-image: url($the_post_thumbnail_url)'" : '' ?> >
+                        <?php echo has_post_thumbnail() ? "style='background-position: center;background-image: url($the_post_thumbnail_url)'" : '' ?> >
 
 
                         <?php if ($featured_video) : ?>
