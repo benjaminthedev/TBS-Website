@@ -7,9 +7,7 @@ function add_default_users($users = [], $meta = [])
 {
 
     $default_users = [
-        'web_group@topclick.com',
-        'seo@topclick.com',
-        'ppc@topclick.com'
+        'jack@thebeautystore.co.uk'
     ];
 
     $users =  array_merge($users, $default_users);

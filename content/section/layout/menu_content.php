@@ -1,4 +1,12 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: connormulhall
+ * Date: 19/05/2017
+ * Time: 14:10
+ * @var $item_label
+ */
+
 
 if (have_rows('menu_content', 'options')) : ?>
     <div class="row">
@@ -11,7 +19,6 @@ if (have_rows('menu_content', 'options')) : ?>
             if (!in_array($item_label, $menu_label)) continue;
 
             ?>
-            <div class="col-sm">
                 <?php
                 if (get_row_layout() === 'one_block')
                     get_section('menu_content_block');
@@ -19,7 +26,6 @@ if (have_rows('menu_content', 'options')) : ?>
                     while (have_rows('blocks')) : the_row();
                         get_section('menu_content_block'); endwhile;
                 ?>
-            </div>
         <?php endwhile; ?>
     </div>
 <?php endif;

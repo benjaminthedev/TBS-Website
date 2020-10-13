@@ -1,6 +1,11 @@
 <?php
 
-
+/**
+ * Created by PhpStorm.
+ * User: connormulhall
+ * Date: 19/05/2017
+ * Time: 10:19
+ */
 class main_menu_walker extends Walker_Nav_Menu
 {
 
@@ -30,12 +35,6 @@ class main_menu_walker extends Walker_Nav_Menu
         $this->current_item = $item;
         $item_html = apply_filters('roots_wp_nav_menu_item', $item_html);
         $output .= $item_html;
-        if ($this->current_item->title === 'Brands') {
-            ob_start();
-            get_section_layout('brands_content', ['item_label' => $this->current_item->title]);
-            $output .= ob_get_contents();
-            ob_clean();
-        }
     }
 
     public function display_element($element, &$children_elements, $max_depth, $depth = 0, $args, &$output)
@@ -47,12 +46,7 @@ class main_menu_walker extends Walker_Nav_Menu
             $element->classes[] = 'mega_menu_parent';
         } else if ($element && ($depth === 1) && $element->has_children) {
             $element->classes[] = 'col-lg-4 col-sm-3';
-        } else if ($element->title === 'Brands') {
-
-            $element->classes[] = 'brands-hover';
-
-
-        }
+        } 
         if ($element && ($depth === 1) && !$element->has_children) {
             $this->no_child[] = $element;
         } else {

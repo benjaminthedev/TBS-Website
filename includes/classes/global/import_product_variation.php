@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * Created by PhpStorm.
+ * User: connormulhall
+ * Date: 13/07/2017
+ * Time: 14:02
+ */
 class import_product_variation
 {
     private $import_dir;

@@ -1,10 +1,11 @@
+<h2 class="section_title"><span>Follow Us</span></h2>
 <footer id="social_footer">
 
-    <div class="container-fluid">
+    <div class="container-fluid" style="padding-right:0px;padding-left:0px">
 
         <div class="row">
 
-            <?php if (have_rows('social_links', 'options')) : ?>
+            <?php if (have_rows('social_links_2', 'options')) : ?>
 
                 <div class="col">
 
@@ -12,15 +13,17 @@
 
                         <ul>
 
-                            <?php while (have_rows('social_links', 'options')) : the_row();
+                            <?php while (have_rows('social_links_2', 'options')) : the_row();
 
-                                $icon = get_sub_field('icon');
+                                 $image = get_sub_field('image');
+                                 $title = get_sub_field('title');      
+                                 $link = get_sub_field('link');
+					             $image_id = get_sub_field('image_id');
 
-                                $link = get_sub_field('link');
-
-                                $extra_attributes = get_sub_field('extra_attributes');
-
-                                echo $link && $icon ? "<li><a href='$link' rel='nofollow noopener noreferrer' target='_blank' aria-label='$extra_attributes'>$icon</a></li>" : '';
+                                echo "<li>
+								<a href='$link' aria-label='$title' rel='nofollow noopener noreferrer' target='_blank' 
+						<span class='image'><img src='$image' id='$image_id' aria-label='$title'/></span>		
+								</a></li>";
 
                             endwhile; ?>
 

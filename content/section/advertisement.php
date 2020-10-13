@@ -1,3 +1,11 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: connormulhall
+ * Date: 21/06/2017
+ * Time: 16:45
+ */
+?>
 <div class="product_ads">
 
     <ul class="slides">

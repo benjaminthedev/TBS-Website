@@ -3,7 +3,7 @@
 /**
  * This is a "static" class which is used to provide helper methods for wordpress.
  *
- * @author BenjaminThedev 
+ * @author Connor Mulhall
  */
 final class WP_HELPER {
 
